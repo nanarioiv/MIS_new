@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using RemontKt.Data;
-using RemontKt.Export;
+using MIS.Data;
+using MIS.Export;
 
 
-namespace RemontKt.Forms.Reports
+namespace MIS.Forms.Reports
 {
     public partial class RequestByFaultTypeReportForm : Form
     {

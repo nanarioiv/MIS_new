@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Text;
 using System.Windows.Forms;
-using RemontKt.Data;
-using RemontKt.Forms.MainForms;
-using RemontKt.Properties;
+using MIS.Data;
+using MIS.Forms.MainForms;
+using MIS.Properties;
 
 
-namespace RemontKt.Forms.AddEditForms
+namespace MIS.Forms.AddEditForms
 {
     public partial class AddEditRequestWorkForm : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace RemontKt.Forms.AddEditForms
+﻿namespace MIS.Forms.AddEditForms
 {
     partial class AddEditPostForm
     {
@@ -61,7 +61,7 @@
             this.buttonCancel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonCancel.FlatAppearance.BorderSize = 2;
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Image = global::RemontKt.Properties.Resources.delete_16;
+            this.buttonCancel.Image = global::MIS.Properties.Resources.delete_16;
             this.buttonCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonCancel.Location = new System.Drawing.Point(215, 98);
             this.buttonCancel.Name = "buttonCancel";

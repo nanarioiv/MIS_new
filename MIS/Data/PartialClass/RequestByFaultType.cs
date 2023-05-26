@@ -1,4 +1,4 @@
-﻿namespace RemontKt.Data
+﻿namespace MIS.Data
 {
     /// <summary>
     /// Клас для представления сгруппированых по типу неисправности заявок

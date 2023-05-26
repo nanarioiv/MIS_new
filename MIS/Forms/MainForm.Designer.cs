@@ -1,4 +1,4 @@
-﻿namespace RemontKt.Forms
+﻿namespace MIS.Forms
 {
     partial class MainForm
     {
@@ -156,7 +156,7 @@
             this.характеристикиТехникиToolStripMenuItem,
             this.видыТехникиToolStripMenuItem,
             this.бытоваяТехникаToolStripMenuItem});
-            this.справочникиToolStripMenuItem.Image = global::RemontKt.Properties.Resources.referenceData;
+            this.справочникиToolStripMenuItem.Image = global::MIS.Properties.Resources.referenceData;
             this.справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
             this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
             this.справочникиToolStripMenuItem.Text = "Справочники";
@@ -236,7 +236,7 @@
             // 
             // сотрудникиToolStripMenuItem
             // 
-            this.сотрудникиToolStripMenuItem.Image = global::RemontKt.Properties.Resources.iconfinder_People_22163;
+            this.сотрудникиToolStripMenuItem.Image = global::MIS.Properties.Resources.iconfinder_People_22163;
             this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
             this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.сотрудникиToolStripMenuItem.Text = "Сотрудники";
@@ -244,7 +244,7 @@
             // 
             // клиентыToolStripMenuItem
             // 
-            this.клиентыToolStripMenuItem.Image = global::RemontKt.Properties.Resources.iconfinder_system_users_118828;
+            this.клиентыToolStripMenuItem.Image = global::MIS.Properties.Resources.iconfinder_system_users_118828;
             this.клиентыToolStripMenuItem.Name = "клиентыToolStripMenuItem";
             this.клиентыToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.клиентыToolStripMenuItem.Text = "Клиенты";
@@ -252,7 +252,7 @@
             // 
             // запчастиToolStripMenuItem
             // 
-            this.запчастиToolStripMenuItem.Image = global::RemontKt.Properties.Resources.tool;
+            this.запчастиToolStripMenuItem.Image = global::MIS.Properties.Resources.tool;
             this.запчастиToolStripMenuItem.Name = "запчастиToolStripMenuItem";
             this.запчастиToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.запчастиToolStripMenuItem.Text = "Запчасти";
@@ -266,7 +266,7 @@
             this.отчётОРасходеЗапчастейToolStripMenuItem,
             this.статистикаЗаявокПоВидамНеисправностейToolStripMenuItem,
             this.статистикаЗаявокПоТипуТехникиToolStripMenuItem});
-            this.отчётыToolStripMenuItem.Image = global::RemontKt.Properties.Resources.word_16;
+            this.отчётыToolStripMenuItem.Image = global::MIS.Properties.Resources.word_16;
             this.отчётыToolStripMenuItem.Name = "отчётыToolStripMenuItem";
             this.отчётыToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.отчётыToolStripMenuItem.Text = "Отчёты";
@@ -404,7 +404,7 @@
             this.buttonReset.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonReset.FlatAppearance.BorderSize = 2;
             this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReset.Image = global::RemontKt.Properties.Resources.return_24;
+            this.buttonReset.Image = global::MIS.Properties.Resources.return_24;
             this.buttonReset.Location = new System.Drawing.Point(860, 74);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(180, 36);
@@ -447,7 +447,7 @@
             this.buttonSearch.FlatAppearance.BorderSize = 2;
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch.ForeColor = System.Drawing.Color.Black;
-            this.buttonSearch.Image = global::RemontKt.Properties.Resources.search_24;
+            this.buttonSearch.Image = global::MIS.Properties.Resources.search_24;
             this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSearch.Location = new System.Drawing.Point(860, 23);
             this.buttonSearch.Name = "buttonSearch";
@@ -708,7 +708,7 @@
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::RemontKt.Properties.Resources.edit_16;
+            this.dataGridViewImageColumn1.Image = global::MIS.Properties.Resources.edit_16;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.ReadOnly = true;
             this.dataGridViewImageColumn1.Width = 30;
@@ -716,7 +716,7 @@
             // dataGridViewImageColumn2
             // 
             this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::RemontKt.Properties.Resources.delete_16;
+            this.dataGridViewImageColumn2.Image = global::MIS.Properties.Resources.delete_16;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
@@ -725,7 +725,7 @@
             // dataGridViewImageColumn3
             // 
             this.dataGridViewImageColumn3.HeaderText = "";
-            this.dataGridViewImageColumn3.Image = global::RemontKt.Properties.Resources.delete_16;
+            this.dataGridViewImageColumn3.Image = global::MIS.Properties.Resources.delete_16;
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             this.dataGridViewImageColumn3.ReadOnly = true;
             this.dataGridViewImageColumn3.Width = 30;
@@ -733,7 +733,7 @@
             // dataGridViewImageColumn4
             // 
             this.dataGridViewImageColumn4.HeaderText = "";
-            this.dataGridViewImageColumn4.Image = global::RemontKt.Properties.Resources.delete_16;
+            this.dataGridViewImageColumn4.Image = global::MIS.Properties.Resources.delete_16;
             this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
             this.dataGridViewImageColumn4.ReadOnly = true;
             this.dataGridViewImageColumn4.Width = 30;
@@ -744,7 +744,7 @@
             this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonAdd.FlatAppearance.BorderSize = 2;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Image = global::RemontKt.Properties.Resources.add_btn;
+            this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
             this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAdd.Location = new System.Drawing.Point(12, 158);
             this.buttonAdd.Name = "buttonAdd";
@@ -756,7 +756,7 @@
             // 
             // requestBindingSource
             // 
-            this.requestBindingSource.DataSource = typeof(RemontKt.Data.Request);
+            this.requestBindingSource.DataSource = typeof(MIS.Data.Request);
             // 
             // requestIDDataGridViewTextBoxColumn
             // 
@@ -858,7 +858,7 @@
             // DetailColumn
             // 
             this.DetailColumn.HeaderText = "";
-            this.DetailColumn.Image = global::RemontKt.Properties.Resources.tool;
+            this.DetailColumn.Image = global::MIS.Properties.Resources.tool;
             this.DetailColumn.Name = "DetailColumn";
             this.DetailColumn.ReadOnly = true;
             this.DetailColumn.Width = 30;
@@ -866,7 +866,7 @@
             // ExportToWordColumn
             // 
             this.ExportToWordColumn.HeaderText = "";
-            this.ExportToWordColumn.Image = global::RemontKt.Properties.Resources.iconfinder_logo_brand_brands_logos_word_2993664;
+            this.ExportToWordColumn.Image = global::MIS.Properties.Resources.iconfinder_logo_brand_brands_logos_word_2993664;
             this.ExportToWordColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.ExportToWordColumn.Name = "ExportToWordColumn";
             this.ExportToWordColumn.ReadOnly = true;
@@ -875,7 +875,7 @@
             // EditColumn
             // 
             this.EditColumn.HeaderText = "";
-            this.EditColumn.Image = global::RemontKt.Properties.Resources.edit_16;
+            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
             this.EditColumn.Name = "EditColumn";
             this.EditColumn.ReadOnly = true;
             this.EditColumn.Width = 30;
@@ -883,7 +883,7 @@
             // DeleteColumn
             // 
             this.DeleteColumn.HeaderText = "";
-            this.DeleteColumn.Image = global::RemontKt.Properties.Resources.delete_16;
+            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
             this.DeleteColumn.Name = "DeleteColumn";
             this.DeleteColumn.ReadOnly = true;
             this.DeleteColumn.Width = 30;

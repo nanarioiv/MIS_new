@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
-using RemontKt.Data;
-using RemontKt.Forms.AddEditForms;
+using MIS.Data;
+using MIS.Forms.AddEditForms;
 
 
-namespace RemontKt.Forms.MainForms
+namespace MIS.Forms.MainForms
 {
     public partial class EmployeesForm : Form
     {

@@ -1,7 +1,7 @@
 ﻿
 using System.Linq;
 
-namespace RemontKt.Data
+namespace MIS.Data
 {
   public  partial class Request
     {

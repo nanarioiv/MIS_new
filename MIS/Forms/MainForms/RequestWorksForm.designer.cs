@@ -1,5 +1,5 @@
 ﻿
-namespace RemontKt.Forms.MainForms
+namespace MIS.Forms.MainForms
 {
     partial class RequestWorksForm
     {
@@ -104,7 +104,7 @@ namespace RemontKt.Forms.MainForms
             this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonAdd.FlatAppearance.BorderSize = 2;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Image = global::RemontKt.Properties.Resources.add_btn;
+            this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
             this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAdd.Location = new System.Drawing.Point(12, 12);
             this.buttonAdd.Name = "buttonAdd";
@@ -116,7 +116,7 @@ namespace RemontKt.Forms.MainForms
             // 
             // requestWorkBindingSource
             // 
-            this.requestWorkBindingSource.DataSource = typeof(RemontKt.Data.RequestWork);
+            this.requestWorkBindingSource.DataSource = typeof(MIS.Data.RequestWork);
             // 
             // requestWorkDtDataGridViewTextBoxColumn
             // 
@@ -199,7 +199,7 @@ namespace RemontKt.Forms.MainForms
             // EditColumn
             // 
             this.EditColumn.HeaderText = "";
-            this.EditColumn.Image = global::RemontKt.Properties.Resources.edit_16;
+            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
             this.EditColumn.Name = "EditColumn";
             this.EditColumn.ReadOnly = true;
             this.EditColumn.Width = 30;
@@ -207,7 +207,7 @@ namespace RemontKt.Forms.MainForms
             // DeleteColumn
             // 
             this.DeleteColumn.HeaderText = "";
-            this.DeleteColumn.Image = global::RemontKt.Properties.Resources.delete_16;
+            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
             this.DeleteColumn.Name = "DeleteColumn";
             this.DeleteColumn.ReadOnly = true;
             this.DeleteColumn.Width = 30;

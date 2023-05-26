@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RemontKt.Data
+namespace MIS.Data
 {
     using System;
     using System.Collections.Generic;

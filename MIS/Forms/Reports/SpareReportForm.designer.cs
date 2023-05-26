@@ -1,5 +1,5 @@
 ﻿
-namespace RemontKt.Forms.Reports
+namespace MIS.Forms.Reports
 {
     partial class SpareReportForm
     {
@@ -159,7 +159,7 @@ namespace RemontKt.Forms.Reports
             // 
             // requestWorkBindingSource
             // 
-            this.requestWorkBindingSource.DataSource = typeof(RemontKt.Data.RequestWork);
+            this.requestWorkBindingSource.DataSource = typeof(MIS.Data.RequestWork);
             // 
             // groupBox1
             // 
@@ -227,7 +227,7 @@ namespace RemontKt.Forms.Reports
             this.buttonReset.FlatAppearance.BorderSize = 2;
             this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReset.ForeColor = System.Drawing.Color.Black;
-            this.buttonReset.Image = global::RemontKt.Properties.Resources.return_24;
+            this.buttonReset.Image = global::MIS.Properties.Resources.return_24;
             this.buttonReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonReset.Location = new System.Drawing.Point(698, 78);
             this.buttonReset.Name = "buttonReset";
@@ -245,7 +245,7 @@ namespace RemontKt.Forms.Reports
             this.buttonExportToWord.FlatAppearance.BorderSize = 2;
             this.buttonExportToWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExportToWord.ForeColor = System.Drawing.Color.Black;
-            this.buttonExportToWord.Image = global::RemontKt.Properties.Resources.iconfinder_logo_brand_brands_logos_word_2993664;
+            this.buttonExportToWord.Image = global::MIS.Properties.Resources.iconfinder_logo_brand_brands_logos_word_2993664;
             this.buttonExportToWord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonExportToWord.Location = new System.Drawing.Point(914, 29);
             this.buttonExportToWord.Name = "buttonExportToWord";
@@ -263,7 +263,7 @@ namespace RemontKt.Forms.Reports
             this.buttonSearch.FlatAppearance.BorderSize = 2;
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch.ForeColor = System.Drawing.Color.Black;
-            this.buttonSearch.Image = global::RemontKt.Properties.Resources.search_24;
+            this.buttonSearch.Image = global::MIS.Properties.Resources.search_24;
             this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSearch.Location = new System.Drawing.Point(698, 29);
             this.buttonSearch.Name = "buttonSearch";

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-using RemontKt.Data;
+using MIS.Data;
 
 
-namespace RemontKt.Forms
+namespace MIS.Forms
 {
     public partial class LoginForm : Form
     {

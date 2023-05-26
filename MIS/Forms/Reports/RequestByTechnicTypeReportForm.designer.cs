@@ -1,5 +1,5 @@
 ﻿
-namespace RemontKt.Forms.Reports
+namespace MIS.Forms.Reports
 {
     partial class RequestByTechnicTypeReportForm
     {
@@ -70,7 +70,7 @@ namespace RemontKt.Forms.Reports
             this.buttonExportToWord.FlatAppearance.BorderSize = 2;
             this.buttonExportToWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExportToWord.ForeColor = System.Drawing.Color.Black;
-            this.buttonExportToWord.Image = global::RemontKt.Properties.Resources.iconfinder_logo_brand_brands_logos_word_2993664;
+            this.buttonExportToWord.Image = global::MIS.Properties.Resources.iconfinder_logo_brand_brands_logos_word_2993664;
             this.buttonExportToWord.Location = new System.Drawing.Point(458, 23);
             this.buttonExportToWord.Name = "buttonExportToWord";
             this.buttonExportToWord.Size = new System.Drawing.Size(75, 87);
@@ -105,7 +105,7 @@ namespace RemontKt.Forms.Reports
             this.buttonReset.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonReset.FlatAppearance.BorderSize = 2;
             this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReset.Image = global::RemontKt.Properties.Resources.return_24;
+            this.buttonReset.Image = global::MIS.Properties.Resources.return_24;
             this.buttonReset.Location = new System.Drawing.Point(234, 74);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(218, 36);
@@ -121,7 +121,7 @@ namespace RemontKt.Forms.Reports
             this.buttonSearch.FlatAppearance.BorderSize = 2;
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch.ForeColor = System.Drawing.Color.Black;
-            this.buttonSearch.Image = global::RemontKt.Properties.Resources.search_24;
+            this.buttonSearch.Image = global::MIS.Properties.Resources.search_24;
             this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSearch.Location = new System.Drawing.Point(234, 23);
             this.buttonSearch.Name = "buttonSearch";
@@ -289,7 +289,7 @@ namespace RemontKt.Forms.Reports
             // 
             // requestByTechnicTypeBindingSource
             // 
-            this.requestByTechnicTypeBindingSource.DataSource = typeof(RemontKt.Data.RequestByTechnicType);
+            this.requestByTechnicTypeBindingSource.DataSource = typeof(MIS.Data.RequestByTechnicType);
             // 
             // technicTypeDataGridViewTextBoxColumn
             // 

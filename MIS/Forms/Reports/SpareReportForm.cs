@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using RemontKt.Data;
-using RemontKt.Export;
-using RemontKt.Forms.AddEditForms;
+using MIS.Data;
+using MIS.Export;
+using MIS.Forms.AddEditForms;
 
 
-namespace RemontKt.Forms.Reports
+namespace MIS.Forms.Reports
 {
     public partial class SpareReportForm : Form
     {

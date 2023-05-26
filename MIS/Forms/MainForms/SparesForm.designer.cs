@@ -1,5 +1,5 @@
 ﻿
-namespace RemontKt.Forms.MainForms
+namespace MIS.Forms.MainForms
 {
     partial class SparesForm
     {
@@ -171,7 +171,7 @@ namespace RemontKt.Forms.MainForms
             // SpareParametersColumn
             // 
             this.SpareParametersColumn.HeaderText = "";
-            this.SpareParametersColumn.Image = global::RemontKt.Properties.Resources.iconfinder_category_103432;
+            this.SpareParametersColumn.Image = global::MIS.Properties.Resources.iconfinder_category_103432;
             this.SpareParametersColumn.Name = "SpareParametersColumn";
             this.SpareParametersColumn.ReadOnly = true;
             this.SpareParametersColumn.Width = 30;
@@ -179,7 +179,7 @@ namespace RemontKt.Forms.MainForms
             // EditColumn
             // 
             this.EditColumn.HeaderText = "";
-            this.EditColumn.Image = global::RemontKt.Properties.Resources.edit_16;
+            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
             this.EditColumn.Name = "EditColumn";
             this.EditColumn.ReadOnly = true;
             this.EditColumn.Width = 30;
@@ -187,14 +187,14 @@ namespace RemontKt.Forms.MainForms
             // DeleteColumn
             // 
             this.DeleteColumn.HeaderText = "";
-            this.DeleteColumn.Image = global::RemontKt.Properties.Resources.delete_16;
+            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
             this.DeleteColumn.Name = "DeleteColumn";
             this.DeleteColumn.ReadOnly = true;
             this.DeleteColumn.Width = 30;
             // 
             // spareBindingSource
             // 
-            this.spareBindingSource.DataSource = typeof(RemontKt.Data.Spare);
+            this.spareBindingSource.DataSource = typeof(MIS.Data.Spare);
             // 
             // groupBox1
             // 
@@ -228,7 +228,7 @@ namespace RemontKt.Forms.MainForms
             this.buttonReset.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonReset.FlatAppearance.BorderSize = 2;
             this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReset.Image = global::RemontKt.Properties.Resources.return_24;
+            this.buttonReset.Image = global::MIS.Properties.Resources.return_24;
             this.buttonReset.Location = new System.Drawing.Point(508, 80);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(192, 36);
@@ -243,7 +243,7 @@ namespace RemontKt.Forms.MainForms
             this.buttonSearch.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonSearch.FlatAppearance.BorderSize = 2;
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSearch.Image = global::RemontKt.Properties.Resources.search_24;
+            this.buttonSearch.Image = global::MIS.Properties.Resources.search_24;
             this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSearch.Location = new System.Drawing.Point(508, 26);
             this.buttonSearch.Name = "buttonSearch";
@@ -319,7 +319,7 @@ namespace RemontKt.Forms.MainForms
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::RemontKt.Properties.Resources.edit_16;
+            this.dataGridViewImageColumn1.Image = global::MIS.Properties.Resources.edit_16;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.ReadOnly = true;
             this.dataGridViewImageColumn1.Width = 30;
@@ -327,7 +327,7 @@ namespace RemontKt.Forms.MainForms
             // dataGridViewImageColumn2
             // 
             this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::RemontKt.Properties.Resources.delete_16;
+            this.dataGridViewImageColumn2.Image = global::MIS.Properties.Resources.delete_16;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Width = 30;
@@ -340,7 +340,7 @@ namespace RemontKt.Forms.MainForms
             this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonAdd.FlatAppearance.BorderSize = 2;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Image = global::RemontKt.Properties.Resources.add_btn;
+            this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
             this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAdd.Location = new System.Drawing.Point(12, 12);
             this.buttonAdd.Name = "buttonAdd";
@@ -352,7 +352,7 @@ namespace RemontKt.Forms.MainForms
             // 
             // spareParameterBindingSource
             // 
-            this.spareParameterBindingSource.DataSource = typeof(RemontKt.Data.SpareParameter);
+            this.spareParameterBindingSource.DataSource = typeof(MIS.Data.SpareParameter);
             // 
             // SparesForm
             // 

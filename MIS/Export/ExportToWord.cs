@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
-using RemontKt.Data;
+using MIS.Data;
 using Word = Microsoft.Office.Interop.Word;
 
-namespace RemontKt.Export
+namespace MIS.Export
 {
     public class ExportToWord : IDisposable
     {

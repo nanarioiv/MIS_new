@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-using RemontKt.Data;
-using RemontKt.Forms;
+using MIS.Data;
+using MIS.Forms;
 
-namespace RemontKt
+namespace MIS
 {
     static class Program
     {

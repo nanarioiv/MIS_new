@@ -1,4 +1,4 @@
-﻿namespace RemontKt.Forms
+﻿namespace MIS.Forms
 {
     partial class LoginForm
     {

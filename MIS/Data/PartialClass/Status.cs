@@ -1,5 +1,5 @@
 ﻿
-namespace RemontKt.Data
+namespace MIS.Data
 {
   public  partial class Status
     {

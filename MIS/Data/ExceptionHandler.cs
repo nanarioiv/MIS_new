@@ -3,7 +3,7 @@ using System.Data.Entity.Infrastructure;
 using System.Text;
 using System.Windows.Forms;
 
-namespace RemontKt.Data
+namespace MIS.Data
 {
     public class ExceptionHandler
     {

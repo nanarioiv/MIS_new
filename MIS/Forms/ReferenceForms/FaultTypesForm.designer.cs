@@ -1,5 +1,5 @@
 ﻿
-namespace RemontKt.Forms.ReferenceForms
+namespace MIS.Forms.ReferenceForms
 {
     partial class FaultTypesForm
     {
@@ -87,7 +87,7 @@ namespace RemontKt.Forms.ReferenceForms
             // 
             // faultTypeBindingSource
             // 
-            this.faultTypeBindingSource.DataSource = typeof(RemontKt.Data.FaultType);
+            this.faultTypeBindingSource.DataSource = typeof(MIS.Data.FaultType);
             // 
             // buttonAdd
             // 
@@ -97,7 +97,7 @@ namespace RemontKt.Forms.ReferenceForms
             this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonAdd.FlatAppearance.BorderSize = 2;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Image = global::RemontKt.Properties.Resources.add_btn;
+            this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
             this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAdd.Location = new System.Drawing.Point(12, 12);
             this.buttonAdd.Name = "buttonAdd";
@@ -129,7 +129,7 @@ namespace RemontKt.Forms.ReferenceForms
             // DescriptionColumn
             // 
             this.DescriptionColumn.HeaderText = "";
-            this.DescriptionColumn.Image = global::RemontKt.Properties.Resources.description;
+            this.DescriptionColumn.Image = global::MIS.Properties.Resources.description;
             this.DescriptionColumn.Name = "DescriptionColumn";
             this.DescriptionColumn.ReadOnly = true;
             this.DescriptionColumn.Width = 30;
@@ -137,7 +137,7 @@ namespace RemontKt.Forms.ReferenceForms
             // EditColumn
             // 
             this.EditColumn.HeaderText = "";
-            this.EditColumn.Image = global::RemontKt.Properties.Resources.edit_16;
+            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
             this.EditColumn.Name = "EditColumn";
             this.EditColumn.ReadOnly = true;
             this.EditColumn.Width = 30;
@@ -145,7 +145,7 @@ namespace RemontKt.Forms.ReferenceForms
             // DeleteColumn
             // 
             this.DeleteColumn.HeaderText = "";
-            this.DeleteColumn.Image = global::RemontKt.Properties.Resources.delete_16;
+            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
             this.DeleteColumn.Name = "DeleteColumn";
             this.DeleteColumn.ReadOnly = true;
             this.DeleteColumn.Width = 30;

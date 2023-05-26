@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using RemontKt.Data;
-using RemontKt.Export;
-using RemontKt.Forms.AddEditForms;
-using RemontKt.Forms.MainForms;
-using RemontKt.Forms.ReferenceForms;
-using RemontKt.Forms.Reports;
-using RequestWorksForm = RemontKt.Forms.MainForms.RequestWorksForm;
+using MIS.Data;
+using MIS.Export;
+using MIS.Forms.AddEditForms;
+using MIS.Forms.MainForms;
+using MIS.Forms.ReferenceForms;
+using MIS.Forms.Reports;
+using RequestWorksForm = MIS.Forms.MainForms.RequestWorksForm;
 
-namespace RemontKt.Forms
+namespace MIS.Forms
 {
     public partial class MainForm : Form
     {
