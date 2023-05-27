@@ -101,9 +101,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 15);
+            this.label2.Size = new System.Drawing.Size(42, 15);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Характеристика";
+            this.label2.Text = "Соста";
             // 
             // AddEditTechnicParameterForm
             // 

@@ -103,7 +103,7 @@ namespace MIS.Forms.ReferenceForms
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(567, 36);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить вид неисправности";
+            this.buttonAdd.Text = "Добавить диагноз";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -122,7 +122,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.faultTypeNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.faultTypeNameDataGridViewTextBoxColumn.DataPropertyName = "FaultTypeName";
-            this.faultTypeNameDataGridViewTextBoxColumn.HeaderText = "Вид неисправности";
+            this.faultTypeNameDataGridViewTextBoxColumn.HeaderText = "Диагноз (нужен код по МКБ)";
             this.faultTypeNameDataGridViewTextBoxColumn.Name = "faultTypeNameDataGridViewTextBoxColumn";
             this.faultTypeNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -160,7 +160,7 @@ namespace MIS.Forms.ReferenceForms
             this.Controls.Add(this.dataGridView);
             this.Name = "FaultTypesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Виды неисправностей";
+            this.Text = "Диагнозы";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.faultTypeBindingSource)).EndInit();
             this.ResumeLayout(false);
