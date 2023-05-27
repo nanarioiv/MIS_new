@@ -111,7 +111,6 @@ namespace MIS.Forms.MainForms
                 dataGridView.Columns["DeleteColumn"].Visible = false;
                 // скрываем кнопку добавления клиента
                 buttonAdd.Visible = false;
-                label1.Visible = true;
             }
             UpdateDatagrid();
             
