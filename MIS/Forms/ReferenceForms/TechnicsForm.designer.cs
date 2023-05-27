@@ -34,7 +34,6 @@ namespace MIS.Forms.ReferenceForms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.technicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -48,6 +47,7 @@ namespace MIS.Forms.ReferenceForms
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxManufacturer = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.technicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technicIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.technicTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,8 +56,8 @@ namespace MIS.Forms.ReferenceForms
             this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technicBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.technicBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView
@@ -101,10 +101,6 @@ namespace MIS.Forms.ReferenceForms
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
-            // 
-            // technicBindingSource
-            // 
-            this.technicBindingSource.DataSource = typeof(MIS.Data.Technic);
             // 
             // dataGridViewImageColumn1
             // 
@@ -244,6 +240,10 @@ namespace MIS.Forms.ReferenceForms
             this.label3.TabIndex = 6;
             this.label3.Text = "Производитель";
             // 
+            // technicBindingSource
+            // 
+            this.technicBindingSource.DataSource = typeof(MIS.Data.Technic);
+            // 
             // technicIDDataGridViewTextBoxColumn
             // 
             this.technicIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -319,9 +319,9 @@ namespace MIS.Forms.ReferenceForms
             this.Text = "Техника";
             this.Load += new System.EventHandler(this.TechnicsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technicBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.technicBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
