@@ -41,9 +41,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 15);
+            this.label1.Size = new System.Drawing.Size(66, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Тип запчасти";
+            this.label1.Text = "Тип услуги";
             // 
             // textBoxSpareTypeName
             // 
@@ -101,9 +101,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 15);
+            this.label2.Size = new System.Drawing.Size(136, 15);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Тип техники";
+            this.label2.Text = "Тип техники (удалить)";
             // 
             // AddEditSpareTypeForm
             // 

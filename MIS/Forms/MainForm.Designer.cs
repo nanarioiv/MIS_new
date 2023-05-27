@@ -31,6 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -39,12 +45,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.должностиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,6 +70,20 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.requestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.requestDtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExecutionDt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FaultType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Technic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DetailColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ExportToWordColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonReset = new System.Windows.Forms.Button();
             this.comboBoxManufacturer = new System.Windows.Forms.ComboBox();
@@ -111,25 +125,11 @@
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.requestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.requestDtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ExecutionDt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FaultType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Technic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DetailColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ExportToWordColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -168,73 +168,73 @@
             // должностиToolStripMenuItem
             // 
             this.должностиToolStripMenuItem.Name = "должностиToolStripMenuItem";
-            this.должностиToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.должностиToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.должностиToolStripMenuItem.Text = "Специальности";
             this.должностиToolStripMenuItem.Click += new System.EventHandler(this.должностиToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(225, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(224, 6);
             // 
             // видыНеисправностейToolStripMenuItem
             // 
             this.видыНеисправностейToolStripMenuItem.Name = "видыНеисправностейToolStripMenuItem";
-            this.видыНеисправностейToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.видыНеисправностейToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.видыНеисправностейToolStripMenuItem.Text = "Диагнозы";
             this.видыНеисправностейToolStripMenuItem.Click += new System.EventHandler(this.видыНеисправностейToolStripMenuItem_Click);
             // 
             // статусыЗаявокToolStripMenuItem
             // 
             this.статусыЗаявокToolStripMenuItem.Name = "статусыЗаявокToolStripMenuItem";
-            this.статусыЗаявокToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.статусыЗаявокToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.статусыЗаявокToolStripMenuItem.Text = "Виды оплаты";
             this.статусыЗаявокToolStripMenuItem.Click += new System.EventHandler(this.статусыЗаявокToolStripMenuItem_Click);
             // 
             // типыЗапчастейToolStripMenuItem
             // 
             this.типыЗапчастейToolStripMenuItem.Name = "типыЗапчастейToolStripMenuItem";
-            this.типыЗапчастейToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.типыЗапчастейToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.типыЗапчастейToolStripMenuItem.Text = "Типы услуг";
             this.типыЗапчастейToolStripMenuItem.Click += new System.EventHandler(this.типыЗапчастейToolStripMenuItem_Click);
             // 
             // работыToolStripMenuItem
             // 
             this.работыToolStripMenuItem.Name = "работыToolStripMenuItem";
-            this.работыToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.работыToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.работыToolStripMenuItem.Text = "Виды услуг";
             this.работыToolStripMenuItem.Click += new System.EventHandler(this.работыToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(225, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(224, 6);
             // 
             // производителиToolStripMenuItem
             // 
             this.производителиToolStripMenuItem.Name = "производителиToolStripMenuItem";
-            this.производителиToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.производителиToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.производителиToolStripMenuItem.Text = "Производители";
             this.производителиToolStripMenuItem.Click += new System.EventHandler(this.производителиToolStripMenuItem_Click);
             // 
             // характеристикиТехникиToolStripMenuItem
             // 
             this.характеристикиТехникиToolStripMenuItem.Name = "характеристикиТехникиToolStripMenuItem";
-            this.характеристикиТехникиToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.характеристикиТехникиToolStripMenuItem.Text = "Характеристики техники";
+            this.характеристикиТехникиToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.характеристикиТехникиToolStripMenuItem.Text = "Составляющие назначений";
             this.характеристикиТехникиToolStripMenuItem.Click += new System.EventHandler(this.характеристикиТехникиToolStripMenuItem_Click);
             // 
             // видыТехникиToolStripMenuItem
             // 
             this.видыТехникиToolStripMenuItem.Name = "видыТехникиToolStripMenuItem";
-            this.видыТехникиToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.видыТехникиToolStripMenuItem.Text = "Типы техники";
+            this.видыТехникиToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.видыТехникиToolStripMenuItem.Text = "Типы назначений";
             this.видыТехникиToolStripMenuItem.Click += new System.EventHandler(this.видыТехникиToolStripMenuItem_Click);
             // 
             // бытоваяТехникаToolStripMenuItem
             // 
             this.бытоваяТехникаToolStripMenuItem.Name = "бытоваяТехникаToolStripMenuItem";
-            this.бытоваяТехникаToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.бытоваяТехникаToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.бытоваяТехникаToolStripMenuItem.Text = "Назначения";
             this.бытоваяТехникаToolStripMenuItem.Click += new System.EventHandler(this.бытоваяТехникаToolStripMenuItem_Click);
             // 
@@ -372,6 +372,141 @@
             this.dataGridView.Size = new System.Drawing.Size(1046, 364);
             this.dataGridView.TabIndex = 3;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
+            // 
+            // requestIDDataGridViewTextBoxColumn
+            // 
+            this.requestIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.requestIDDataGridViewTextBoxColumn.DataPropertyName = "Request_ID";
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.requestIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle19;
+            this.requestIDDataGridViewTextBoxColumn.HeaderText = "№ посещения";
+            this.requestIDDataGridViewTextBoxColumn.Name = "requestIDDataGridViewTextBoxColumn";
+            this.requestIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.requestIDDataGridViewTextBoxColumn.Width = 95;
+            // 
+            // clientDataGridViewTextBoxColumn
+            // 
+            this.clientDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
+            this.clientDataGridViewTextBoxColumn.HeaderText = "Пациент";
+            this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
+            this.clientDataGridViewTextBoxColumn.ReadOnly = true;
+            this.clientDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // requestDtDataGridViewTextBoxColumn
+            // 
+            this.requestDtDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.requestDtDataGridViewTextBoxColumn.DataPropertyName = "RequestDt";
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.Format = "d";
+            dataGridViewCellStyle20.NullValue = null;
+            this.requestDtDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle20;
+            this.requestDtDataGridViewTextBoxColumn.HeaderText = "Дата посещения";
+            this.requestDtDataGridViewTextBoxColumn.MinimumWidth = 90;
+            this.requestDtDataGridViewTextBoxColumn.Name = "requestDtDataGridViewTextBoxColumn";
+            this.requestDtDataGridViewTextBoxColumn.ReadOnly = true;
+            this.requestDtDataGridViewTextBoxColumn.Width = 108;
+            // 
+            // ExecutionDt
+            // 
+            this.ExecutionDt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ExecutionDt.DataPropertyName = "ExecutionDt";
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.Format = "d";
+            dataGridViewCellStyle21.NullValue = null;
+            this.ExecutionDt.DefaultCellStyle = dataGridViewCellStyle21;
+            this.ExecutionDt.HeaderText = "Дата выполнения (удалить)";
+            this.ExecutionDt.MinimumWidth = 90;
+            this.ExecutionDt.Name = "ExecutionDt";
+            this.ExecutionDt.ReadOnly = true;
+            this.ExecutionDt.Width = 115;
+            // 
+            // Employee
+            // 
+            this.Employee.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Employee.DataPropertyName = "Employee";
+            this.Employee.HeaderText = "Врач";
+            this.Employee.Name = "Employee";
+            this.Employee.ReadOnly = true;
+            this.Employee.Width = 56;
+            // 
+            // FaultType
+            // 
+            this.FaultType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.FaultType.DataPropertyName = "FaultType";
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FaultType.DefaultCellStyle = dataGridViewCellStyle22;
+            this.FaultType.HeaderText = "Диагноз";
+            this.FaultType.Name = "FaultType";
+            this.FaultType.ReadOnly = true;
+            // 
+            // Technic
+            // 
+            this.Technic.DataPropertyName = "Technic";
+            this.Technic.HeaderText = "Назначения и направления (удалить)";
+            this.Technic.Name = "Technic";
+            this.Technic.ReadOnly = true;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.statusDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle23;
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Вид оплаты";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.statusDataGridViewTextBoxColumn.Width = 84;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column1.DataPropertyName = "CostOfRepair";
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.Format = "C2";
+            dataGridViewCellStyle24.NullValue = null;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle24;
+            this.Column1.HeaderText = "Общая стоимость";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 114;
+            // 
+            // DetailColumn
+            // 
+            this.DetailColumn.HeaderText = "";
+            this.DetailColumn.Image = global::MIS.Properties.Resources.tool;
+            this.DetailColumn.Name = "DetailColumn";
+            this.DetailColumn.ReadOnly = true;
+            this.DetailColumn.Width = 30;
+            // 
+            // ExportToWordColumn
+            // 
+            this.ExportToWordColumn.HeaderText = "";
+            this.ExportToWordColumn.Image = global::MIS.Properties.Resources.iconfinder_logo_brand_brands_logos_word_2993664;
+            this.ExportToWordColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.ExportToWordColumn.Name = "ExportToWordColumn";
+            this.ExportToWordColumn.ReadOnly = true;
+            this.ExportToWordColumn.Width = 30;
+            // 
+            // EditColumn
+            // 
+            this.EditColumn.HeaderText = "";
+            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
+            this.EditColumn.Name = "EditColumn";
+            this.EditColumn.ReadOnly = true;
+            this.EditColumn.Width = 30;
+            // 
+            // DeleteColumn
+            // 
+            this.DeleteColumn.HeaderText = "";
+            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
+            this.DeleteColumn.Name = "DeleteColumn";
+            this.DeleteColumn.ReadOnly = true;
+            this.DeleteColumn.Width = 30;
+            // 
+            // requestBindingSource
+            // 
+            this.requestBindingSource.DataSource = typeof(MIS.Data.Request);
             // 
             // groupBox1
             // 
@@ -765,7 +900,6 @@
             this.dataGridViewTextBoxColumn14.HeaderText = "Врач";
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
             this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            this.dataGridViewTextBoxColumn14.Width = 56;
             // 
             // dataGridViewTextBoxColumn15
             // 
@@ -784,141 +918,6 @@
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             this.dataGridViewTextBoxColumn16.ReadOnly = true;
             // 
-            // requestBindingSource
-            // 
-            this.requestBindingSource.DataSource = typeof(MIS.Data.Request);
-            // 
-            // requestIDDataGridViewTextBoxColumn
-            // 
-            this.requestIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.requestIDDataGridViewTextBoxColumn.DataPropertyName = "Request_ID";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.requestIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle19;
-            this.requestIDDataGridViewTextBoxColumn.HeaderText = "№ посещения";
-            this.requestIDDataGridViewTextBoxColumn.Name = "requestIDDataGridViewTextBoxColumn";
-            this.requestIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.requestIDDataGridViewTextBoxColumn.Width = 95;
-            // 
-            // clientDataGridViewTextBoxColumn
-            // 
-            this.clientDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
-            this.clientDataGridViewTextBoxColumn.HeaderText = "Пациент";
-            this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
-            this.clientDataGridViewTextBoxColumn.ReadOnly = true;
-            this.clientDataGridViewTextBoxColumn.Width = 75;
-            // 
-            // requestDtDataGridViewTextBoxColumn
-            // 
-            this.requestDtDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.requestDtDataGridViewTextBoxColumn.DataPropertyName = "RequestDt";
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle20.Format = "d";
-            dataGridViewCellStyle20.NullValue = null;
-            this.requestDtDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle20;
-            this.requestDtDataGridViewTextBoxColumn.HeaderText = "Дата посещения";
-            this.requestDtDataGridViewTextBoxColumn.MinimumWidth = 90;
-            this.requestDtDataGridViewTextBoxColumn.Name = "requestDtDataGridViewTextBoxColumn";
-            this.requestDtDataGridViewTextBoxColumn.ReadOnly = true;
-            this.requestDtDataGridViewTextBoxColumn.Width = 108;
-            // 
-            // ExecutionDt
-            // 
-            this.ExecutionDt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ExecutionDt.DataPropertyName = "ExecutionDt";
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.Format = "d";
-            dataGridViewCellStyle21.NullValue = null;
-            this.ExecutionDt.DefaultCellStyle = dataGridViewCellStyle21;
-            this.ExecutionDt.HeaderText = "Дата выполнения (удалить)";
-            this.ExecutionDt.MinimumWidth = 90;
-            this.ExecutionDt.Name = "ExecutionDt";
-            this.ExecutionDt.ReadOnly = true;
-            this.ExecutionDt.Width = 157;
-            // 
-            // Employee
-            // 
-            this.Employee.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Employee.DataPropertyName = "Employee";
-            this.Employee.HeaderText = "Врач";
-            this.Employee.Name = "Employee";
-            this.Employee.ReadOnly = true;
-            this.Employee.Width = 56;
-            // 
-            // FaultType
-            // 
-            this.FaultType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.FaultType.DataPropertyName = "FaultType";
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FaultType.DefaultCellStyle = dataGridViewCellStyle22;
-            this.FaultType.HeaderText = "Диагноз";
-            this.FaultType.Name = "FaultType";
-            this.FaultType.ReadOnly = true;
-            // 
-            // Technic
-            // 
-            this.Technic.DataPropertyName = "Technic";
-            this.Technic.HeaderText = "Назначения и направления (удалить)";
-            this.Technic.Name = "Technic";
-            this.Technic.ReadOnly = true;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.statusDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle23;
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Вид оплаты";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.statusDataGridViewTextBoxColumn.Width = 84;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column1.DataPropertyName = "CostOfRepair";
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.Format = "C2";
-            dataGridViewCellStyle24.NullValue = null;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle24;
-            this.Column1.HeaderText = "Общая стоимость";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 114;
-            // 
-            // DetailColumn
-            // 
-            this.DetailColumn.HeaderText = "";
-            this.DetailColumn.Image = global::MIS.Properties.Resources.tool;
-            this.DetailColumn.Name = "DetailColumn";
-            this.DetailColumn.ReadOnly = true;
-            this.DetailColumn.Width = 30;
-            // 
-            // ExportToWordColumn
-            // 
-            this.ExportToWordColumn.HeaderText = "";
-            this.ExportToWordColumn.Image = global::MIS.Properties.Resources.iconfinder_logo_brand_brands_logos_word_2993664;
-            this.ExportToWordColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.ExportToWordColumn.Name = "ExportToWordColumn";
-            this.ExportToWordColumn.ReadOnly = true;
-            this.ExportToWordColumn.Width = 30;
-            // 
-            // EditColumn
-            // 
-            this.EditColumn.HeaderText = "";
-            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
-            this.EditColumn.Name = "EditColumn";
-            this.EditColumn.ReadOnly = true;
-            this.EditColumn.Width = 30;
-            // 
-            // DeleteColumn
-            // 
-            this.DeleteColumn.HeaderText = "";
-            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
-            this.DeleteColumn.Name = "DeleteColumn";
-            this.DeleteColumn.ReadOnly = true;
-            this.DeleteColumn.Width = 30;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -933,16 +932,16 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ремонт компьютерного оборудования";
+            this.Text = "АРМ врача поликлиники";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
