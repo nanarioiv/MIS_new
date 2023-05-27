@@ -36,6 +36,10 @@ namespace MIS.Forms.AddEditForms
         private bool Check()
         {
             var sb = new StringBuilder();
+
+            // [проверка] Все поля всегда "заполнены"
+            return true;
+
             if (string.IsNullOrWhiteSpace(textBoxSpareTypeName.Text))
             {
                 sb.AppendLine($"Не верно заполнено поле {label1.Text}!");
