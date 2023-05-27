@@ -105,7 +105,7 @@ namespace MIS.Forms.ReferenceForms
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(567, 36);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить ремонтную работу";
+            this.buttonAdd.Text = "Добавить категорию услуги";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -124,7 +124,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.workNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.workNameDataGridViewTextBoxColumn.DataPropertyName = "WorkName";
-            this.workNameDataGridViewTextBoxColumn.HeaderText = "Краткое наименование";
+            this.workNameDataGridViewTextBoxColumn.HeaderText = "Категория";
             this.workNameDataGridViewTextBoxColumn.Name = "workNameDataGridViewTextBoxColumn";
             this.workNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -136,10 +136,10 @@ namespace MIS.Forms.ReferenceForms
             dataGridViewCellStyle4.Format = "C2";
             dataGridViewCellStyle4.NullValue = null;
             this.priceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Стоимость";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Стоимость (удалить)";
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.priceDataGridViewTextBoxColumn.Width = 87;
+            this.priceDataGridViewTextBoxColumn.Width = 124;
             // 
             // DescriptionColumn
             // 
@@ -175,7 +175,7 @@ namespace MIS.Forms.ReferenceForms
             this.Controls.Add(this.dataGridView);
             this.Name = "WorksForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Виды ремонтных работ";
+            this.Text = "Категории услуг";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.workBindingSource)).EndInit();
             this.ResumeLayout(false);

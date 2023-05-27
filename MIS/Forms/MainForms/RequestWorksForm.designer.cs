@@ -305,10 +305,10 @@ namespace MIS.Forms.MainForms
             // 
             this.workDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.workDataGridViewTextBoxColumn.DataPropertyName = "Work";
-            this.workDataGridViewTextBoxColumn.HeaderText = "Тип услуги (удалить)";
+            this.workDataGridViewTextBoxColumn.HeaderText = "Категория услуги";
             this.workDataGridViewTextBoxColumn.Name = "workDataGridViewTextBoxColumn";
             this.workDataGridViewTextBoxColumn.ReadOnly = true;
-            this.workDataGridViewTextBoxColumn.Width = 124;
+            this.workDataGridViewTextBoxColumn.Width = 111;
             // 
             // workPriceDataGridViewTextBoxColumn
             // 
