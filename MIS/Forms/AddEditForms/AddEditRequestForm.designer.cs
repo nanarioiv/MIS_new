@@ -51,6 +51,10 @@
             this.textBoxFaultType = new System.Windows.Forms.TextBox();
             this.linkLabelStatus = new System.Windows.Forms.LinkLabel();
             this.textBoxStatus = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBoxAnamnesis = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxClinicalDiagnosis = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +68,7 @@
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Image = global::MIS.Properties.Resources.delete_16;
             this.buttonCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonCancel.Location = new System.Drawing.Point(335, 501);
+            this.buttonCancel.Location = new System.Drawing.Point(335, 622);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(153, 43);
             this.buttonCancel.TabIndex = 10;
@@ -79,7 +83,7 @@
             this.buttonAddEdit.FlatAppearance.BorderSize = 2;
             this.buttonAddEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAddEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAddEdit.Location = new System.Drawing.Point(12, 501);
+            this.buttonAddEdit.Location = new System.Drawing.Point(12, 622);
             this.buttonAddEdit.Name = "buttonAddEdit";
             this.buttonAddEdit.Size = new System.Drawing.Size(153, 43);
             this.buttonAddEdit.TabIndex = 9;
@@ -115,9 +119,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(12, 328);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 17);
+            this.label5.Size = new System.Drawing.Size(63, 17);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Описание поломки";
+            this.label5.Text = "Жалобы";
             // 
             // textBoxDescription
             // 
@@ -128,7 +132,7 @@
             this.textBoxDescription.MaxLength = 1000;
             this.textBoxDescription.Multiline = true;
             this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.Size = new System.Drawing.Size(473, 135);
+            this.textBoxDescription.Size = new System.Drawing.Size(473, 56);
             this.textBoxDescription.TabIndex = 8;
             // 
             // label1
@@ -137,9 +141,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(15, 194);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 17);
+            this.label1.Size = new System.Drawing.Size(63, 17);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Вид неисправности";
+            this.label1.Text = "Диагноз";
             // 
             // linkLabelSearchTechnik
             // 
@@ -157,10 +161,10 @@
             this.textBoxClient.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxClient.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxClient.Location = new System.Drawing.Point(74, 23);
+            this.textBoxClient.Location = new System.Drawing.Point(83, 23);
             this.textBoxClient.Name = "textBoxClient";
             this.textBoxClient.ReadOnly = true;
-            this.textBoxClient.Size = new System.Drawing.Size(405, 20);
+            this.textBoxClient.Size = new System.Drawing.Size(396, 20);
             this.textBoxClient.TabIndex = 1;
             this.textBoxClient.TabStop = false;
             // 
@@ -170,9 +174,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(12, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 17);
+            this.label3.Size = new System.Drawing.Size(65, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Клиент";
+            this.label3.Text = "Пациент";
             // 
             // linkLabelSearchClient
             // 
@@ -198,9 +202,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(15, 271);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(157, 17);
+            this.label4.Size = new System.Drawing.Size(120, 17);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Дата создания заявки";
+            this.label4.Text = "Дата посещения";
             // 
             // textBoxSerial
             // 
@@ -231,22 +235,22 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.groupBox1.Location = new System.Drawing.Point(12, 61);
+            this.groupBox1.Location = new System.Drawing.Point(12, 49);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(476, 109);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Компьютерная техника";
+            this.groupBox1.Text = "Компьютерная техника (скрыть, удалить)";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(279, 271);
+            this.label7.Location = new System.Drawing.Point(193, 271);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(174, 17);
+            this.label7.Size = new System.Drawing.Size(295, 17);
             this.label7.TabIndex = 2;
-            this.label7.Text = "Срок выполнения заявки";
+            this.label7.Text = "Срок выполнения заявки (скрыть, удалить)";
             // 
             // dateTimePickerExecution
             // 
@@ -259,11 +263,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(45, 232);
+            this.label8.Location = new System.Drawing.Point(15, 232);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 17);
+            this.label8.Size = new System.Drawing.Size(86, 17);
             this.label8.TabIndex = 2;
-            this.label8.Text = "Статус заявки";
+            this.label8.Text = "Вид оплаты";
             // 
             // linkLabelFaultType
             // 
@@ -281,10 +285,10 @@
             this.textBoxFaultType.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxFaultType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxFaultType.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxFaultType.Location = new System.Drawing.Point(159, 191);
+            this.textBoxFaultType.Location = new System.Drawing.Point(89, 191);
             this.textBoxFaultType.Name = "textBoxFaultType";
             this.textBoxFaultType.ReadOnly = true;
-            this.textBoxFaultType.Size = new System.Drawing.Size(320, 20);
+            this.textBoxFaultType.Size = new System.Drawing.Size(390, 20);
             this.textBoxFaultType.TabIndex = 1;
             this.textBoxFaultType.TabStop = false;
             // 
@@ -311,13 +315,61 @@
             this.textBoxStatus.TabIndex = 1;
             this.textBoxStatus.TabStop = false;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(9, 426);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(140, 17);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Анамнез (добавить)";
+            // 
+            // textBoxAnamnesis
+            // 
+            this.textBoxAnamnesis.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxAnamnesis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxAnamnesis.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxAnamnesis.Location = new System.Drawing.Point(12, 446);
+            this.textBoxAnamnesis.MaxLength = 1000;
+            this.textBoxAnamnesis.Multiline = true;
+            this.textBoxAnamnesis.Name = "textBoxAnamnesis";
+            this.textBoxAnamnesis.Size = new System.Drawing.Size(473, 56);
+            this.textBoxAnamnesis.TabIndex = 12;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(9, 511);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(226, 17);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "Клинический диагноз (добавить)";
+            // 
+            // textBoxClinicalDiagnosis
+            // 
+            this.textBoxClinicalDiagnosis.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxClinicalDiagnosis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxClinicalDiagnosis.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxClinicalDiagnosis.Location = new System.Drawing.Point(12, 531);
+            this.textBoxClinicalDiagnosis.MaxLength = 1000;
+            this.textBoxClinicalDiagnosis.Multiline = true;
+            this.textBoxClinicalDiagnosis.Name = "textBoxClinicalDiagnosis";
+            this.textBoxClinicalDiagnosis.Size = new System.Drawing.Size(473, 56);
+            this.textBoxClinicalDiagnosis.TabIndex = 14;
+            // 
             // AddEditRequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(500, 556);
+            this.ClientSize = new System.Drawing.Size(500, 677);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.textBoxClinicalDiagnosis);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBoxAnamnesis);
             this.Controls.Add(this.textBoxStatus);
             this.Controls.Add(this.linkLabelStatus);
             this.Controls.Add(this.textBoxFaultType);
@@ -374,5 +426,9 @@
         private System.Windows.Forms.TextBox textBoxFaultType;
         private System.Windows.Forms.LinkLabel linkLabelStatus;
         private System.Windows.Forms.TextBox textBoxStatus;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBoxAnamnesis;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxClinicalDiagnosis;
     }
 }
