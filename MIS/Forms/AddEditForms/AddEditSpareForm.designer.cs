@@ -47,9 +47,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 142);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 15);
+            this.label1.Size = new System.Drawing.Size(102, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Название запчасти";
+            this.label1.Text = "Название услуги";
             // 
             // textBoxSpareName
             // 
@@ -71,7 +71,7 @@
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Image = global::MIS.Properties.Resources.delete_16;
             this.buttonCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonCancel.Location = new System.Drawing.Point(215, 392);
+            this.buttonCancel.Location = new System.Drawing.Point(215, 335);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(153, 34);
             this.buttonCancel.TabIndex = 4;
@@ -86,7 +86,7 @@
             this.buttonAddEdit.FlatAppearance.BorderSize = 2;
             this.buttonAddEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAddEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAddEdit.Location = new System.Drawing.Point(12, 392);
+            this.buttonAddEdit.Location = new System.Drawing.Point(12, 335);
             this.buttonAddEdit.Name = "buttonAddEdit";
             this.buttonAddEdit.Size = new System.Drawing.Size(153, 34);
             this.buttonAddEdit.TabIndex = 3;
@@ -107,9 +107,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(9, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 15);
+            this.label2.Size = new System.Drawing.Size(66, 15);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Тип запчасти";
+            this.label2.Text = "Тип услуги";
             // 
             // label3
             // 
@@ -154,9 +154,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(9, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 15);
+            this.label5.Size = new System.Drawing.Size(136, 15);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Тип техники";
+            this.label5.Text = "Тип техники (удалить)";
             // 
             // comboBoxTechnicType
             // 
@@ -174,7 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(380, 438);
+            this.ClientSize = new System.Drawing.Size(380, 381);
             this.Controls.Add(this.comboBoxTechnicType);
             this.Controls.Add(this.comboBoxSpareType);
             this.Controls.Add(this.buttonCancel);

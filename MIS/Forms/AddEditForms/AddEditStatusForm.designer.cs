@@ -39,9 +39,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 15);
+            this.label1.Size = new System.Drawing.Size(76, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Статус заявки";
+            this.label1.Text = "Вид оплаты";
             // 
             // textBoxStatusName
             // 

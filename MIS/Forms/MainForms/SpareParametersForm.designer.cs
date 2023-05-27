@@ -33,9 +33,9 @@ namespace MIS.Forms.MainForms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.spareParameterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonAdd = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.spareParameterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.parameterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.parameterVakueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
@@ -82,6 +82,10 @@ namespace MIS.Forms.MainForms
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
+            // spareParameterBindingSource
+            // 
+            this.spareParameterBindingSource.DataSource = typeof(MIS.Data.SpareParameter);
+            // 
             // buttonAdd
             // 
             this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -96,7 +100,7 @@ namespace MIS.Forms.MainForms
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(567, 36);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить параметр";
+            this.buttonAdd.Text = "Добавить составляющую";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -106,19 +110,15 @@ namespace MIS.Forms.MainForms
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 17);
+            this.label1.Size = new System.Drawing.Size(152, 17);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Название запчасти";
-            // 
-            // spareParameterBindingSource
-            // 
-            this.spareParameterBindingSource.DataSource = typeof(MIS.Data.SpareParameter);
+            this.label1.Text = "Наименование услуги";
             // 
             // parameterDataGridViewTextBoxColumn
             // 
             this.parameterDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.parameterDataGridViewTextBoxColumn.DataPropertyName = "Parameter";
-            this.parameterDataGridViewTextBoxColumn.HeaderText = "Наименование параметра";
+            this.parameterDataGridViewTextBoxColumn.HeaderText = "Наименование";
             this.parameterDataGridViewTextBoxColumn.Name = "parameterDataGridViewTextBoxColumn";
             this.parameterDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -158,7 +158,7 @@ namespace MIS.Forms.MainForms
             this.Controls.Add(this.dataGridView);
             this.Name = "SpareParametersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Параметры запчасти";
+            this.Text = "Составляющие услуги";
             this.Load += new System.EventHandler(this.SpareParametersForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spareParameterBindingSource)).EndInit();
@@ -172,10 +172,10 @@ namespace MIS.Forms.MainForms
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource spareParameterBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn parameterDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn parameterVakueDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn EditColumn;
         private System.Windows.Forms.DataGridViewImageColumn DeleteColumn;
-        private System.Windows.Forms.BindingSource spareParameterBindingSource;
     }
 }

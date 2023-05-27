@@ -41,9 +41,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 15);
+            this.label1.Size = new System.Drawing.Size(98, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Параметр запчасти";
+            this.label1.Text = "Составляющая ";
             // 
             // textBoxParameter
             // 
@@ -92,9 +92,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 15);
+            this.label2.Size = new System.Drawing.Size(63, 15);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Значение параметра";
+            this.label2.Text = "Значение";
             // 
             // textBoxValue
             // 
