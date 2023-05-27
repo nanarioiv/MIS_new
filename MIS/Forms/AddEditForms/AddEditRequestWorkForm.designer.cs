@@ -31,6 +31,7 @@
             this.buttonAddEdit = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLabelDeleteSpare = new System.Windows.Forms.LinkLabel();
             this.linkLabelSearchSpare = new System.Windows.Forms.LinkLabel();
             this.textBoxSpare = new System.Windows.Forms.TextBox();
             this.comboBoxEmployees = new System.Windows.Forms.ComboBox();
@@ -39,7 +40,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.linkLabelDeleteSpare = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,15 +90,26 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
+            // linkLabelDeleteSpare
+            // 
+            this.linkLabelDeleteSpare.AutoSize = true;
+            this.linkLabelDeleteSpare.Location = new System.Drawing.Point(308, 151);
+            this.linkLabelDeleteSpare.Name = "linkLabelDeleteSpare";
+            this.linkLabelDeleteSpare.Size = new System.Drawing.Size(57, 15);
+            this.linkLabelDeleteSpare.TabIndex = 14;
+            this.linkLabelDeleteSpare.TabStop = true;
+            this.linkLabelDeleteSpare.Text = "Удалить";
+            this.linkLabelDeleteSpare.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelDeleteSpare_LinkClicked);
+            // 
             // linkLabelSearchSpare
             // 
             this.linkLabelSearchSpare.AutoSize = true;
             this.linkLabelSearchSpare.Location = new System.Drawing.Point(6, 150);
             this.linkLabelSearchSpare.Name = "linkLabelSearchSpare";
-            this.linkLabelSearchSpare.Size = new System.Drawing.Size(98, 15);
+            this.linkLabelSearchSpare.Size = new System.Drawing.Size(80, 15);
             this.linkLabelSearchSpare.TabIndex = 13;
             this.linkLabelSearchSpare.TabStop = true;
-            this.linkLabelSearchSpare.Text = "Поиск запчасти";
+            this.linkLabelSearchSpare.Text = "Поиск услуги";
             this.linkLabelSearchSpare.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelSearchSpare_LinkClicked);
             // 
             // textBoxSpare
@@ -133,9 +144,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(197, 15);
+            this.label2.Size = new System.Drawing.Size(250, 15);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Сотрудник выполняющий работу";
+            this.label2.Text = "Сотрудник выполняющий работу (скрыть)";
             // 
             // label1
             // 
@@ -158,20 +169,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(18, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 15);
+            this.label3.Size = new System.Drawing.Size(212, 15);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Дата выполнения работы";
-            // 
-            // linkLabelDeleteSpare
-            // 
-            this.linkLabelDeleteSpare.AutoSize = true;
-            this.linkLabelDeleteSpare.Location = new System.Drawing.Point(308, 151);
-            this.linkLabelDeleteSpare.Name = "linkLabelDeleteSpare";
-            this.linkLabelDeleteSpare.Size = new System.Drawing.Size(57, 15);
-            this.linkLabelDeleteSpare.TabIndex = 14;
-            this.linkLabelDeleteSpare.TabStop = true;
-            this.linkLabelDeleteSpare.Text = "Удалить";
-            this.linkLabelDeleteSpare.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelDeleteSpare_LinkClicked);
+            this.label3.Text = "Дата выполнения работы (скрыть)";
             // 
             // AddEditRequestWorkForm
             // 

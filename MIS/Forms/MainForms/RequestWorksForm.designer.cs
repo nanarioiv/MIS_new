@@ -32,11 +32,6 @@ namespace MIS.Forms.MainForms
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -44,18 +39,14 @@ namespace MIS.Forms.MainForms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.requestWorkBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonAdd = new System.Windows.Forms.Button();
-            this.requestWorkDtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.workDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.workPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.spareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Цена = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Итого = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +58,15 @@ namespace MIS.Forms.MainForms
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.requestWorkDtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.workDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.workPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Цена = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Итого = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestWorkBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -136,100 +136,6 @@ namespace MIS.Forms.MainForms
             this.buttonAdd.Text = "Добавить услугу";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            // 
-            // requestWorkDtDataGridViewTextBoxColumn
-            // 
-            this.requestWorkDtDataGridViewTextBoxColumn.DataPropertyName = "RequestWorkDt";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Format = "d";
-            dataGridViewCellStyle3.NullValue = null;
-            this.requestWorkDtDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.requestWorkDtDataGridViewTextBoxColumn.HeaderText = "Дата (удалить)";
-            this.requestWorkDtDataGridViewTextBoxColumn.Name = "requestWorkDtDataGridViewTextBoxColumn";
-            this.requestWorkDtDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // workDataGridViewTextBoxColumn
-            // 
-            this.workDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.workDataGridViewTextBoxColumn.DataPropertyName = "Work";
-            this.workDataGridViewTextBoxColumn.HeaderText = "Тип услуги";
-            this.workDataGridViewTextBoxColumn.Name = "workDataGridViewTextBoxColumn";
-            this.workDataGridViewTextBoxColumn.ReadOnly = true;
-            this.workDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // workPriceDataGridViewTextBoxColumn
-            // 
-            this.workPriceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.workPriceDataGridViewTextBoxColumn.DataPropertyName = "WorkPrice";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = "-";
-            this.workPriceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.workPriceDataGridViewTextBoxColumn.HeaderText = "Стоимость (удалить)";
-            this.workPriceDataGridViewTextBoxColumn.Name = "workPriceDataGridViewTextBoxColumn";
-            this.workPriceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.workPriceDataGridViewTextBoxColumn.Width = 124;
-            // 
-            // employeeDataGridViewTextBoxColumn
-            // 
-            this.employeeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.employeeDataGridViewTextBoxColumn.DataPropertyName = "Employee";
-            this.employeeDataGridViewTextBoxColumn.HeaderText = "Врач (скрыть)";
-            this.employeeDataGridViewTextBoxColumn.Name = "employeeDataGridViewTextBoxColumn";
-            this.employeeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.employeeDataGridViewTextBoxColumn.Width = 94;
-            // 
-            // spareDataGridViewTextBoxColumn
-            // 
-            this.spareDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.spareDataGridViewTextBoxColumn.DataPropertyName = "Spare";
-            dataGridViewCellStyle5.NullValue = "-";
-            this.spareDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
-            this.spareDataGridViewTextBoxColumn.HeaderText = "Услуга";
-            this.spareDataGridViewTextBoxColumn.Name = "spareDataGridViewTextBoxColumn";
-            this.spareDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // Цена
-            // 
-            this.Цена.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Цена.DataPropertyName = "SparePrice";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Format = "C2";
-            dataGridViewCellStyle6.NullValue = "-";
-            this.Цена.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Цена.HeaderText = "Стоимость";
-            this.Цена.Name = "Цена";
-            this.Цена.ReadOnly = true;
-            this.Цена.Width = 87;
-            // 
-            // Итого
-            // 
-            this.Итого.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Итого.DataPropertyName = "TotalPrice";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.Format = "C2";
-            dataGridViewCellStyle7.NullValue = null;
-            this.Итого.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Итого.HeaderText = "Итого (удалить)";
-            this.Итого.Name = "Итого";
-            this.Итого.ReadOnly = true;
-            this.Итого.Width = 102;
-            // 
-            // EditColumn
-            // 
-            this.EditColumn.HeaderText = "";
-            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
-            this.EditColumn.Name = "EditColumn";
-            this.EditColumn.ReadOnly = true;
-            this.EditColumn.Width = 30;
-            // 
-            // DeleteColumn
-            // 
-            this.DeleteColumn.HeaderText = "";
-            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
-            this.DeleteColumn.Name = "DeleteColumn";
-            this.DeleteColumn.ReadOnly = true;
-            this.DeleteColumn.Width = 30;
             // 
             // button1
             // 
@@ -384,6 +290,100 @@ namespace MIS.Forms.MainForms
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Width = 30;
             // 
+            // requestWorkDtDataGridViewTextBoxColumn
+            // 
+            this.requestWorkDtDataGridViewTextBoxColumn.DataPropertyName = "RequestWorkDt";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Format = "d";
+            dataGridViewCellStyle3.NullValue = null;
+            this.requestWorkDtDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.requestWorkDtDataGridViewTextBoxColumn.HeaderText = "Дата (удалить)";
+            this.requestWorkDtDataGridViewTextBoxColumn.Name = "requestWorkDtDataGridViewTextBoxColumn";
+            this.requestWorkDtDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // workDataGridViewTextBoxColumn
+            // 
+            this.workDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.workDataGridViewTextBoxColumn.DataPropertyName = "Work";
+            this.workDataGridViewTextBoxColumn.HeaderText = "Тип услуги (удалить)";
+            this.workDataGridViewTextBoxColumn.Name = "workDataGridViewTextBoxColumn";
+            this.workDataGridViewTextBoxColumn.ReadOnly = true;
+            this.workDataGridViewTextBoxColumn.Width = 124;
+            // 
+            // workPriceDataGridViewTextBoxColumn
+            // 
+            this.workPriceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.workPriceDataGridViewTextBoxColumn.DataPropertyName = "WorkPrice";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = "-";
+            this.workPriceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            this.workPriceDataGridViewTextBoxColumn.HeaderText = "Стоимость (удалить)";
+            this.workPriceDataGridViewTextBoxColumn.Name = "workPriceDataGridViewTextBoxColumn";
+            this.workPriceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.workPriceDataGridViewTextBoxColumn.Width = 124;
+            // 
+            // employeeDataGridViewTextBoxColumn
+            // 
+            this.employeeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.employeeDataGridViewTextBoxColumn.DataPropertyName = "Employee";
+            this.employeeDataGridViewTextBoxColumn.HeaderText = "Врач (скрыть)";
+            this.employeeDataGridViewTextBoxColumn.Name = "employeeDataGridViewTextBoxColumn";
+            this.employeeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.employeeDataGridViewTextBoxColumn.Width = 94;
+            // 
+            // spareDataGridViewTextBoxColumn
+            // 
+            this.spareDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.spareDataGridViewTextBoxColumn.DataPropertyName = "Spare";
+            dataGridViewCellStyle5.NullValue = "-";
+            this.spareDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            this.spareDataGridViewTextBoxColumn.HeaderText = "Услуга";
+            this.spareDataGridViewTextBoxColumn.Name = "spareDataGridViewTextBoxColumn";
+            this.spareDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Цена
+            // 
+            this.Цена.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Цена.DataPropertyName = "SparePrice";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Format = "C2";
+            dataGridViewCellStyle6.NullValue = "-";
+            this.Цена.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Цена.HeaderText = "Стоимость";
+            this.Цена.Name = "Цена";
+            this.Цена.ReadOnly = true;
+            this.Цена.Width = 87;
+            // 
+            // Итого
+            // 
+            this.Итого.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Итого.DataPropertyName = "TotalPrice";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Format = "C2";
+            dataGridViewCellStyle7.NullValue = null;
+            this.Итого.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Итого.HeaderText = "Итого (удалить)";
+            this.Итого.Name = "Итого";
+            this.Итого.ReadOnly = true;
+            this.Итого.Width = 102;
+            // 
+            // EditColumn
+            // 
+            this.EditColumn.HeaderText = "";
+            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
+            this.EditColumn.Name = "EditColumn";
+            this.EditColumn.ReadOnly = true;
+            this.EditColumn.Width = 30;
+            // 
+            // DeleteColumn
+            // 
+            this.DeleteColumn.HeaderText = "";
+            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
+            this.DeleteColumn.Name = "DeleteColumn";
+            this.DeleteColumn.ReadOnly = true;
+            this.DeleteColumn.Width = 30;
+            // 
             // RequestWorksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -410,15 +410,6 @@ namespace MIS.Forms.MainForms
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.BindingSource requestWorkBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn requestWorkDtDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn workDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn workPriceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn employeeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn spareDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Цена;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Итого;
-        private System.Windows.Forms.DataGridViewImageColumn EditColumn;
-        private System.Windows.Forms.DataGridViewImageColumn DeleteColumn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -430,5 +421,14 @@ namespace MIS.Forms.MainForms
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn requestWorkDtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn workDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn workPriceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn employeeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn spareDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Цена;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Итого;
+        private System.Windows.Forms.DataGridViewImageColumn EditColumn;
+        private System.Windows.Forms.DataGridViewImageColumn DeleteColumn;
     }
 }
