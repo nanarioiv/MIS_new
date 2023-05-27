@@ -276,7 +276,6 @@ namespace MIS.Forms.ReferenceForms
             this.manufacturerDataGridViewTextBoxColumn.HeaderText = "Производитель";
             this.manufacturerDataGridViewTextBoxColumn.Name = "manufacturerDataGridViewTextBoxColumn";
             this.manufacturerDataGridViewTextBoxColumn.ReadOnly = true;
-            this.manufacturerDataGridViewTextBoxColumn.Visible = false;
             // 
             // modelDataGridViewTextBoxColumn
             // 
@@ -285,7 +284,6 @@ namespace MIS.Forms.ReferenceForms
             this.modelDataGridViewTextBoxColumn.HeaderText = "Модель";
             this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
             this.modelDataGridViewTextBoxColumn.ReadOnly = true;
-            this.modelDataGridViewTextBoxColumn.Visible = false;
             this.modelDataGridViewTextBoxColumn.Width = 71;
             // 
             // ParametersColumn

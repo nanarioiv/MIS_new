@@ -36,22 +36,24 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxManufacturer = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 134);
+            this.label1.Location = new System.Drawing.Point(12, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 15);
+            this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Модель";
+            this.label1.Text = "Детали";
             // 
             // textBoxModel
             // 
             this.textBoxModel.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxModel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxModel.Location = new System.Drawing.Point(12, 152);
+            this.textBoxModel.Location = new System.Drawing.Point(12, 173);
             this.textBoxModel.MaxLength = 100;
             this.textBoxModel.Name = "textBoxModel";
             this.textBoxModel.Size = new System.Drawing.Size(356, 21);
@@ -73,6 +75,7 @@
             this.buttonCancel.TabIndex = 4;
             this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonAddEdit
             // 
@@ -103,18 +106,18 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 15);
+            this.label2.Size = new System.Drawing.Size(99, 15);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Результат обращения";
+            this.label2.Text = "Тип назначения";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 15);
+            this.label3.Size = new System.Drawing.Size(304, 15);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Фирма производитель";
+            this.label3.Text = "Фирма производитель (сделать необязательным)";
             // 
             // comboBoxManufacturer
             // 
@@ -125,6 +128,25 @@
             this.comboBoxManufacturer.Size = new System.Drawing.Size(356, 23);
             this.comboBoxManufacturer.TabIndex = 5;
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(12, 131);
+            this.textBox1.MaxLength = 100;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(356, 21);
+            this.textBox1.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(327, 15);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Наименование (пока не существует, только на фроме)";
+            // 
             // AddEditTechnicForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -132,6 +154,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(380, 257);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBoxManufacturer);
             this.Controls.Add(this.comboBoxTechnicType);
             this.Controls.Add(this.buttonCancel);
@@ -162,5 +186,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxManufacturer;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
     }
 }

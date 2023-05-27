@@ -29,21 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.должностиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -107,6 +108,9 @@
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.buttonAdd = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.requestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -164,66 +168,66 @@
             // должностиToolStripMenuItem
             // 
             this.должностиToolStripMenuItem.Name = "должностиToolStripMenuItem";
-            this.должностиToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.должностиToolStripMenuItem.Text = "Должности";
+            this.должностиToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.должностиToolStripMenuItem.Text = "Специальности";
             this.должностиToolStripMenuItem.Click += new System.EventHandler(this.должностиToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(206, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(225, 6);
             // 
             // видыНеисправностейToolStripMenuItem
             // 
             this.видыНеисправностейToolStripMenuItem.Name = "видыНеисправностейToolStripMenuItem";
-            this.видыНеисправностейToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.видыНеисправностейToolStripMenuItem.Text = "Виды неисправностей";
+            this.видыНеисправностейToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.видыНеисправностейToolStripMenuItem.Text = "Диагнозы";
             this.видыНеисправностейToolStripMenuItem.Click += new System.EventHandler(this.видыНеисправностейToolStripMenuItem_Click);
             // 
             // статусыЗаявокToolStripMenuItem
             // 
             this.статусыЗаявокToolStripMenuItem.Name = "статусыЗаявокToolStripMenuItem";
-            this.статусыЗаявокToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.статусыЗаявокToolStripMenuItem.Text = "Статусы заявок";
+            this.статусыЗаявокToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.статусыЗаявокToolStripMenuItem.Text = "Виды оплаты";
             this.статусыЗаявокToolStripMenuItem.Click += new System.EventHandler(this.статусыЗаявокToolStripMenuItem_Click);
             // 
             // типыЗапчастейToolStripMenuItem
             // 
             this.типыЗапчастейToolStripMenuItem.Name = "типыЗапчастейToolStripMenuItem";
-            this.типыЗапчастейToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.типыЗапчастейToolStripMenuItem.Text = "Типы запчастей";
+            this.типыЗапчастейToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.типыЗапчастейToolStripMenuItem.Text = "Типы услуг";
             this.типыЗапчастейToolStripMenuItem.Click += new System.EventHandler(this.типыЗапчастейToolStripMenuItem_Click);
             // 
             // работыToolStripMenuItem
             // 
             this.работыToolStripMenuItem.Name = "работыToolStripMenuItem";
-            this.работыToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.работыToolStripMenuItem.Text = "Виды ремонтных работ";
+            this.работыToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.работыToolStripMenuItem.Text = "Виды услуг";
             this.работыToolStripMenuItem.Click += new System.EventHandler(this.работыToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(206, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(225, 6);
             // 
             // производителиToolStripMenuItem
             // 
             this.производителиToolStripMenuItem.Name = "производителиToolStripMenuItem";
-            this.производителиToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.производителиToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.производителиToolStripMenuItem.Text = "Производители";
             this.производителиToolStripMenuItem.Click += new System.EventHandler(this.производителиToolStripMenuItem_Click);
             // 
             // характеристикиТехникиToolStripMenuItem
             // 
             this.характеристикиТехникиToolStripMenuItem.Name = "характеристикиТехникиToolStripMenuItem";
-            this.характеристикиТехникиToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.характеристикиТехникиToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.характеристикиТехникиToolStripMenuItem.Text = "Характеристики техники";
             this.характеристикиТехникиToolStripMenuItem.Click += new System.EventHandler(this.характеристикиТехникиToolStripMenuItem_Click);
             // 
             // видыТехникиToolStripMenuItem
             // 
             this.видыТехникиToolStripMenuItem.Name = "видыТехникиToolStripMenuItem";
-            this.видыТехникиToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.видыТехникиToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.видыТехникиToolStripMenuItem.Text = "Типы техники";
             this.видыТехникиToolStripMenuItem.Click += new System.EventHandler(this.видыТехникиToolStripMenuItem_Click);
             // 
@@ -231,31 +235,31 @@
             // 
             this.бытоваяТехникаToolStripMenuItem.Name = "бытоваяТехникаToolStripMenuItem";
             this.бытоваяТехникаToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.бытоваяТехникаToolStripMenuItem.Text = "Компьютерная техника";
+            this.бытоваяТехникаToolStripMenuItem.Text = "Назначения";
             this.бытоваяТехникаToolStripMenuItem.Click += new System.EventHandler(this.бытоваяТехникаToolStripMenuItem_Click);
             // 
             // сотрудникиToolStripMenuItem
             // 
             this.сотрудникиToolStripMenuItem.Image = global::MIS.Properties.Resources.iconfinder_People_22163;
             this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
-            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-            this.сотрудникиToolStripMenuItem.Text = "Сотрудники";
+            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.сотрудникиToolStripMenuItem.Text = "Врачи";
             this.сотрудникиToolStripMenuItem.Click += new System.EventHandler(this.сотрудникиToolStripMenuItem_Click);
             // 
             // клиентыToolStripMenuItem
             // 
             this.клиентыToolStripMenuItem.Image = global::MIS.Properties.Resources.iconfinder_system_users_118828;
             this.клиентыToolStripMenuItem.Name = "клиентыToolStripMenuItem";
-            this.клиентыToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
-            this.клиентыToolStripMenuItem.Text = "Клиенты";
+            this.клиентыToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.клиентыToolStripMenuItem.Text = "Пациенты";
             this.клиентыToolStripMenuItem.Click += new System.EventHandler(this.клиентыToolStripMenuItem_Click);
             // 
             // запчастиToolStripMenuItem
             // 
             this.запчастиToolStripMenuItem.Image = global::MIS.Properties.Resources.tool;
             this.запчастиToolStripMenuItem.Name = "запчастиToolStripMenuItem";
-            this.запчастиToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.запчастиToolStripMenuItem.Text = "Запчасти";
+            this.запчастиToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.запчастиToolStripMenuItem.Text = "Услуги";
             this.запчастиToolStripMenuItem.Click += new System.EventHandler(this.запчастиToolStripMenuItem_Click);
             // 
             // отчётыToolStripMenuItem
@@ -328,21 +332,21 @@
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.AllowUserToOrderColumns = true;
             this.dataGridView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LemonChiffon;
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.LemonChiffon;
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView.AutoGenerateColumns = false;
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.requestIDDataGridViewTextBoxColumn,
@@ -396,7 +400,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1046, 125);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Поиск заявки";
+            this.groupBox1.Text = "Поиск посещения";
             // 
             // buttonReset
             // 
@@ -489,9 +493,9 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(643, 66);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 13);
+            this.label9.Size = new System.Drawing.Size(150, 13);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Производитель";
+            this.label9.Text = "Наименование наз (скрыть)";
             // 
             // label3
             // 
@@ -509,9 +513,9 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(643, 20);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 13);
+            this.label8.Size = new System.Drawing.Size(134, 13);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Тип техники";
+            this.label8.Text = "Тип назначения (скрыть)";
             // 
             // label2
             // 
@@ -529,9 +533,9 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(437, 66);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 13);
+            this.label7.Size = new System.Drawing.Size(66, 13);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Статус заявки";
+            this.label7.Text = "Вид оплаты";
             // 
             // label6
             // 
@@ -549,9 +553,9 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(231, 66);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 13);
+            this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Вид неисправности";
+            this.label5.Text = "Диагноз";
             // 
             // label4
             // 
@@ -559,9 +563,9 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(231, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 13);
+            this.label4.Size = new System.Drawing.Size(106, 13);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Фамилия клиента";
+            this.label4.Text = "Фамилия пациента";
             // 
             // label1
             // 
@@ -569,9 +573,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(54, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 13);
+            this.label1.Size = new System.Drawing.Size(156, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Период создания заявки";
+            this.label1.Text = "Период создания посещения";
             // 
             // dateTimePickerTo
             // 
@@ -595,8 +599,8 @@
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn1.DataPropertyName = "FaultType";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle25;
             this.dataGridViewTextBoxColumn1.HeaderText = "Вид неисправности";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
@@ -604,8 +608,8 @@
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "FaultType";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle26;
             this.dataGridViewTextBoxColumn2.HeaderText = "Вид неисправности";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
@@ -621,8 +625,8 @@
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn4.DataPropertyName = "FaultType";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle27;
             this.dataGridViewTextBoxColumn4.HeaderText = "Вид неисправности";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
@@ -639,8 +643,8 @@
             // 
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn6.DataPropertyName = "FaultType";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle28;
             this.dataGridViewTextBoxColumn6.HeaderText = "Вид неисправности";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
@@ -657,8 +661,8 @@
             // 
             this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn8.DataPropertyName = "FaultType";
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle29;
             this.dataGridViewTextBoxColumn8.HeaderText = "Вид неисправности";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
@@ -675,8 +679,8 @@
             // 
             this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn10.DataPropertyName = "FaultType";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle30;
             this.dataGridViewTextBoxColumn10.HeaderText = "Вид неисправности";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
@@ -693,8 +697,8 @@
             // 
             this.dataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn12.DataPropertyName = "FaultType";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle31;
             this.dataGridViewTextBoxColumn12.HeaderText = "Вид неисправности";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             this.dataGridViewTextBoxColumn12.ReadOnly = true;
@@ -754,6 +758,32 @@
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Employee";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Врач";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            this.dataGridViewTextBoxColumn14.Width = 56;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "FaultType";
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn15.DefaultCellStyle = dataGridViewCellStyle32;
+            this.dataGridViewTextBoxColumn15.HeaderText = "Диагноз";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Technic";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Результат обращения";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            // 
             // requestBindingSource
             // 
             this.requestBindingSource.DataSource = typeof(MIS.Data.Request);
@@ -762,72 +792,73 @@
             // 
             this.requestIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.requestIDDataGridViewTextBoxColumn.DataPropertyName = "Request_ID";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.requestIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.requestIDDataGridViewTextBoxColumn.HeaderText = "№ завки";
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.requestIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle19;
+            this.requestIDDataGridViewTextBoxColumn.HeaderText = "№ посещения";
             this.requestIDDataGridViewTextBoxColumn.Name = "requestIDDataGridViewTextBoxColumn";
             this.requestIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.requestIDDataGridViewTextBoxColumn.Width = 76;
+            this.requestIDDataGridViewTextBoxColumn.Width = 95;
             // 
             // clientDataGridViewTextBoxColumn
             // 
             this.clientDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
-            this.clientDataGridViewTextBoxColumn.HeaderText = "Клиент";
+            this.clientDataGridViewTextBoxColumn.HeaderText = "Пациент";
             this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
             this.clientDataGridViewTextBoxColumn.ReadOnly = true;
-            this.clientDataGridViewTextBoxColumn.Width = 68;
+            this.clientDataGridViewTextBoxColumn.Width = 75;
             // 
             // requestDtDataGridViewTextBoxColumn
             // 
             this.requestDtDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.requestDtDataGridViewTextBoxColumn.DataPropertyName = "RequestDt";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Format = "d";
-            dataGridViewCellStyle4.NullValue = null;
-            this.requestDtDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.requestDtDataGridViewTextBoxColumn.HeaderText = "Дата создания";
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.Format = "d";
+            dataGridViewCellStyle20.NullValue = null;
+            this.requestDtDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle20;
+            this.requestDtDataGridViewTextBoxColumn.HeaderText = "Дата посещения";
             this.requestDtDataGridViewTextBoxColumn.MinimumWidth = 90;
             this.requestDtDataGridViewTextBoxColumn.Name = "requestDtDataGridViewTextBoxColumn";
             this.requestDtDataGridViewTextBoxColumn.ReadOnly = true;
+            this.requestDtDataGridViewTextBoxColumn.Width = 108;
             // 
             // ExecutionDt
             // 
             this.ExecutionDt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.ExecutionDt.DataPropertyName = "ExecutionDt";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Format = "d";
-            dataGridViewCellStyle5.NullValue = null;
-            this.ExecutionDt.DefaultCellStyle = dataGridViewCellStyle5;
-            this.ExecutionDt.HeaderText = "Дата выполнения";
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.Format = "d";
+            dataGridViewCellStyle21.NullValue = null;
+            this.ExecutionDt.DefaultCellStyle = dataGridViewCellStyle21;
+            this.ExecutionDt.HeaderText = "Дата выполнения (удалить)";
             this.ExecutionDt.MinimumWidth = 90;
             this.ExecutionDt.Name = "ExecutionDt";
             this.ExecutionDt.ReadOnly = true;
-            this.ExecutionDt.Width = 113;
+            this.ExecutionDt.Width = 157;
             // 
             // Employee
             // 
             this.Employee.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Employee.DataPropertyName = "Employee";
-            this.Employee.HeaderText = "Сотрудник";
+            this.Employee.HeaderText = "Врач";
             this.Employee.Name = "Employee";
             this.Employee.ReadOnly = true;
-            this.Employee.Width = 85;
+            this.Employee.Width = 56;
             // 
             // FaultType
             // 
             this.FaultType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.FaultType.DataPropertyName = "FaultType";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FaultType.DefaultCellStyle = dataGridViewCellStyle6;
-            this.FaultType.HeaderText = "Вид неисправности";
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FaultType.DefaultCellStyle = dataGridViewCellStyle22;
+            this.FaultType.HeaderText = "Диагноз";
             this.FaultType.Name = "FaultType";
             this.FaultType.ReadOnly = true;
             // 
             // Technic
             // 
             this.Technic.DataPropertyName = "Technic";
-            this.Technic.HeaderText = "Результат обращения";
+            this.Technic.HeaderText = "Назначения и направления (удалить)";
             this.Technic.Name = "Technic";
             this.Technic.ReadOnly = true;
             // 
@@ -835,25 +866,25 @@
             // 
             this.statusDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.statusDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Статус";
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.statusDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle23;
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Вид оплаты";
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.statusDataGridViewTextBoxColumn.Width = 66;
+            this.statusDataGridViewTextBoxColumn.Width = 84;
             // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Column1.DataPropertyName = "CostOfRepair";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.Format = "C2";
-            dataGridViewCellStyle8.NullValue = null;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column1.HeaderText = "Стоимость";
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.Format = "C2";
+            dataGridViewCellStyle24.NullValue = null;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle24;
+            this.Column1.HeaderText = "Общая стоимость";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 87;
+            this.Column1.Width = 114;
             // 
             // DetailColumn
             // 
@@ -996,6 +1027,9 @@
         private System.Windows.Forms.DataGridViewImageColumn ExportToWordColumn;
         private System.Windows.Forms.DataGridViewImageColumn EditColumn;
         private System.Windows.Forms.DataGridViewImageColumn DeleteColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
     }
 }
 
