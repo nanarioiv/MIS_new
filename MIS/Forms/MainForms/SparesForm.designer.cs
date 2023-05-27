@@ -35,15 +35,6 @@ namespace MIS.Forms.MainForms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.spareIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TechnicType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.spareTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.spareNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.articleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SpareParametersColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.spareBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxAricle = new System.Windows.Forms.TextBox();
@@ -60,6 +51,15 @@ namespace MIS.Forms.MainForms
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.spareParameterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spareIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TechnicType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spareTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spareNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.articleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SpareParametersColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spareBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -109,88 +109,6 @@ namespace MIS.Forms.MainForms
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
-            // 
-            // spareIDDataGridViewTextBoxColumn
-            // 
-            this.spareIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.spareIDDataGridViewTextBoxColumn.DataPropertyName = "Spare_ID";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.spareIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.spareIDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.spareIDDataGridViewTextBoxColumn.Name = "spareIDDataGridViewTextBoxColumn";
-            this.spareIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.spareIDDataGridViewTextBoxColumn.Width = 43;
-            // 
-            // TechnicType
-            // 
-            this.TechnicType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.TechnicType.DataPropertyName = "TechnicType";
-            this.TechnicType.HeaderText = "Тип техники";
-            this.TechnicType.Name = "TechnicType";
-            this.TechnicType.ReadOnly = true;
-            this.TechnicType.Width = 94;
-            // 
-            // spareTypeDataGridViewTextBoxColumn
-            // 
-            this.spareTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.spareTypeDataGridViewTextBoxColumn.DataPropertyName = "SpareType";
-            this.spareTypeDataGridViewTextBoxColumn.HeaderText = "Тип запчасти";
-            this.spareTypeDataGridViewTextBoxColumn.Name = "spareTypeDataGridViewTextBoxColumn";
-            this.spareTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // spareNameDataGridViewTextBoxColumn
-            // 
-            this.spareNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.spareNameDataGridViewTextBoxColumn.DataPropertyName = "SpareName";
-            this.spareNameDataGridViewTextBoxColumn.HeaderText = "Наименование";
-            this.spareNameDataGridViewTextBoxColumn.Name = "spareNameDataGridViewTextBoxColumn";
-            this.spareNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // articleDataGridViewTextBoxColumn
-            // 
-            this.articleDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.articleDataGridViewTextBoxColumn.DataPropertyName = "Article";
-            this.articleDataGridViewTextBoxColumn.HeaderText = "Артикул";
-            this.articleDataGridViewTextBoxColumn.Name = "articleDataGridViewTextBoxColumn";
-            this.articleDataGridViewTextBoxColumn.ReadOnly = true;
-            this.articleDataGridViewTextBoxColumn.Width = 73;
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.priceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Стоимость";
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.priceDataGridViewTextBoxColumn.Width = 87;
-            // 
-            // SpareParametersColumn
-            // 
-            this.SpareParametersColumn.HeaderText = "";
-            this.SpareParametersColumn.Image = global::MIS.Properties.Resources.iconfinder_category_103432;
-            this.SpareParametersColumn.Name = "SpareParametersColumn";
-            this.SpareParametersColumn.ReadOnly = true;
-            this.SpareParametersColumn.Width = 30;
-            // 
-            // EditColumn
-            // 
-            this.EditColumn.HeaderText = "";
-            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
-            this.EditColumn.Name = "EditColumn";
-            this.EditColumn.ReadOnly = true;
-            this.EditColumn.Width = 30;
-            // 
-            // DeleteColumn
-            // 
-            this.DeleteColumn.HeaderText = "";
-            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
-            this.DeleteColumn.Name = "DeleteColumn";
-            this.DeleteColumn.ReadOnly = true;
-            this.DeleteColumn.Width = 30;
             // 
             // spareBindingSource
             // 
@@ -275,27 +193,27 @@ namespace MIS.Forms.MainForms
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(14, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Тип запчасти";
+            this.label2.Text = "Тип услуги";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(261, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 13);
+            this.label3.Size = new System.Drawing.Size(119, 13);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Наименование запчасти";
+            this.label3.Text = "Наименование услуги";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(14, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.Size = new System.Drawing.Size(118, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Тип техники";
+            this.label1.Text = "Тип техники (удалить)";
             // 
             // comboBoxSpareType
             // 
@@ -346,13 +264,96 @@ namespace MIS.Forms.MainForms
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(715, 36);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить новую запчасть";
+            this.buttonAdd.Text = "Добавить новую услугу";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // spareParameterBindingSource
             // 
             this.spareParameterBindingSource.DataSource = typeof(MIS.Data.SpareParameter);
+            // 
+            // spareIDDataGridViewTextBoxColumn
+            // 
+            this.spareIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.spareIDDataGridViewTextBoxColumn.DataPropertyName = "Spare_ID";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.spareIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.spareIDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.spareIDDataGridViewTextBoxColumn.Name = "spareIDDataGridViewTextBoxColumn";
+            this.spareIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.spareIDDataGridViewTextBoxColumn.Width = 43;
+            // 
+            // TechnicType
+            // 
+            this.TechnicType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.TechnicType.DataPropertyName = "TechnicType";
+            this.TechnicType.HeaderText = "Тип техники (удалить, скрыть, необязат)";
+            this.TechnicType.Name = "TechnicType";
+            this.TechnicType.ReadOnly = true;
+            this.TechnicType.Width = 172;
+            // 
+            // spareTypeDataGridViewTextBoxColumn
+            // 
+            this.spareTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.spareTypeDataGridViewTextBoxColumn.DataPropertyName = "SpareType";
+            this.spareTypeDataGridViewTextBoxColumn.HeaderText = "Тип услуги";
+            this.spareTypeDataGridViewTextBoxColumn.Name = "spareTypeDataGridViewTextBoxColumn";
+            this.spareTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.spareTypeDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // spareNameDataGridViewTextBoxColumn
+            // 
+            this.spareNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.spareNameDataGridViewTextBoxColumn.DataPropertyName = "SpareName";
+            this.spareNameDataGridViewTextBoxColumn.HeaderText = "Наименование";
+            this.spareNameDataGridViewTextBoxColumn.Name = "spareNameDataGridViewTextBoxColumn";
+            this.spareNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // articleDataGridViewTextBoxColumn
+            // 
+            this.articleDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.articleDataGridViewTextBoxColumn.DataPropertyName = "Article";
+            this.articleDataGridViewTextBoxColumn.HeaderText = "Артикул";
+            this.articleDataGridViewTextBoxColumn.Name = "articleDataGridViewTextBoxColumn";
+            this.articleDataGridViewTextBoxColumn.ReadOnly = true;
+            this.articleDataGridViewTextBoxColumn.Width = 73;
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.priceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Стоимость";
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.priceDataGridViewTextBoxColumn.Width = 87;
+            // 
+            // SpareParametersColumn
+            // 
+            this.SpareParametersColumn.HeaderText = "";
+            this.SpareParametersColumn.Image = global::MIS.Properties.Resources.iconfinder_category_103432;
+            this.SpareParametersColumn.Name = "SpareParametersColumn";
+            this.SpareParametersColumn.ReadOnly = true;
+            this.SpareParametersColumn.Width = 30;
+            // 
+            // EditColumn
+            // 
+            this.EditColumn.HeaderText = "";
+            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
+            this.EditColumn.Name = "EditColumn";
+            this.EditColumn.ReadOnly = true;
+            this.EditColumn.Width = 30;
+            // 
+            // DeleteColumn
+            // 
+            this.DeleteColumn.HeaderText = "";
+            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
+            this.DeleteColumn.Name = "DeleteColumn";
+            this.DeleteColumn.ReadOnly = true;
+            this.DeleteColumn.Width = 30;
             // 
             // SparesForm
             // 
@@ -365,7 +366,7 @@ namespace MIS.Forms.MainForms
             this.Controls.Add(this.dataGridView);
             this.Name = "SparesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Запчасти";
+            this.Text = "Услуги";
             this.Load += new System.EventHandler(this.SparesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spareBindingSource)).EndInit();
