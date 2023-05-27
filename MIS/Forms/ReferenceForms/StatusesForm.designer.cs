@@ -34,12 +34,12 @@ namespace MIS.Forms.ReferenceForms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.statusBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.statusIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.statusBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -83,6 +83,28 @@ namespace MIS.Forms.ReferenceForms
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
             // 
+            // statusBindingSource
+            // 
+            this.statusBindingSource.DataSource = typeof(MIS.Data.Status);
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAdd.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonAdd.FlatAppearance.BorderSize = 2;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
+            this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdd.Location = new System.Drawing.Point(12, 12);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(399, 36);
+            this.buttonAdd.TabIndex = 3;
+            this.buttonAdd.Text = "Добавить вид оплаты";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
             // statusIDDataGridViewTextBoxColumn
             // 
             this.statusIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -98,7 +120,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.statusNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.statusNameDataGridViewTextBoxColumn.DataPropertyName = "StatusName";
-            this.statusNameDataGridViewTextBoxColumn.HeaderText = "Наименование статуса";
+            this.statusNameDataGridViewTextBoxColumn.HeaderText = "Вид оплаты";
             this.statusNameDataGridViewTextBoxColumn.Name = "statusNameDataGridViewTextBoxColumn";
             this.statusNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -118,28 +140,6 @@ namespace MIS.Forms.ReferenceForms
             this.DeleteColumn.ReadOnly = true;
             this.DeleteColumn.Width = 30;
             // 
-            // statusBindingSource
-            // 
-            this.statusBindingSource.DataSource = typeof(MIS.Data.Status);
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAdd.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.buttonAdd.FlatAppearance.BorderSize = 2;
-            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
-            this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdd.Location = new System.Drawing.Point(12, 12);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(399, 36);
-            this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить статус";
-            this.buttonAdd.UseVisualStyleBackColor = false;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            // 
             // StatusesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,7 +150,7 @@ namespace MIS.Forms.ReferenceForms
             this.Controls.Add(this.dataGridView);
             this.Name = "StatusesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Статусы заявок";
+            this.Text = "Виды оплаты";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBindingSource)).EndInit();
             this.ResumeLayout(false);

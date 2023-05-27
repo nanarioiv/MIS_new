@@ -100,7 +100,7 @@ namespace MIS.Forms.ReferenceForms
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(567, 36);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить должность";
+            this.buttonAdd.Text = "Добавить специальность";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -119,7 +119,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn7.DataPropertyName = "PostName";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Должность";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Специальность";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
@@ -149,7 +149,7 @@ namespace MIS.Forms.ReferenceForms
             this.Controls.Add(this.dataGridView);
             this.Name = "PostsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Должности сотрудников";
+            this.Text = "Специальности";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postBindingSource)).EndInit();
             this.ResumeLayout(false);

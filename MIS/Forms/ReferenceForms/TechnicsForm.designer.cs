@@ -34,6 +34,7 @@ namespace MIS.Forms.ReferenceForms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.technicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -47,7 +48,6 @@ namespace MIS.Forms.ReferenceForms
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxManufacturer = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.technicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technicIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.technicTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,8 +56,8 @@ namespace MIS.Forms.ReferenceForms
             this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.technicBindingSource)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView
@@ -102,6 +102,10 @@ namespace MIS.Forms.ReferenceForms
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
             // 
+            // technicBindingSource
+            // 
+            this.technicBindingSource.DataSource = typeof(MIS.Data.Technic);
+            // 
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.HeaderText = "";
@@ -137,7 +141,7 @@ namespace MIS.Forms.ReferenceForms
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(762, 36);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить результат обращения";
+            this.buttonAdd.Text = "Добавить назначение";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -245,10 +249,6 @@ namespace MIS.Forms.ReferenceForms
             this.label3.Text = "Производитель";
             this.label3.Visible = false;
             // 
-            // technicBindingSource
-            // 
-            this.technicBindingSource.DataSource = typeof(MIS.Data.Technic);
-            // 
             // technicIDDataGridViewTextBoxColumn
             // 
             this.technicIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -265,7 +265,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.technicTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.technicTypeDataGridViewTextBoxColumn.DataPropertyName = "TechnicType";
-            this.technicTypeDataGridViewTextBoxColumn.HeaderText = "Результат обращения";
+            this.technicTypeDataGridViewTextBoxColumn.HeaderText = "Тип назначения";
             this.technicTypeDataGridViewTextBoxColumn.Name = "technicTypeDataGridViewTextBoxColumn";
             this.technicTypeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -273,7 +273,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.manufacturerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.manufacturerDataGridViewTextBoxColumn.DataPropertyName = "Manufacturer";
-            this.manufacturerDataGridViewTextBoxColumn.HeaderText = "Производитель";
+            this.manufacturerDataGridViewTextBoxColumn.HeaderText = "Производитель (удалить)";
             this.manufacturerDataGridViewTextBoxColumn.Name = "manufacturerDataGridViewTextBoxColumn";
             this.manufacturerDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -281,10 +281,10 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.modelDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.modelDataGridViewTextBoxColumn.DataPropertyName = "Model";
-            this.modelDataGridViewTextBoxColumn.HeaderText = "Модель";
+            this.modelDataGridViewTextBoxColumn.HeaderText = "Назначение";
             this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
             this.modelDataGridViewTextBoxColumn.ReadOnly = true;
-            this.modelDataGridViewTextBoxColumn.Width = 71;
+            this.modelDataGridViewTextBoxColumn.Width = 93;
             // 
             // ParametersColumn
             // 
@@ -321,12 +321,12 @@ namespace MIS.Forms.ReferenceForms
             this.Controls.Add(this.dataGridView);
             this.Name = "TechnicsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Результаты обращения";
+            this.Text = "Назначения";
             this.Load += new System.EventHandler(this.TechnicsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technicBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.technicBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -34,8 +34,8 @@ namespace MIS.Forms.ReferenceForms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.buttonAdd = new System.Windows.Forms.Button();
             this.spareTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.spareTypeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.spareTypeNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.technicTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,6 +84,10 @@ namespace MIS.Forms.ReferenceForms
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
+            // spareTypeBindingSource
+            // 
+            this.spareTypeBindingSource.DataSource = typeof(MIS.Data.SpareType);
+            // 
             // buttonAdd
             // 
             this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -98,13 +102,9 @@ namespace MIS.Forms.ReferenceForms
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(567, 36);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить тип запчасти";
+            this.buttonAdd.Text = "Добавить тип услуги";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            // 
-            // spareTypeBindingSource
-            // 
-            this.spareTypeBindingSource.DataSource = typeof(MIS.Data.SpareType);
             // 
             // spareTypeIDDataGridViewTextBoxColumn
             // 
@@ -121,7 +121,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.spareTypeNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.spareTypeNameDataGridViewTextBoxColumn.DataPropertyName = "SpareTypeName";
-            this.spareTypeNameDataGridViewTextBoxColumn.HeaderText = "Тип запчасти";
+            this.spareTypeNameDataGridViewTextBoxColumn.HeaderText = "Тип услуги";
             this.spareTypeNameDataGridViewTextBoxColumn.Name = "spareTypeNameDataGridViewTextBoxColumn";
             this.spareTypeNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -129,10 +129,10 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.technicTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.technicTypeDataGridViewTextBoxColumn.DataPropertyName = "TechnicType";
-            this.technicTypeDataGridViewTextBoxColumn.HeaderText = "Вид техники";
+            this.technicTypeDataGridViewTextBoxColumn.HeaderText = "Вид техники (удалить)";
             this.technicTypeDataGridViewTextBoxColumn.Name = "technicTypeDataGridViewTextBoxColumn";
             this.technicTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.technicTypeDataGridViewTextBoxColumn.Width = 94;
+            this.technicTypeDataGridViewTextBoxColumn.Width = 131;
             // 
             // EditColumn
             // 
@@ -160,7 +160,7 @@ namespace MIS.Forms.ReferenceForms
             this.Controls.Add(this.dataGridView);
             this.Name = "SpareTypesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Типы запчастей";
+            this.Text = "Типы услуг";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spareTypeBindingSource)).EndInit();
             this.ResumeLayout(false);
