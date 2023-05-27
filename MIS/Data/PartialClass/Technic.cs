@@ -5,7 +5,7 @@ namespace MIS.Data
     {
         public override string ToString()
         {
-            return $"{TechnicType} {Manufacturer} {Model}";
+            return $"{TechnicType}";
         }
        
         public override bool Equals(object obj)

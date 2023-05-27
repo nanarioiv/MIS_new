@@ -91,13 +91,13 @@ namespace MIS.Forms.ReferenceForms
             this.EditColumn,
             this.DeleteColumn});
             this.dataGridView.DataSource = this.technicBindingSource;
-            this.dataGridView.Location = new System.Drawing.Point(12, 152);
+            this.dataGridView.Location = new System.Drawing.Point(12, 87);
             this.dataGridView.MultiSelect = false;
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(762, 299);
+            this.dataGridView.Size = new System.Drawing.Size(762, 225);
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
@@ -133,11 +133,11 @@ namespace MIS.Forms.ReferenceForms
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
             this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdd.Location = new System.Drawing.Point(12, 12);
+            this.buttonAdd.Location = new System.Drawing.Point(12, 23);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(762, 36);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить новую технику";
+            this.buttonAdd.Text = "Добавить результат обращения";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -151,12 +151,13 @@ namespace MIS.Forms.ReferenceForms
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBoxManufacturer);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(12, 54);
+            this.groupBox1.Location = new System.Drawing.Point(12, 234);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(762, 92);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Поиск техники";
+            this.groupBox1.Visible = false;
             // 
             // buttonReset
             // 
@@ -165,7 +166,7 @@ namespace MIS.Forms.ReferenceForms
             this.buttonReset.FlatAppearance.BorderSize = 2;
             this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReset.Image = global::MIS.Properties.Resources.return_24;
-            this.buttonReset.Location = new System.Drawing.Point(699, 29);
+            this.buttonReset.Location = new System.Drawing.Point(412, 28);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(57, 36);
             this.buttonReset.TabIndex = 9;
@@ -190,7 +191,7 @@ namespace MIS.Forms.ReferenceForms
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch.Image = global::MIS.Properties.Resources.search_24;
             this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSearch.Location = new System.Drawing.Point(545, 29);
+            this.buttonSearch.Location = new System.Drawing.Point(233, 29);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(148, 37);
             this.buttonSearch.TabIndex = 10;
@@ -210,35 +211,39 @@ namespace MIS.Forms.ReferenceForms
             // 
             // textBoxModel
             // 
-            this.textBoxModel.Location = new System.Drawing.Point(387, 38);
+            this.textBoxModel.Location = new System.Drawing.Point(571, 72);
             this.textBoxModel.Name = "textBoxModel";
             this.textBoxModel.Size = new System.Drawing.Size(152, 20);
             this.textBoxModel.TabIndex = 8;
+            this.textBoxModel.Visible = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(388, 23);
+            this.label2.Location = new System.Drawing.Point(519, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Модель";
+            this.label2.Visible = false;
             // 
             // textBoxManufacturer
             // 
-            this.textBoxManufacturer.Location = new System.Drawing.Point(216, 38);
+            this.textBoxManufacturer.Location = new System.Drawing.Point(522, 46);
             this.textBoxManufacturer.Name = "textBoxManufacturer";
             this.textBoxManufacturer.Size = new System.Drawing.Size(152, 20);
             this.textBoxManufacturer.TabIndex = 8;
+            this.textBoxManufacturer.Visible = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(213, 23);
+            this.label3.Location = new System.Drawing.Point(519, 21);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Производитель";
+            this.label3.Visible = false;
             // 
             // technicBindingSource
             // 
@@ -260,7 +265,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.technicTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.technicTypeDataGridViewTextBoxColumn.DataPropertyName = "TechnicType";
-            this.technicTypeDataGridViewTextBoxColumn.HeaderText = "Вид техники";
+            this.technicTypeDataGridViewTextBoxColumn.HeaderText = "Результат обращения";
             this.technicTypeDataGridViewTextBoxColumn.Name = "technicTypeDataGridViewTextBoxColumn";
             this.technicTypeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -271,6 +276,7 @@ namespace MIS.Forms.ReferenceForms
             this.manufacturerDataGridViewTextBoxColumn.HeaderText = "Производитель";
             this.manufacturerDataGridViewTextBoxColumn.Name = "manufacturerDataGridViewTextBoxColumn";
             this.manufacturerDataGridViewTextBoxColumn.ReadOnly = true;
+            this.manufacturerDataGridViewTextBoxColumn.Visible = false;
             // 
             // modelDataGridViewTextBoxColumn
             // 
@@ -279,6 +285,7 @@ namespace MIS.Forms.ReferenceForms
             this.modelDataGridViewTextBoxColumn.HeaderText = "Модель";
             this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
             this.modelDataGridViewTextBoxColumn.ReadOnly = true;
+            this.modelDataGridViewTextBoxColumn.Visible = false;
             this.modelDataGridViewTextBoxColumn.Width = 71;
             // 
             // ParametersColumn
@@ -310,13 +317,13 @@ namespace MIS.Forms.ReferenceForms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(786, 463);
+            this.ClientSize = new System.Drawing.Size(786, 339);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.dataGridView);
             this.Name = "TechnicsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Техника";
+            this.Text = "Результаты обращения";
             this.Load += new System.EventHandler(this.TechnicsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
