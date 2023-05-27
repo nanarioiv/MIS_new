@@ -103,9 +103,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 15);
+            this.label2.Size = new System.Drawing.Size(136, 15);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Тип техники";
+            this.label2.Text = "Результат обращения";
             // 
             // label3
             // 
