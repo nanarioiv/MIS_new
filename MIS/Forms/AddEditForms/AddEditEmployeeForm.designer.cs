@@ -53,7 +53,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 76);
+            this.label2.Location = new System.Drawing.Point(12, 6);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 15);
             this.label2.TabIndex = 0;
@@ -63,7 +63,7 @@
             // 
             this.textBoxFName.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxFName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxFName.Location = new System.Drawing.Point(12, 94);
+            this.textBoxFName.Location = new System.Drawing.Point(12, 24);
             this.textBoxFName.MaxLength = 100;
             this.textBoxFName.Name = "textBoxFName";
             this.textBoxFName.Size = new System.Drawing.Size(356, 21);
@@ -105,7 +105,7 @@
             // 
             this.comboBoxPosts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPosts.FormattingEnabled = true;
-            this.comboBoxPosts.Location = new System.Drawing.Point(12, 40);
+            this.comboBoxPosts.Location = new System.Drawing.Point(12, 174);
             this.comboBoxPosts.Name = "comboBoxPosts";
             this.comboBoxPosts.Size = new System.Drawing.Size(356, 23);
             this.comboBoxPosts.TabIndex = 1;
@@ -113,16 +113,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 22);
+            this.label1.Location = new System.Drawing.Point(12, 156);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 15);
+            this.label1.Size = new System.Drawing.Size(98, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Должность";
+            this.label1.Text = "Специальность";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 122);
+            this.label3.Location = new System.Drawing.Point(12, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 15);
             this.label3.TabIndex = 0;
@@ -132,7 +132,7 @@
             // 
             this.textBoxName.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxName.Location = new System.Drawing.Point(12, 140);
+            this.textBoxName.Location = new System.Drawing.Point(12, 70);
             this.textBoxName.MaxLength = 100;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(356, 21);
@@ -141,7 +141,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 170);
+            this.label4.Location = new System.Drawing.Point(12, 100);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 15);
             this.label4.TabIndex = 0;
@@ -151,7 +151,7 @@
             // 
             this.textBoxLName.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxLName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxLName.Location = new System.Drawing.Point(12, 188);
+            this.textBoxLName.Location = new System.Drawing.Point(12, 118);
             this.textBoxLName.MaxLength = 100;
             this.textBoxLName.Name = "textBoxLName";
             this.textBoxLName.Size = new System.Drawing.Size(356, 21);
@@ -206,6 +206,7 @@
             this.groupBox1.Size = new System.Drawing.Size(356, 128);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Данные для авторизации";
             // 
             // textBoxPassword
             // 
