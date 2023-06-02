@@ -119,7 +119,7 @@
             this.textBoxSpare.ReadOnly = true;
             this.textBoxSpare.Size = new System.Drawing.Size(366, 21);
             this.textBoxSpare.TabIndex = 12;
-            this.textBoxSpare.Text = "Запчасть не требуется";
+            this.textBoxSpare.Text = "";
             // 
             // comboBoxEmployees
             // 

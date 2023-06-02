@@ -7,7 +7,7 @@ namespace MIS.Data
         {
             if (SpareType_ID==0)
             {
-                return "Все типы запчастей";
+                return "Все типы услуг";
             }
             return $"{SpareTypeName}";
         }

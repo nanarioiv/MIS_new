@@ -5,7 +5,7 @@ namespace MIS.Data
     {
         public override string ToString()
         {
-            return $"{TechnicType} {SpareType} {SpareName} ({Article})";
+            return $"{SpareName} ({Article})";
         }
 
         public TechnicType TechnicType => SpareType.TechnicType;

@@ -110,7 +110,7 @@ namespace MIS.Forms.AddEditForms
                 comboBoxWorks.SelectedItem = _item.Work;
                 comboBoxEmployees.SelectedItem = _item.Employee;
                 _selectedSpare = _item.Spare;
-                textBoxSpare.Text = _item.Spare == null ? "Запчасть не требуется" : _item.Spare.ToString();
+                textBoxSpare.Text = _item.Spare == null ? "" : _item.Spare.ToString();
                 buttonAddEdit.Image = Resources.save;
             }
             else
@@ -134,7 +134,7 @@ namespace MIS.Forms.AddEditForms
         private void linkLabelDeleteSpare_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             _selectedSpare = null;
-            textBoxSpare.Text = "Запчасть не требуется";
+            textBoxSpare.Text = "";
         }
     }
 }
