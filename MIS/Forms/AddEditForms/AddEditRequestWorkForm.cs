@@ -105,7 +105,7 @@ namespace MIS.Forms.AddEditForms
             if (_item != null)
             {
                 buttonAddEdit.Text = "Сохранить";
-                Text = "Редактирование работы по заявке";
+                Text = "Добавление услуги";
                 textBoxSpare.Text = _item.Spare?.ToString();
                 comboBoxWorks.SelectedItem = _item.Work;
                 comboBoxEmployees.SelectedItem = _item.Employee;

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using MIS.Data;
 using MIS.Forms.MainForms;
 using MIS.Forms.ReferenceForms;
@@ -51,19 +52,19 @@ namespace MIS.Forms.AddEditForms
             var sb = new StringBuilder();
             if (_client == null) 
             {
-                sb.AppendLine($"Не верно заполнено поле {label3.Text}!");
+                sb.AppendLine($"Не заполнено поле {label3.Text}!");
             }
             if (_technic == null)
             {
-                sb.AppendLine($"Не верно заполнено поле {label2.Text}!");
+                sb.AppendLine($"Не заполнено поле {label2.Text}!");
             }
             if (_faultType == null)
             {
-                sb.AppendLine($"Не верно заполнено поле {label1.Text}!");
+                sb.AppendLine($"Не заполнено поле {label1.Text}!");
             }
             if (_status == null)
             {
-                sb.AppendLine($"Не верно заполнено поле {label8.Text}!");
+                sb.AppendLine($"Не заполнено поле {label8.Text}!");
             }
             if (string.IsNullOrWhiteSpace(textBoxDescription.Text))
             {
@@ -137,14 +138,14 @@ namespace MIS.Forms.AddEditForms
             
             if (_item != null)
             {
-                Text = $"Редактирование заявки №{_item.Request_ID}";
+                Text = $"Редактирование посещения №{_item.Request_ID}";
                 buttonAddEdit.Text = "Сохранить";
-
+                textBoxTechnik.Text = _technic?.ToString();          
 
                 textBoxStatus.Text= _item.Status.ToString();
                 textBoxFaultType.Text= _item.FaultType.ToString();
                 textBoxClient.Text = _client.ToString();
-                textBoxTechnik.Text = _technic.ToString();
+                textBoxTechnik.Text = _technic.ToString() == null ? "" : _technic.ToString(); ;
                
                 
                 dateTimePickerCreate.Value= _item.RequestDt;

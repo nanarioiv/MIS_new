@@ -112,6 +112,7 @@
             this.textBoxTechnik.Size = new System.Drawing.Size(320, 20);
             this.textBoxTechnik.TabIndex = 1;
             this.textBoxTechnik.TabStop = false;
+            this.textBoxTechnik.Text = "";
             // 
             // label5
             // 
