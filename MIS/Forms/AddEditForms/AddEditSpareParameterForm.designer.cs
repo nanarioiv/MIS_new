@@ -65,7 +65,7 @@
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Image = global::MIS.Properties.Resources.delete_16;
             this.buttonCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonCancel.Location = new System.Drawing.Point(215, 166);
+            this.buttonCancel.Location = new System.Drawing.Point(215, 138);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(153, 34);
             this.buttonCancel.TabIndex = 4;
@@ -80,7 +80,7 @@
             this.buttonAddEdit.FlatAppearance.BorderSize = 2;
             this.buttonAddEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAddEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAddEdit.Location = new System.Drawing.Point(12, 166);
+            this.buttonAddEdit.Location = new System.Drawing.Point(12, 138);
             this.buttonAddEdit.Name = "buttonAddEdit";
             this.buttonAddEdit.Size = new System.Drawing.Size(153, 34);
             this.buttonAddEdit.TabIndex = 3;
@@ -112,7 +112,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(380, 212);
+            this.ClientSize = new System.Drawing.Size(380, 184);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonAddEdit);
             this.Controls.Add(this.textBoxValue);

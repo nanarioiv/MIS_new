@@ -30,7 +30,6 @@
         {
             this.buttonAddEdit = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.linkLabelDeleteSpare = new System.Windows.Forms.LinkLabel();
             this.linkLabelSearchSpare = new System.Windows.Forms.LinkLabel();
             this.textBoxSpare = new System.Windows.Forms.TextBox();
@@ -40,7 +39,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonAddEdit
@@ -51,7 +49,7 @@
             this.buttonAddEdit.FlatAppearance.BorderSize = 2;
             this.buttonAddEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAddEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAddEdit.Location = new System.Drawing.Point(12, 320);
+            this.buttonAddEdit.Location = new System.Drawing.Point(12, 193);
             this.buttonAddEdit.Name = "buttonAddEdit";
             this.buttonAddEdit.Size = new System.Drawing.Size(153, 34);
             this.buttonAddEdit.TabIndex = 3;
@@ -68,34 +66,19 @@
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Image = global::MIS.Properties.Resources.delete_16;
             this.buttonCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonCancel.Location = new System.Drawing.Point(237, 320);
+            this.buttonCancel.Location = new System.Drawing.Point(237, 193);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(153, 34);
             this.buttonCancel.TabIndex = 4;
             this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = false;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.linkLabelDeleteSpare);
-            this.groupBox1.Controls.Add(this.linkLabelSearchSpare);
-            this.groupBox1.Controls.Add(this.textBoxSpare);
-            this.groupBox1.Controls.Add(this.comboBoxEmployees);
-            this.groupBox1.Controls.Add(this.comboBoxWorks);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(378, 210);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            // 
             // linkLabelDeleteSpare
             // 
             this.linkLabelDeleteSpare.AutoSize = true;
-            this.linkLabelDeleteSpare.Location = new System.Drawing.Point(308, 151);
+            this.linkLabelDeleteSpare.Location = new System.Drawing.Point(327, 124);
             this.linkLabelDeleteSpare.Name = "linkLabelDeleteSpare";
-            this.linkLabelDeleteSpare.Size = new System.Drawing.Size(80, 22);
+            this.linkLabelDeleteSpare.Size = new System.Drawing.Size(57, 15);
             this.linkLabelDeleteSpare.TabIndex = 14;
             this.linkLabelDeleteSpare.TabStop = true;
             this.linkLabelDeleteSpare.Text = "Удалить";
@@ -104,86 +87,94 @@
             // linkLabelSearchSpare
             // 
             this.linkLabelSearchSpare.AutoSize = true;
-            this.linkLabelSearchSpare.Location = new System.Drawing.Point(6, 150);
+            this.linkLabelSearchSpare.Location = new System.Drawing.Point(18, 124);
             this.linkLabelSearchSpare.Name = "linkLabelSearchSpare";
-            this.linkLabelSearchSpare.Size = new System.Drawing.Size(166, 22);
+            this.linkLabelSearchSpare.Size = new System.Drawing.Size(112, 15);
             this.linkLabelSearchSpare.TabIndex = 13;
             this.linkLabelSearchSpare.TabStop = true;
-            this.linkLabelSearchSpare.Text = "Поиск Расходники";
+            this.linkLabelSearchSpare.Text = "Поиск расходника";
             this.linkLabelSearchSpare.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelSearchSpare_LinkClicked);
             // 
             // textBoxSpare
             // 
-            this.textBoxSpare.Location = new System.Drawing.Point(6, 169);
+            this.textBoxSpare.Location = new System.Drawing.Point(18, 142);
             this.textBoxSpare.Name = "textBoxSpare";
             this.textBoxSpare.ReadOnly = true;
-            this.textBoxSpare.Size = new System.Drawing.Size(366, 28);
+            this.textBoxSpare.Size = new System.Drawing.Size(366, 21);
             this.textBoxSpare.TabIndex = 12;
             // 
             // comboBoxEmployees
             // 
             this.comboBoxEmployees.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxEmployees.FormattingEnabled = true;
-            this.comboBoxEmployees.Location = new System.Drawing.Point(6, 103);
+            this.comboBoxEmployees.Location = new System.Drawing.Point(18, 80);
             this.comboBoxEmployees.Name = "comboBoxEmployees";
-            this.comboBoxEmployees.Size = new System.Drawing.Size(366, 30);
+            this.comboBoxEmployees.Size = new System.Drawing.Size(366, 23);
             this.comboBoxEmployees.TabIndex = 10;
             // 
             // comboBoxWorks
             // 
             this.comboBoxWorks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxWorks.FormattingEnabled = true;
-            this.comboBoxWorks.Location = new System.Drawing.Point(6, 37);
+            this.comboBoxWorks.Location = new System.Drawing.Point(18, 29);
             this.comboBoxWorks.Name = "comboBoxWorks";
-            this.comboBoxWorks.Size = new System.Drawing.Size(366, 30);
+            this.comboBoxWorks.Size = new System.Drawing.Size(366, 23);
             this.comboBoxWorks.TabIndex = 11;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 85);
+            this.label2.Location = new System.Drawing.Point(18, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(363, 22);
+            this.label2.Size = new System.Drawing.Size(250, 15);
             this.label2.TabIndex = 8;
             this.label2.Text = "Сотрудник выполняющий работу (скрыть)";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 19);
+            this.label1.Location = new System.Drawing.Point(18, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 22);
+            this.label1.Size = new System.Drawing.Size(45, 15);
             this.label1.TabIndex = 9;
             this.label1.Text = "Услуга";
             // 
             // dateTimePicker
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(18, 253);
+            this.dateTimePicker.Location = new System.Drawing.Point(252, 169);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(200, 28);
+            this.dateTimePicker.Size = new System.Drawing.Size(116, 21);
             this.dateTimePicker.TabIndex = 6;
+            this.dateTimePicker.Visible = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 235);
+            this.label3.Location = new System.Drawing.Point(9, 169);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(301, 22);
+            this.label3.Size = new System.Drawing.Size(212, 15);
             this.label3.TabIndex = 8;
             this.label3.Text = "Дата выполнения работы (скрыть)";
+            this.label3.Visible = false;
             // 
             // AddEditRequestWorkForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(402, 366);
+            this.ClientSize = new System.Drawing.Size(402, 239);
+            this.Controls.Add(this.linkLabelDeleteSpare);
             this.Controls.Add(this.dateTimePicker);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.textBoxSpare);
+            this.Controls.Add(this.linkLabelSearchSpare);
             this.Controls.Add(this.buttonCancel);
+            this.Controls.Add(this.comboBoxEmployees);
             this.Controls.Add(this.buttonAddEdit);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboBoxWorks);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -191,8 +182,6 @@
             this.Name = "AddEditRequestWorkForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,7 +190,6 @@
         #endregion
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button buttonAddEdit;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.LinkLabel linkLabelSearchSpare;
         private System.Windows.Forms.TextBox textBoxSpare;
         private System.Windows.Forms.ComboBox comboBoxEmployees;

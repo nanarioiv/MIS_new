@@ -45,9 +45,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 15);
+            this.label1.Size = new System.Drawing.Size(79, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Детали";
+            this.label1.Text = "№ Кабинета";
             // 
             // textBoxModel
             // 
@@ -106,18 +106,18 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 15);
+            this.label2.Size = new System.Drawing.Size(72, 15);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Тип назначения";
+            this.label2.Text = "Отделение";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 75);
+            this.label3.Location = new System.Drawing.Point(9, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(304, 15);
+            this.label3.Size = new System.Drawing.Size(86, 15);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Фирма производитель (сделать необязательным)";
+            this.label3.Text = "Тип кабинета";
             // 
             // comboBoxManufacturer
             // 
