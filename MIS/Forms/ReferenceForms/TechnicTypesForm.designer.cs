@@ -100,7 +100,7 @@ namespace MIS.Forms.ReferenceForms
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(443, 36);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить тип назначения";
+            this.buttonAdd.Text = "Добавить отделение";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -119,7 +119,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.technicTypeNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.technicTypeNameDataGridViewTextBoxColumn.DataPropertyName = "TechnicTypeName";
-            this.technicTypeNameDataGridViewTextBoxColumn.HeaderText = "Тип назначения";
+            this.technicTypeNameDataGridViewTextBoxColumn.HeaderText = "Отделение";
             this.technicTypeNameDataGridViewTextBoxColumn.Name = "technicTypeNameDataGridViewTextBoxColumn";
             this.technicTypeNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -149,7 +149,7 @@ namespace MIS.Forms.ReferenceForms
             this.Controls.Add(this.dataGridView);
             this.Name = "TechnicTypesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Типы назначения";
+            this.Text = "Отделения";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.technicTypeBindingSource)).EndInit();
             this.ResumeLayout(false);
