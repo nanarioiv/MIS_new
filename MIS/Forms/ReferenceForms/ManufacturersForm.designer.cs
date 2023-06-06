@@ -34,12 +34,12 @@ namespace MIS.Forms.ReferenceForms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.manufacturerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.manufacturerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.manufacturerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,28 @@ namespace MIS.Forms.ReferenceForms
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
+            // manufacturerBindingSource
+            // 
+            this.manufacturerBindingSource.DataSource = typeof(MIS.Data.Manufacturer);
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAdd.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonAdd.FlatAppearance.BorderSize = 2;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
+            this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdd.Location = new System.Drawing.Point(12, 12);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(567, 36);
+            this.buttonAdd.TabIndex = 3;
+            this.buttonAdd.Text = "Добавить тип кабинета";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
             // manufacturerIDDataGridViewTextBoxColumn
             // 
             this.manufacturerIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -97,7 +119,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.manufacturerNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.manufacturerNameDataGridViewTextBoxColumn.DataPropertyName = "ManufacturerName";
-            this.manufacturerNameDataGridViewTextBoxColumn.HeaderText = "Фирма производитель";
+            this.manufacturerNameDataGridViewTextBoxColumn.HeaderText = "Тип кабинета";
             this.manufacturerNameDataGridViewTextBoxColumn.Name = "manufacturerNameDataGridViewTextBoxColumn";
             this.manufacturerNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -117,28 +139,6 @@ namespace MIS.Forms.ReferenceForms
             this.DeleteColumn.ReadOnly = true;
             this.DeleteColumn.Width = 30;
             // 
-            // manufacturerBindingSource
-            // 
-            this.manufacturerBindingSource.DataSource = typeof(MIS.Data.Manufacturer);
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAdd.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.buttonAdd.FlatAppearance.BorderSize = 2;
-            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
-            this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdd.Location = new System.Drawing.Point(12, 12);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(567, 36);
-            this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить производителя";
-            this.buttonAdd.UseVisualStyleBackColor = false;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            // 
             // ManufacturersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,7 +149,7 @@ namespace MIS.Forms.ReferenceForms
             this.Controls.Add(this.dataGridView);
             this.Name = "ManufacturersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Фирмы производители (Скрыть форму)";
+            this.Text = "Типы кабинета";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource)).EndInit();
             this.ResumeLayout(false);
