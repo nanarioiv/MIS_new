@@ -95,7 +95,7 @@
             this.linkLabelDeleteSpare.AutoSize = true;
             this.linkLabelDeleteSpare.Location = new System.Drawing.Point(308, 151);
             this.linkLabelDeleteSpare.Name = "linkLabelDeleteSpare";
-            this.linkLabelDeleteSpare.Size = new System.Drawing.Size(57, 15);
+            this.linkLabelDeleteSpare.Size = new System.Drawing.Size(80, 22);
             this.linkLabelDeleteSpare.TabIndex = 14;
             this.linkLabelDeleteSpare.TabStop = true;
             this.linkLabelDeleteSpare.Text = "Удалить";
@@ -106,10 +106,10 @@
             this.linkLabelSearchSpare.AutoSize = true;
             this.linkLabelSearchSpare.Location = new System.Drawing.Point(6, 150);
             this.linkLabelSearchSpare.Name = "linkLabelSearchSpare";
-            this.linkLabelSearchSpare.Size = new System.Drawing.Size(80, 15);
+            this.linkLabelSearchSpare.Size = new System.Drawing.Size(166, 22);
             this.linkLabelSearchSpare.TabIndex = 13;
             this.linkLabelSearchSpare.TabStop = true;
-            this.linkLabelSearchSpare.Text = "Поиск услуги";
+            this.linkLabelSearchSpare.Text = "Поиск Расходники";
             this.linkLabelSearchSpare.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelSearchSpare_LinkClicked);
             // 
             // textBoxSpare
@@ -117,9 +117,8 @@
             this.textBoxSpare.Location = new System.Drawing.Point(6, 169);
             this.textBoxSpare.Name = "textBoxSpare";
             this.textBoxSpare.ReadOnly = true;
-            this.textBoxSpare.Size = new System.Drawing.Size(366, 21);
+            this.textBoxSpare.Size = new System.Drawing.Size(366, 28);
             this.textBoxSpare.TabIndex = 12;
-            this.textBoxSpare.Text = "";
             // 
             // comboBoxEmployees
             // 
@@ -127,7 +126,7 @@
             this.comboBoxEmployees.FormattingEnabled = true;
             this.comboBoxEmployees.Location = new System.Drawing.Point(6, 103);
             this.comboBoxEmployees.Name = "comboBoxEmployees";
-            this.comboBoxEmployees.Size = new System.Drawing.Size(366, 23);
+            this.comboBoxEmployees.Size = new System.Drawing.Size(366, 30);
             this.comboBoxEmployees.TabIndex = 10;
             // 
             // comboBoxWorks
@@ -136,7 +135,7 @@
             this.comboBoxWorks.FormattingEnabled = true;
             this.comboBoxWorks.Location = new System.Drawing.Point(6, 37);
             this.comboBoxWorks.Name = "comboBoxWorks";
-            this.comboBoxWorks.Size = new System.Drawing.Size(366, 23);
+            this.comboBoxWorks.Size = new System.Drawing.Size(366, 30);
             this.comboBoxWorks.TabIndex = 11;
             // 
             // label2
@@ -144,7 +143,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(250, 15);
+            this.label2.Size = new System.Drawing.Size(363, 22);
             this.label2.TabIndex = 8;
             this.label2.Text = "Сотрудник выполняющий работу (скрыть)";
             // 
@@ -153,15 +152,15 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 15);
+            this.label1.Size = new System.Drawing.Size(67, 22);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Работа по заявке";
+            this.label1.Text = "Услуга";
             // 
             // dateTimePicker
             // 
             this.dateTimePicker.Location = new System.Drawing.Point(18, 253);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(200, 21);
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 28);
             this.dateTimePicker.TabIndex = 6;
             // 
             // label3
@@ -169,13 +168,13 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(18, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(212, 15);
+            this.label3.Size = new System.Drawing.Size(301, 22);
             this.label3.TabIndex = 8;
             this.label3.Text = "Дата выполнения работы (скрыть)";
             // 
             // AddEditRequestWorkForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;

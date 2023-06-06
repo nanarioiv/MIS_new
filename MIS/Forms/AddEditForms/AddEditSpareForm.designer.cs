@@ -45,20 +45,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 142);
+            this.label1.Location = new System.Drawing.Point(12, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 15);
+            this.label1.Size = new System.Drawing.Size(195, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Название услуги";
+            this.label1.Text = "Название расходника";
             // 
             // textBoxSpareName
             // 
             this.textBoxSpareName.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxSpareName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSpareName.Location = new System.Drawing.Point(12, 161);
+            this.textBoxSpareName.Location = new System.Drawing.Point(13, 118);
             this.textBoxSpareName.MaxLength = 100;
             this.textBoxSpareName.Name = "textBoxSpareName";
-            this.textBoxSpareName.Size = new System.Drawing.Size(356, 21);
+            this.textBoxSpareName.Size = new System.Drawing.Size(356, 28);
             this.textBoxSpareName.TabIndex = 1;
             // 
             // buttonCancel
@@ -97,26 +97,26 @@
             // 
             this.comboBoxSpareType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSpareType.FormattingEnabled = true;
-            this.comboBoxSpareType.Location = new System.Drawing.Point(12, 99);
+            this.comboBoxSpareType.Location = new System.Drawing.Point(12, 34);
             this.comboBoxSpareType.Name = "comboBoxSpareType";
-            this.comboBoxSpareType.Size = new System.Drawing.Size(356, 23);
+            this.comboBoxSpareType.Size = new System.Drawing.Size(356, 30);
             this.comboBoxSpareType.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 81);
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 15);
+            this.label2.Size = new System.Drawing.Size(145, 22);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Тип услуги";
+            this.label2.Text = "Тип расходника";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 203);
+            this.label3.Location = new System.Drawing.Point(12, 170);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 15);
+            this.label3.Size = new System.Drawing.Size(78, 22);
             this.label3.TabIndex = 0;
             this.label3.Text = "Артикул";
             // 
@@ -124,10 +124,10 @@
             // 
             this.textBoxArticle.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxArticle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxArticle.Location = new System.Drawing.Point(12, 221);
+            this.textBoxArticle.Location = new System.Drawing.Point(16, 205);
             this.textBoxArticle.MaxLength = 100;
             this.textBoxArticle.Name = "textBoxArticle";
-            this.textBoxArticle.Size = new System.Drawing.Size(356, 21);
+            this.textBoxArticle.Size = new System.Drawing.Size(356, 28);
             this.textBoxArticle.TabIndex = 1;
             // 
             // label4
@@ -135,7 +135,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 264);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 15);
+            this.label4.Size = new System.Drawing.Size(100, 22);
             this.label4.TabIndex = 0;
             this.label4.Text = "Стоимость";
             // 
@@ -143,18 +143,18 @@
             // 
             this.textBoxPrice.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxPrice.Location = new System.Drawing.Point(12, 281);
+            this.textBoxPrice.Location = new System.Drawing.Point(12, 289);
             this.textBoxPrice.MaxLength = 100;
             this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(153, 21);
+            this.textBoxPrice.Size = new System.Drawing.Size(153, 28);
             this.textBoxPrice.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 20);
+            this.label5.Location = new System.Drawing.Point(172, 274);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(136, 15);
+            this.label5.Size = new System.Drawing.Size(197, 22);
             this.label5.TabIndex = 0;
             this.label5.Text = "Тип техники (удалить)";
             // 
@@ -162,15 +162,15 @@
             // 
             this.comboBoxTechnicType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTechnicType.FormattingEnabled = true;
-            this.comboBoxTechnicType.Location = new System.Drawing.Point(12, 37);
+            this.comboBoxTechnicType.Location = new System.Drawing.Point(186, 299);
             this.comboBoxTechnicType.Name = "comboBoxTechnicType";
-            this.comboBoxTechnicType.Size = new System.Drawing.Size(356, 23);
+            this.comboBoxTechnicType.Size = new System.Drawing.Size(183, 30);
             this.comboBoxTechnicType.TabIndex = 5;
             this.comboBoxTechnicType.SelectedIndexChanged += new System.EventHandler(this.comboBoxTechnicType_SelectedIndexChanged);
             // 
             // AddEditSpareForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;

@@ -99,13 +99,15 @@ namespace MIS.Forms.MainForms
             this.EditColumn,
             this.DeleteColumn});
             this.dataGridView.DataSource = this.spareBindingSource;
-            this.dataGridView.Location = new System.Drawing.Point(12, 182);
+            this.dataGridView.Location = new System.Drawing.Point(18, 280);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView.MultiSelect = false;
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
+            this.dataGridView.RowHeadersWidth = 62;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(715, 373);
+            this.dataGridView.Size = new System.Drawing.Size(1072, 574);
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
@@ -126,18 +128,21 @@ namespace MIS.Forms.MainForms
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.comboBoxSpareType);
             this.groupBox1.Controls.Add(this.comboBoxTechnicType);
-            this.groupBox1.Location = new System.Drawing.Point(12, 54);
+            this.groupBox1.Location = new System.Drawing.Point(18, 83);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(715, 122);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(1072, 188);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Поиск";
             // 
             // textBoxAricle
             // 
-            this.textBoxAricle.Location = new System.Drawing.Point(264, 87);
+            this.textBoxAricle.Location = new System.Drawing.Point(396, 134);
+            this.textBoxAricle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxAricle.Name = "textBoxAricle";
-            this.textBoxAricle.Size = new System.Drawing.Size(220, 20);
+            this.textBoxAricle.Size = new System.Drawing.Size(328, 26);
             this.textBoxAricle.TabIndex = 2;
             // 
             // buttonReset
@@ -147,9 +152,10 @@ namespace MIS.Forms.MainForms
             this.buttonReset.FlatAppearance.BorderSize = 2;
             this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReset.Image = global::MIS.Properties.Resources.return_24;
-            this.buttonReset.Location = new System.Drawing.Point(508, 80);
+            this.buttonReset.Location = new System.Drawing.Point(762, 123);
+            this.buttonReset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(192, 36);
+            this.buttonReset.Size = new System.Drawing.Size(288, 55);
             this.buttonReset.TabIndex = 3;
             this.buttonReset.TabStop = false;
             this.buttonReset.UseVisualStyleBackColor = false;
@@ -163,9 +169,10 @@ namespace MIS.Forms.MainForms
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch.Image = global::MIS.Properties.Resources.search_24;
             this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSearch.Location = new System.Drawing.Point(508, 26);
+            this.buttonSearch.Location = new System.Drawing.Point(762, 40);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(192, 48);
+            this.buttonSearch.Size = new System.Drawing.Size(288, 74);
             this.buttonSearch.TabIndex = 3;
             this.buttonSearch.TabStop = false;
             this.buttonSearch.Text = "Поиск";
@@ -174,44 +181,49 @@ namespace MIS.Forms.MainForms
             // 
             // textBoxSpareName
             // 
-            this.textBoxSpareName.Location = new System.Drawing.Point(264, 35);
+            this.textBoxSpareName.Location = new System.Drawing.Point(396, 54);
+            this.textBoxSpareName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxSpareName.Name = "textBoxSpareName";
-            this.textBoxSpareName.Size = new System.Drawing.Size(220, 20);
+            this.textBoxSpareName.Size = new System.Drawing.Size(328, 26);
             this.textBoxSpareName.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(261, 71);
+            this.label4.Location = new System.Drawing.Point(392, 109);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 13);
+            this.label4.Size = new System.Drawing.Size(72, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "Артикул";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 70);
+            this.label2.Location = new System.Drawing.Point(21, 108);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.Size = new System.Drawing.Size(128, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Тип услуги";
+            this.label2.Text = "Тип расходника";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(261, 19);
+            this.label3.Location = new System.Drawing.Point(392, 29);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 13);
+            this.label3.Size = new System.Drawing.Size(214, 20);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Наименование услуги";
+            this.label3.Text = "Наименование расходника";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 19);
+            this.label1.Location = new System.Drawing.Point(21, 29);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 13);
+            this.label1.Size = new System.Drawing.Size(178, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Тип техники (удалить)";
             // 
@@ -219,18 +231,20 @@ namespace MIS.Forms.MainForms
             // 
             this.comboBoxSpareType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSpareType.FormattingEnabled = true;
-            this.comboBoxSpareType.Location = new System.Drawing.Point(17, 86);
+            this.comboBoxSpareType.Location = new System.Drawing.Point(26, 132);
+            this.comboBoxSpareType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxSpareType.Name = "comboBoxSpareType";
-            this.comboBoxSpareType.Size = new System.Drawing.Size(229, 21);
+            this.comboBoxSpareType.Size = new System.Drawing.Size(342, 28);
             this.comboBoxSpareType.TabIndex = 0;
             // 
             // comboBoxTechnicType
             // 
             this.comboBoxTechnicType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTechnicType.FormattingEnabled = true;
-            this.comboBoxTechnicType.Location = new System.Drawing.Point(17, 35);
+            this.comboBoxTechnicType.Location = new System.Drawing.Point(26, 54);
+            this.comboBoxTechnicType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxTechnicType.Name = "comboBoxTechnicType";
-            this.comboBoxTechnicType.Size = new System.Drawing.Size(229, 21);
+            this.comboBoxTechnicType.Size = new System.Drawing.Size(342, 28);
             this.comboBoxTechnicType.TabIndex = 0;
             this.comboBoxTechnicType.SelectedIndexChanged += new System.EventHandler(this.comboBoxTechnicType_SelectedIndexChanged);
             // 
@@ -238,6 +252,7 @@ namespace MIS.Forms.MainForms
             // 
             this.dataGridViewImageColumn1.HeaderText = "";
             this.dataGridViewImageColumn1.Image = global::MIS.Properties.Resources.edit_16;
+            this.dataGridViewImageColumn1.MinimumWidth = 8;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.ReadOnly = true;
             this.dataGridViewImageColumn1.Width = 30;
@@ -246,6 +261,7 @@ namespace MIS.Forms.MainForms
             // 
             this.dataGridViewImageColumn2.HeaderText = "";
             this.dataGridViewImageColumn2.Image = global::MIS.Properties.Resources.delete_16;
+            this.dataGridViewImageColumn2.MinimumWidth = 8;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Width = 30;
@@ -260,11 +276,12 @@ namespace MIS.Forms.MainForms
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
             this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdd.Location = new System.Drawing.Point(12, 12);
+            this.buttonAdd.Location = new System.Drawing.Point(18, 18);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(715, 36);
+            this.buttonAdd.Size = new System.Drawing.Size(1072, 55);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить новую услугу";
+            this.buttonAdd.Text = "Добавить новый расходник";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -279,33 +296,37 @@ namespace MIS.Forms.MainForms
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.spareIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.spareIDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.spareIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.spareIDDataGridViewTextBoxColumn.Name = "spareIDDataGridViewTextBoxColumn";
             this.spareIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.spareIDDataGridViewTextBoxColumn.Width = 43;
+            this.spareIDDataGridViewTextBoxColumn.Width = 62;
             // 
             // TechnicType
             // 
             this.TechnicType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.TechnicType.DataPropertyName = "TechnicType";
             this.TechnicType.HeaderText = "Тип техники (удалить, скрыть, необязат)";
+            this.TechnicType.MinimumWidth = 8;
             this.TechnicType.Name = "TechnicType";
             this.TechnicType.ReadOnly = true;
-            this.TechnicType.Width = 172;
+            this.TechnicType.Width = 279;
             // 
             // spareTypeDataGridViewTextBoxColumn
             // 
             this.spareTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.spareTypeDataGridViewTextBoxColumn.DataPropertyName = "SpareType";
-            this.spareTypeDataGridViewTextBoxColumn.HeaderText = "Тип услуги";
+            this.spareTypeDataGridViewTextBoxColumn.HeaderText = "Тип расходника";
+            this.spareTypeDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.spareTypeDataGridViewTextBoxColumn.Name = "spareTypeDataGridViewTextBoxColumn";
             this.spareTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.spareTypeDataGridViewTextBoxColumn.Width = 80;
+            this.spareTypeDataGridViewTextBoxColumn.Width = 163;
             // 
             // spareNameDataGridViewTextBoxColumn
             // 
             this.spareNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.spareNameDataGridViewTextBoxColumn.DataPropertyName = "SpareName";
             this.spareNameDataGridViewTextBoxColumn.HeaderText = "Наименование";
+            this.spareNameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.spareNameDataGridViewTextBoxColumn.Name = "spareNameDataGridViewTextBoxColumn";
             this.spareNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -314,9 +335,10 @@ namespace MIS.Forms.MainForms
             this.articleDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.articleDataGridViewTextBoxColumn.DataPropertyName = "Article";
             this.articleDataGridViewTextBoxColumn.HeaderText = "Артикул";
+            this.articleDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.articleDataGridViewTextBoxColumn.Name = "articleDataGridViewTextBoxColumn";
             this.articleDataGridViewTextBoxColumn.ReadOnly = true;
-            this.articleDataGridViewTextBoxColumn.Width = 73;
+            this.articleDataGridViewTextBoxColumn.Width = 114;
             // 
             // priceDataGridViewTextBoxColumn
             // 
@@ -327,22 +349,26 @@ namespace MIS.Forms.MainForms
             dataGridViewCellStyle4.NullValue = null;
             this.priceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
             this.priceDataGridViewTextBoxColumn.HeaderText = "Стоимость";
+            this.priceDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.priceDataGridViewTextBoxColumn.Width = 87;
+            this.priceDataGridViewTextBoxColumn.Width = 138;
             // 
             // SpareParametersColumn
             // 
             this.SpareParametersColumn.HeaderText = "";
             this.SpareParametersColumn.Image = global::MIS.Properties.Resources.iconfinder_category_103432;
+            this.SpareParametersColumn.MinimumWidth = 8;
             this.SpareParametersColumn.Name = "SpareParametersColumn";
             this.SpareParametersColumn.ReadOnly = true;
+            this.SpareParametersColumn.Visible = false;
             this.SpareParametersColumn.Width = 30;
             // 
             // EditColumn
             // 
             this.EditColumn.HeaderText = "";
             this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
+            this.EditColumn.MinimumWidth = 8;
             this.EditColumn.Name = "EditColumn";
             this.EditColumn.ReadOnly = true;
             this.EditColumn.Width = 30;
@@ -351,22 +377,24 @@ namespace MIS.Forms.MainForms
             // 
             this.DeleteColumn.HeaderText = "";
             this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
+            this.DeleteColumn.MinimumWidth = 8;
             this.DeleteColumn.Name = "DeleteColumn";
             this.DeleteColumn.ReadOnly = true;
             this.DeleteColumn.Width = 30;
             // 
             // SparesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(739, 567);
+            this.ClientSize = new System.Drawing.Size(1108, 872);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.dataGridView);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SparesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Услуги";
+            this.Text = "Расходные материалы";
             this.Load += new System.EventHandler(this.SparesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spareBindingSource)).EndInit();

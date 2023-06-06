@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 15);
+            this.label1.Size = new System.Drawing.Size(136, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Наименование";
             // 
@@ -54,7 +54,7 @@
             this.textBoxWorkName.Location = new System.Drawing.Point(12, 42);
             this.textBoxWorkName.MaxLength = 100;
             this.textBoxWorkName.Name = "textBoxWorkName";
-            this.textBoxWorkName.Size = new System.Drawing.Size(356, 21);
+            this.textBoxWorkName.Size = new System.Drawing.Size(356, 28);
             this.textBoxWorkName.TabIndex = 1;
             // 
             // buttonCancel
@@ -94,9 +94,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 15);
+            this.label2.Size = new System.Drawing.Size(100, 22);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Стоимость (удалить)";
+            this.label2.Text = "Стоимость";
             // 
             // textBoxPrice
             // 
@@ -105,7 +105,7 @@
             this.textBoxPrice.Location = new System.Drawing.Point(12, 95);
             this.textBoxPrice.MaxLength = 100;
             this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(145, 21);
+            this.textBoxPrice.Size = new System.Drawing.Size(145, 28);
             this.textBoxPrice.TabIndex = 2;
             // 
             // label3
@@ -113,7 +113,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.Size = new System.Drawing.Size(93, 22);
             this.label3.TabIndex = 0;
             this.label3.Text = "Описание";
             // 
@@ -130,7 +130,7 @@
             // 
             // AddEditWorkForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;

@@ -77,13 +77,15 @@ namespace MIS.Forms.ReferenceForms
             this.EditColumn,
             this.DeleteColumn});
             this.dataGridView.DataSource = this.workBindingSource;
-            this.dataGridView.Location = new System.Drawing.Point(12, 69);
+            this.dataGridView.Location = new System.Drawing.Point(18, 106);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView.MultiSelect = false;
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
+            this.dataGridView.RowHeadersWidth = 62;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(567, 299);
+            this.dataGridView.Size = new System.Drawing.Size(850, 460);
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
@@ -101,11 +103,12 @@ namespace MIS.Forms.ReferenceForms
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
             this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdd.Location = new System.Drawing.Point(12, 12);
+            this.buttonAdd.Location = new System.Drawing.Point(18, 18);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(567, 36);
+            this.buttonAdd.Size = new System.Drawing.Size(850, 55);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить категорию услуги";
+            this.buttonAdd.Text = "Добавить услугу";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -116,15 +119,17 @@ namespace MIS.Forms.ReferenceForms
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.workIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.workIDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.workIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.workIDDataGridViewTextBoxColumn.Name = "workIDDataGridViewTextBoxColumn";
             this.workIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.workIDDataGridViewTextBoxColumn.Width = 43;
+            this.workIDDataGridViewTextBoxColumn.Width = 62;
             // 
             // workNameDataGridViewTextBoxColumn
             // 
             this.workNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.workNameDataGridViewTextBoxColumn.DataPropertyName = "WorkName";
-            this.workNameDataGridViewTextBoxColumn.HeaderText = "Категория";
+            this.workNameDataGridViewTextBoxColumn.HeaderText = "Услуга";
+            this.workNameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.workNameDataGridViewTextBoxColumn.Name = "workNameDataGridViewTextBoxColumn";
             this.workNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -136,15 +141,17 @@ namespace MIS.Forms.ReferenceForms
             dataGridViewCellStyle4.Format = "C2";
             dataGridViewCellStyle4.NullValue = null;
             this.priceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Стоимость (удалить)";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Стоимость";
+            this.priceDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.priceDataGridViewTextBoxColumn.Width = 124;
+            this.priceDataGridViewTextBoxColumn.Width = 138;
             // 
             // DescriptionColumn
             // 
             this.DescriptionColumn.HeaderText = "";
             this.DescriptionColumn.Image = global::MIS.Properties.Resources.description;
+            this.DescriptionColumn.MinimumWidth = 8;
             this.DescriptionColumn.Name = "DescriptionColumn";
             this.DescriptionColumn.ReadOnly = true;
             this.DescriptionColumn.Width = 30;
@@ -153,6 +160,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.EditColumn.HeaderText = "";
             this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
+            this.EditColumn.MinimumWidth = 8;
             this.EditColumn.Name = "EditColumn";
             this.EditColumn.ReadOnly = true;
             this.EditColumn.Width = 30;
@@ -161,21 +169,23 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.DeleteColumn.HeaderText = "";
             this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
+            this.DeleteColumn.MinimumWidth = 8;
             this.DeleteColumn.Name = "DeleteColumn";
             this.DeleteColumn.ReadOnly = true;
             this.DeleteColumn.Width = 30;
             // 
             // WorksForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(591, 380);
+            this.ClientSize = new System.Drawing.Size(886, 585);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.dataGridView);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "WorksForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Категории услуг";
+            this.Text = "Услуги";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.workBindingSource)).EndInit();
             this.ResumeLayout(false);
