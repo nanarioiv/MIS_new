@@ -7,7 +7,7 @@ namespace MIS.Data
         {
             if (Work_ID==0)
             {
-                return "Все виды работ";
+                return "Все услуги";
             }
             return $"{WorkName}";
         }

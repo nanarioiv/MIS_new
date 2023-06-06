@@ -204,11 +204,11 @@ namespace MIS.Forms
         /// </summary>
         private void InitComboBoxes()
         {
-            _faultTypes=new List<FaultType>(){new FaultType(){FaultTypeName = "Все типы поломок"}};
+            _faultTypes=new List<FaultType>(){new FaultType(){FaultTypeName = "Все диагнозы"}};
             _faultTypes.AddRange(_repository.GetEntityes<FaultType>());
             comboBoxFaultTypes.DataSource = _faultTypes;
 
-            _statuses=new List<Status>(){new Status(){StatusName = "Все статусы заявок"}};
+            _statuses=new List<Status>(){new Status(){StatusName = "Все виды оплаты"}};
             _statuses.AddRange(_repository.GetEntityes<Status>());
             comboBoxStatuses.DataSource = _statuses;
 
@@ -257,7 +257,7 @@ namespace MIS.Forms
                 if (!int.TryParse(textBoxRequestId.Text, out requestId))
                 {
                     // если ввели слишком большое или слишком маленькое значение для типа int
-                    MessageBox.Show("Не верно введен номер заявки!", "Ошибка", MessageBoxButtons.OK,
+                    MessageBox.Show("Неверно введен номер посещения!", "Ошибка", MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
                 }
             }
