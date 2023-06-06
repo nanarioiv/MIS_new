@@ -118,7 +118,7 @@ namespace MIS.Forms.ReferenceForms
         private void TechnicsForm_Load(object sender, EventArgs e)
         {
             
-            _technicTypes = new List<TechnicType> { new TechnicType() { TechnicTypeName = "Все виды техники" } };
+            _technicTypes = new List<TechnicType> { new TechnicType() { TechnicTypeName = "Все отделения" } };
             _technicTypes.AddRange(_repository.GetEntityes<TechnicType>());
             comboBoxTechnicType.DataSource = _technicTypes;
         }

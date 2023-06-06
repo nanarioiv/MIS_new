@@ -7,7 +7,7 @@ namespace MIS.Data
         {
             if (TechnicType_ID==0)
             {
-                return "Все типы техники";
+                return "Все отделения";
             }
             return $"{TechnicTypeName}";
         }

@@ -63,19 +63,19 @@ namespace MIS.Forms.Reports
         /// </summary>
         private void InitComboBoxes()
         {
-            _faultTypes = new List<FaultType>() { new FaultType() { FaultTypeName = "Все типы поломок" } };
+            _faultTypes = new List<FaultType>() { new FaultType() { FaultTypeName = "Все диагнозы" } };
             _faultTypes.AddRange(_repository.GetEntityes<FaultType>());
             comboBoxFaultTypes.DataSource = _faultTypes;
 
-            _statuses = new List<Status>() { new Status() { StatusName = "Все статусы заявок" } };
+            _statuses = new List<Status>() { new Status() { StatusName = "Все виды оплаты" } };
             _statuses.AddRange(_repository.GetEntityes<Status>());
             comboBoxStatuses.DataSource = _statuses;
 
-            _technicTypes = new List<TechnicType>() { new TechnicType() { TechnicTypeName = "Все типы техники" } };
+            _technicTypes = new List<TechnicType>() { new TechnicType() { TechnicTypeName = "Все отделения" } };
             _technicTypes.AddRange(_repository.GetEntityes<TechnicType>());
             comboBoxTechnicType.DataSource = _technicTypes;
 
-            _manufacturers = new List<Manufacturer>() { new Manufacturer() { ManufacturerName = "Все производители" } };
+            _manufacturers = new List<Manufacturer>() { new Manufacturer() { ManufacturerName = "Все типы кабинета" } };
             _manufacturers.AddRange(_repository.GetEntityes<Manufacturer>());
             comboBoxManufacturer.DataSource = _manufacturers;
         }

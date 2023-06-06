@@ -118,7 +118,7 @@ namespace MIS.Forms.MainForms
             _spareTypes = new List<SpareType>();
 
             // в список типов техники добавляем запись "Все типы техники" у которой будет ID = 0
-            _technicTypes = new List<TechnicType> { new TechnicType { TechnicTypeName = "Все типы техники" } };
+            _technicTypes = new List<TechnicType> { new TechnicType { TechnicTypeName = "Все отделения" } };
             // добавляем в список типы техники с БД
             _technicTypes.AddRange(_repository.GetEntityes<TechnicType>());
             // выводим в ComboBox
@@ -149,7 +149,7 @@ namespace MIS.Forms.MainForms
             // на основании выбора типа техники выбираем из БД типы запастей для этого типа техники
             if (comboBoxTechnicType.SelectedItem is TechnicType selectedTechType)
             {
-                _spareTypes.Add(new SpareType { SpareTypeName = "Все типы запчастей" });
+                _spareTypes.Add(new SpareType { SpareTypeName = "Все типы расходников" });
                 if (selectedTechType.TechnicType_ID != 0)
                 {
                     _spareTypes.AddRange(_repository.GetEntityes<SpareType>(st => st.TechnicType_ID == selectedTechType.TechnicType_ID));

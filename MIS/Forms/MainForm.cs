@@ -212,11 +212,11 @@ namespace MIS.Forms
             _statuses.AddRange(_repository.GetEntityes<Status>());
             comboBoxStatuses.DataSource = _statuses;
 
-            _technicTypes=new List<TechnicType>(){new TechnicType(){TechnicTypeName = "Все типы техники"}};
+            _technicTypes=new List<TechnicType>(){new TechnicType(){TechnicTypeName = "Все отделения"}};
             _technicTypes.AddRange(_repository.GetEntityes<TechnicType>());
             comboBoxTechnicType.DataSource = _technicTypes;
 
-            _manufacturers=new List<Manufacturer>(){new Manufacturer(){ManufacturerName = "Все производители"}};
+            _manufacturers=new List<Manufacturer>(){new Manufacturer(){ManufacturerName = "Все типы кабинета"}};
             _manufacturers.AddRange(_repository.GetEntityes<Manufacturer>());
             comboBoxManufacturer.DataSource = _manufacturers;
         }
