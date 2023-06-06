@@ -34,6 +34,14 @@ namespace MIS.Forms.ReferenceForms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.technicIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.technicTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ParametersColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.technicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -47,17 +55,9 @@ namespace MIS.Forms.ReferenceForms
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxManufacturer = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.technicBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.technicIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.technicTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ParametersColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.technicBindingSource)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView
@@ -101,6 +101,72 @@ namespace MIS.Forms.ReferenceForms
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
+            // 
+            // technicIDDataGridViewTextBoxColumn
+            // 
+            this.technicIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.technicIDDataGridViewTextBoxColumn.DataPropertyName = "Technic_ID";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.technicIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.technicIDDataGridViewTextBoxColumn.Frozen = true;
+            this.technicIDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.technicIDDataGridViewTextBoxColumn.Name = "technicIDDataGridViewTextBoxColumn";
+            this.technicIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.technicIDDataGridViewTextBoxColumn.Width = 43;
+            // 
+            // technicTypeDataGridViewTextBoxColumn
+            // 
+            this.technicTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.technicTypeDataGridViewTextBoxColumn.DataPropertyName = "TechnicType";
+            this.technicTypeDataGridViewTextBoxColumn.HeaderText = "Отделение";
+            this.technicTypeDataGridViewTextBoxColumn.Name = "technicTypeDataGridViewTextBoxColumn";
+            this.technicTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // manufacturerDataGridViewTextBoxColumn
+            // 
+            this.manufacturerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.manufacturerDataGridViewTextBoxColumn.DataPropertyName = "Manufacturer";
+            this.manufacturerDataGridViewTextBoxColumn.HeaderText = "Тип кабинета";
+            this.manufacturerDataGridViewTextBoxColumn.Name = "manufacturerDataGridViewTextBoxColumn";
+            this.manufacturerDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // modelDataGridViewTextBoxColumn
+            // 
+            this.modelDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.modelDataGridViewTextBoxColumn.DataPropertyName = "Model";
+            this.modelDataGridViewTextBoxColumn.HeaderText = "№ Кабинета";
+            this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
+            this.modelDataGridViewTextBoxColumn.ReadOnly = true;
+            this.modelDataGridViewTextBoxColumn.Width = 94;
+            // 
+            // ParametersColumn
+            // 
+            this.ParametersColumn.HeaderText = "";
+            this.ParametersColumn.Image = global::MIS.Properties.Resources._params;
+            this.ParametersColumn.Name = "ParametersColumn";
+            this.ParametersColumn.ReadOnly = true;
+            this.ParametersColumn.Visible = false;
+            this.ParametersColumn.Width = 30;
+            // 
+            // EditColumn
+            // 
+            this.EditColumn.HeaderText = "";
+            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
+            this.EditColumn.Name = "EditColumn";
+            this.EditColumn.ReadOnly = true;
+            this.EditColumn.Width = 30;
+            // 
+            // DeleteColumn
+            // 
+            this.DeleteColumn.HeaderText = "";
+            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
+            this.DeleteColumn.Name = "DeleteColumn";
+            this.DeleteColumn.ReadOnly = true;
+            this.DeleteColumn.Width = 30;
+            // 
+            // technicBindingSource
+            // 
+            this.technicBindingSource.DataSource = typeof(MIS.Data.Technic);
             // 
             // dataGridViewImageColumn1
             // 
@@ -226,7 +292,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             // textBoxManufacturer
             // 
-            this.textBoxManufacturer.Location = new System.Drawing.Point(15, 100);
+            this.textBoxManufacturer.Location = new System.Drawing.Point(15, 93);
             this.textBoxManufacturer.Name = "textBoxManufacturer";
             this.textBoxManufacturer.Size = new System.Drawing.Size(283, 20);
             this.textBoxManufacturer.TabIndex = 8;
@@ -234,77 +300,11 @@ namespace MIS.Forms.ReferenceForms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 83);
+            this.label3.Location = new System.Drawing.Point(12, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Тип кабинета";
-            // 
-            // technicBindingSource
-            // 
-            this.technicBindingSource.DataSource = typeof(MIS.Data.Technic);
-            // 
-            // technicIDDataGridViewTextBoxColumn
-            // 
-            this.technicIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.technicIDDataGridViewTextBoxColumn.DataPropertyName = "Technic_ID";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.technicIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.technicIDDataGridViewTextBoxColumn.Frozen = true;
-            this.technicIDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.technicIDDataGridViewTextBoxColumn.Name = "technicIDDataGridViewTextBoxColumn";
-            this.technicIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.technicIDDataGridViewTextBoxColumn.Width = 43;
-            // 
-            // technicTypeDataGridViewTextBoxColumn
-            // 
-            this.technicTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.technicTypeDataGridViewTextBoxColumn.DataPropertyName = "TechnicType";
-            this.technicTypeDataGridViewTextBoxColumn.HeaderText = "Отделение";
-            this.technicTypeDataGridViewTextBoxColumn.Name = "technicTypeDataGridViewTextBoxColumn";
-            this.technicTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // manufacturerDataGridViewTextBoxColumn
-            // 
-            this.manufacturerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.manufacturerDataGridViewTextBoxColumn.DataPropertyName = "Manufacturer";
-            this.manufacturerDataGridViewTextBoxColumn.HeaderText = "Тип кабинета";
-            this.manufacturerDataGridViewTextBoxColumn.Name = "manufacturerDataGridViewTextBoxColumn";
-            this.manufacturerDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // modelDataGridViewTextBoxColumn
-            // 
-            this.modelDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.modelDataGridViewTextBoxColumn.DataPropertyName = "Model";
-            this.modelDataGridViewTextBoxColumn.HeaderText = "№ Кабинета";
-            this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
-            this.modelDataGridViewTextBoxColumn.ReadOnly = true;
-            this.modelDataGridViewTextBoxColumn.Width = 94;
-            // 
-            // ParametersColumn
-            // 
-            this.ParametersColumn.HeaderText = "";
-            this.ParametersColumn.Image = global::MIS.Properties.Resources._params;
-            this.ParametersColumn.Name = "ParametersColumn";
-            this.ParametersColumn.ReadOnly = true;
-            this.ParametersColumn.Visible = false;
-            this.ParametersColumn.Width = 30;
-            // 
-            // EditColumn
-            // 
-            this.EditColumn.HeaderText = "";
-            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
-            this.EditColumn.Name = "EditColumn";
-            this.EditColumn.ReadOnly = true;
-            this.EditColumn.Width = 30;
-            // 
-            // DeleteColumn
-            // 
-            this.DeleteColumn.HeaderText = "";
-            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
-            this.DeleteColumn.Name = "DeleteColumn";
-            this.DeleteColumn.ReadOnly = true;
-            this.DeleteColumn.Width = 30;
             // 
             // TechnicsForm
             // 
@@ -320,9 +320,9 @@ namespace MIS.Forms.ReferenceForms
             this.Text = "Кабинеты";
             this.Load += new System.EventHandler(this.TechnicsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technicBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.technicBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -162,7 +162,7 @@ namespace MIS.Forms.AddEditForms
                 dateTimePickerExecution.MinDate = DateTime.Now.AddDays(1);
 
                 buttonAddEdit.Text = "Добавить";
-                Text = "Добавление новой заявки";
+                Text = "Добавление нового посещения";
                 buttonAddEdit.Image = Resources.add_btn;
             }
         }

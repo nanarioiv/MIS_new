@@ -152,7 +152,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(183, 223);
+            this.label5.Location = new System.Drawing.Point(222, 214);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(136, 15);
             this.label5.TabIndex = 0;
@@ -162,9 +162,9 @@
             // 
             this.comboBoxTechnicType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTechnicType.FormattingEnabled = true;
-            this.comboBoxTechnicType.Location = new System.Drawing.Point(186, 241);
+            this.comboBoxTechnicType.Location = new System.Drawing.Point(225, 241);
             this.comboBoxTechnicType.Name = "comboBoxTechnicType";
-            this.comboBoxTechnicType.Size = new System.Drawing.Size(183, 23);
+            this.comboBoxTechnicType.Size = new System.Drawing.Size(144, 23);
             this.comboBoxTechnicType.TabIndex = 5;
             this.comboBoxTechnicType.SelectedIndexChanged += new System.EventHandler(this.comboBoxTechnicType_SelectedIndexChanged);
             // 

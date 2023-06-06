@@ -38,6 +38,8 @@ namespace MIS.Forms.MainForms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.requestWorkBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.requestWorkDtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,8 +49,6 @@ namespace MIS.Forms.MainForms
             this.Итого = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.requestWorkBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestWorkBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -97,6 +97,28 @@ namespace MIS.Forms.MainForms
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
+            // requestWorkBindingSource
+            // 
+            this.requestWorkBindingSource.DataSource = typeof(MIS.Data.RequestWork);
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAdd.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonAdd.FlatAppearance.BorderSize = 2;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
+            this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdd.Location = new System.Drawing.Point(12, 12);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(844, 36);
+            this.buttonAdd.TabIndex = 3;
+            this.buttonAdd.Text = "Добавить услугу";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
             // requestWorkDtDataGridViewTextBoxColumn
             // 
             this.requestWorkDtDataGridViewTextBoxColumn.DataPropertyName = "RequestWorkDt";
@@ -113,13 +135,12 @@ namespace MIS.Forms.MainForms
             // 
             // workDataGridViewTextBoxColumn
             // 
-            this.workDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.workDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.workDataGridViewTextBoxColumn.DataPropertyName = "Work";
             this.workDataGridViewTextBoxColumn.HeaderText = "Услуга";
             this.workDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.workDataGridViewTextBoxColumn.Name = "workDataGridViewTextBoxColumn";
             this.workDataGridViewTextBoxColumn.ReadOnly = true;
-            this.workDataGridViewTextBoxColumn.Width = 68;
             // 
             // workPriceDataGridViewTextBoxColumn
             // 
@@ -129,11 +150,11 @@ namespace MIS.Forms.MainForms
             dataGridViewCellStyle4.Format = "C2";
             dataGridViewCellStyle4.NullValue = "-";
             this.workPriceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.workPriceDataGridViewTextBoxColumn.HeaderText = "Стоимость";
+            this.workPriceDataGridViewTextBoxColumn.HeaderText = "Стоимость услуги";
             this.workPriceDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.workPriceDataGridViewTextBoxColumn.Name = "workPriceDataGridViewTextBoxColumn";
             this.workPriceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.workPriceDataGridViewTextBoxColumn.Width = 87;
+            this.workPriceDataGridViewTextBoxColumn.Width = 113;
             // 
             // employeeDataGridViewTextBoxColumn
             // 
@@ -144,6 +165,7 @@ namespace MIS.Forms.MainForms
             this.employeeDataGridViewTextBoxColumn.Name = "employeeDataGridViewTextBoxColumn";
             this.employeeDataGridViewTextBoxColumn.ReadOnly = true;
             this.employeeDataGridViewTextBoxColumn.Visible = false;
+            this.employeeDataGridViewTextBoxColumn.Width = 94;
             // 
             // spareDataGridViewTextBoxColumn
             // 
@@ -164,11 +186,11 @@ namespace MIS.Forms.MainForms
             dataGridViewCellStyle6.Format = "C2";
             dataGridViewCellStyle6.NullValue = "-";
             this.Цена.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Цена.HeaderText = "Стоимость";
+            this.Цена.HeaderText = "Стоимость расходника";
             this.Цена.MinimumWidth = 8;
             this.Цена.Name = "Цена";
             this.Цена.ReadOnly = true;
-            this.Цена.Width = 87;
+            this.Цена.Width = 136;
             // 
             // Итого
             // 
@@ -202,28 +224,6 @@ namespace MIS.Forms.MainForms
             this.DeleteColumn.ReadOnly = true;
             this.DeleteColumn.Width = 30;
             // 
-            // requestWorkBindingSource
-            // 
-            this.requestWorkBindingSource.DataSource = typeof(MIS.Data.RequestWork);
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAdd.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.buttonAdd.FlatAppearance.BorderSize = 2;
-            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
-            this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdd.Location = new System.Drawing.Point(12, 12);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(844, 36);
-            this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить услугу";
-            this.buttonAdd.UseVisualStyleBackColor = false;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            // 
             // RequestWorksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,7 +234,7 @@ namespace MIS.Forms.MainForms
             this.Controls.Add(this.dataGridView);
             this.Name = "RequestWorksForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Услуги и назначения";
+            this.Text = "Услуги";
             this.Load += new System.EventHandler(this.SpareParametersForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestWorkBindingSource)).EndInit();

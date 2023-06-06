@@ -8,7 +8,7 @@ namespace MIS.Data
             if (Employee_ID==0)
             {
                 // используется при поиске данных
-                return "Все сотрудники";
+                return "Все врачи";
             }
             return $"{FName} {EmpName[0]}. {LName[0]}. ({Post})";
         }

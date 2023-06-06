@@ -38,11 +38,11 @@ namespace MIS.Forms.AddEditForms
             var sb = new StringBuilder();
             if (string.IsNullOrWhiteSpace(textBoxSpareTypeName.Text))
             {
-                sb.AppendLine($"Не верно заполнено поле {label1.Text}!");
+                sb.AppendLine($"Не заполнено поле {label1.Text}!");
             }
             if (comboBoxTechnicType.SelectedItem == null)
             {
-                sb.AppendLine($"Не верно заполнено поле {label2.Text}!");
+                sb.AppendLine($"Не заполнено поле {label2.Text}!");
 
             }
             if (sb.Length != 0)
