@@ -55,7 +55,7 @@
             // 
             this.textBoxSpareName.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxSpareName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSpareName.Location = new System.Drawing.Point(12, 112);
+            this.textBoxSpareName.Location = new System.Drawing.Point(12, 102);
             this.textBoxSpareName.MaxLength = 100;
             this.textBoxSpareName.Name = "textBoxSpareName";
             this.textBoxSpareName.Size = new System.Drawing.Size(356, 21);
@@ -71,7 +71,7 @@
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Image = global::MIS.Properties.Resources.delete_16;
             this.buttonCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonCancel.Location = new System.Drawing.Point(215, 274);
+            this.buttonCancel.Location = new System.Drawing.Point(215, 290);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(153, 34);
             this.buttonCancel.TabIndex = 4;
@@ -86,7 +86,7 @@
             this.buttonAddEdit.FlatAppearance.BorderSize = 2;
             this.buttonAddEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAddEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAddEdit.Location = new System.Drawing.Point(12, 274);
+            this.buttonAddEdit.Location = new System.Drawing.Point(12, 290);
             this.buttonAddEdit.Name = "buttonAddEdit";
             this.buttonAddEdit.Size = new System.Drawing.Size(153, 34);
             this.buttonAddEdit.TabIndex = 3;
@@ -97,7 +97,7 @@
             // 
             this.comboBoxSpareType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSpareType.FormattingEnabled = true;
-            this.comboBoxSpareType.Location = new System.Drawing.Point(12, 34);
+            this.comboBoxSpareType.Location = new System.Drawing.Point(12, 27);
             this.comboBoxSpareType.Name = "comboBoxSpareType";
             this.comboBoxSpareType.Size = new System.Drawing.Size(356, 23);
             this.comboBoxSpareType.TabIndex = 5;
@@ -174,7 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(380, 320);
+            this.ClientSize = new System.Drawing.Size(380, 336);
             this.Controls.Add(this.comboBoxTechnicType);
             this.Controls.Add(this.comboBoxSpareType);
             this.Controls.Add(this.buttonCancel);

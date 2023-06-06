@@ -195,5 +195,10 @@ namespace MIS.Forms.MainForms
                 DialogResult = DialogResult.OK;
             }
         }
+
+        private void comboBoxSpareType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

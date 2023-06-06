@@ -37,6 +37,7 @@ namespace MIS.Forms.AddEditForms
             _faultType = _item.FaultType;
             _status = _item.Status;
             InitializeComponent();
+            _item.SerialNumber = textBoxSerial.Text = "0";
         }
 
         /// <summary>
@@ -45,6 +46,7 @@ namespace MIS.Forms.AddEditForms
         public AddEditRequestForm()
         {
             InitializeComponent();
+            textBoxSerial.Text = "0";
         }
 
         private bool Check()
@@ -118,7 +120,7 @@ namespace MIS.Forms.AddEditForms
                         Employee_ID = Repository.LoginedEmployee.Employee_ID,
                         RequestDt = dateTimePickerCreate.Value.Date,
                         ExecutionDt = dateTimePickerExecution.Value.Date,
-                        SerialNumber = textBoxSerial.Text,
+                        SerialNumber = textBoxSerial.Text = "0",
                         Description = textBoxDescription.Text
                     };
                     _repository.Add(_item);

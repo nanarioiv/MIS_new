@@ -36,14 +36,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxManufacturer = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 155);
+            this.label1.Location = new System.Drawing.Point(12, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 15);
             this.label1.TabIndex = 0;
@@ -53,7 +51,7 @@
             // 
             this.textBoxModel.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxModel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxModel.Location = new System.Drawing.Point(12, 173);
+            this.textBoxModel.Location = new System.Drawing.Point(12, 160);
             this.textBoxModel.MaxLength = 100;
             this.textBoxModel.Name = "textBoxModel";
             this.textBoxModel.Size = new System.Drawing.Size(356, 21);
@@ -69,7 +67,7 @@
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Image = global::MIS.Properties.Resources.delete_16;
             this.buttonCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonCancel.Location = new System.Drawing.Point(215, 211);
+            this.buttonCancel.Location = new System.Drawing.Point(215, 201);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(153, 34);
             this.buttonCancel.TabIndex = 4;
@@ -85,7 +83,7 @@
             this.buttonAddEdit.FlatAppearance.BorderSize = 2;
             this.buttonAddEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAddEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAddEdit.Location = new System.Drawing.Point(12, 211);
+            this.buttonAddEdit.Location = new System.Drawing.Point(12, 201);
             this.buttonAddEdit.Name = "buttonAddEdit";
             this.buttonAddEdit.Size = new System.Drawing.Size(153, 34);
             this.buttonAddEdit.TabIndex = 3;
@@ -128,34 +126,13 @@
             this.comboBoxManufacturer.Size = new System.Drawing.Size(356, 23);
             this.comboBoxManufacturer.TabIndex = 5;
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(12, 131);
-            this.textBox1.MaxLength = 100;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(356, 21);
-            this.textBox1.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 113);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(327, 15);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Наименование (пока не существует, только на фроме)";
-            // 
             // AddEditTechnicForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(380, 257);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(380, 247);
             this.Controls.Add(this.comboBoxManufacturer);
             this.Controls.Add(this.comboBoxTechnicType);
             this.Controls.Add(this.buttonCancel);
@@ -186,7 +163,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxManufacturer;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
     }
 }

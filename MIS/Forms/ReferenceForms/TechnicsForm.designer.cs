@@ -47,14 +47,14 @@ namespace MIS.Forms.ReferenceForms
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxManufacturer = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.ParametersColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.technicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technicIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.technicTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.technicBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ParametersColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.technicBindingSource)).BeginInit();
@@ -165,9 +165,9 @@ namespace MIS.Forms.ReferenceForms
             this.buttonReset.FlatAppearance.BorderSize = 2;
             this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReset.Image = global::MIS.Properties.Resources.return_24;
-            this.buttonReset.Location = new System.Drawing.Point(642, 77);
+            this.buttonReset.Location = new System.Drawing.Point(551, 77);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(57, 36);
+            this.buttonReset.Size = new System.Drawing.Size(148, 36);
             this.buttonReset.TabIndex = 9;
             this.buttonReset.TabStop = false;
             this.buttonReset.UseVisualStyleBackColor = false;
@@ -179,7 +179,7 @@ namespace MIS.Forms.ReferenceForms
             this.comboBoxTechnicType.FormattingEnabled = true;
             this.comboBoxTechnicType.Location = new System.Drawing.Point(15, 37);
             this.comboBoxTechnicType.Name = "comboBoxTechnicType";
-            this.comboBoxTechnicType.Size = new System.Drawing.Size(221, 21);
+            this.comboBoxTechnicType.Size = new System.Drawing.Size(283, 21);
             this.comboBoxTechnicType.TabIndex = 5;
             // 
             // buttonSearch
@@ -210,15 +210,15 @@ namespace MIS.Forms.ReferenceForms
             // 
             // textBoxModel
             // 
-            this.textBoxModel.Location = new System.Drawing.Point(15, 93);
+            this.textBoxModel.Location = new System.Drawing.Point(341, 38);
             this.textBoxModel.Name = "textBoxModel";
-            this.textBoxModel.Size = new System.Drawing.Size(191, 20);
+            this.textBoxModel.Size = new System.Drawing.Size(132, 20);
             this.textBoxModel.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 74);
+            this.label2.Location = new System.Drawing.Point(338, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 6;
@@ -226,43 +226,23 @@ namespace MIS.Forms.ReferenceForms
             // 
             // textBoxManufacturer
             // 
-            this.textBoxManufacturer.Location = new System.Drawing.Point(269, 38);
+            this.textBoxManufacturer.Location = new System.Drawing.Point(15, 100);
             this.textBoxManufacturer.Name = "textBoxManufacturer";
-            this.textBoxManufacturer.Size = new System.Drawing.Size(191, 20);
+            this.textBoxManufacturer.Size = new System.Drawing.Size(283, 20);
             this.textBoxManufacturer.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(266, 21);
+            this.label3.Location = new System.Drawing.Point(12, 83);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Тип кабинета";
             // 
-            // ParametersColumn
+            // technicBindingSource
             // 
-            this.ParametersColumn.HeaderText = "";
-            this.ParametersColumn.Image = global::MIS.Properties.Resources._params;
-            this.ParametersColumn.Name = "ParametersColumn";
-            this.ParametersColumn.ReadOnly = true;
-            this.ParametersColumn.Width = 30;
-            // 
-            // EditColumn
-            // 
-            this.EditColumn.HeaderText = "";
-            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
-            this.EditColumn.Name = "EditColumn";
-            this.EditColumn.ReadOnly = true;
-            this.EditColumn.Width = 30;
-            // 
-            // DeleteColumn
-            // 
-            this.DeleteColumn.HeaderText = "";
-            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
-            this.DeleteColumn.Name = "DeleteColumn";
-            this.DeleteColumn.ReadOnly = true;
-            this.DeleteColumn.Width = 30;
+            this.technicBindingSource.DataSource = typeof(MIS.Data.Technic);
             // 
             // technicIDDataGridViewTextBoxColumn
             // 
@@ -301,9 +281,30 @@ namespace MIS.Forms.ReferenceForms
             this.modelDataGridViewTextBoxColumn.ReadOnly = true;
             this.modelDataGridViewTextBoxColumn.Width = 94;
             // 
-            // technicBindingSource
+            // ParametersColumn
             // 
-            this.technicBindingSource.DataSource = typeof(MIS.Data.Technic);
+            this.ParametersColumn.HeaderText = "";
+            this.ParametersColumn.Image = global::MIS.Properties.Resources._params;
+            this.ParametersColumn.Name = "ParametersColumn";
+            this.ParametersColumn.ReadOnly = true;
+            this.ParametersColumn.Visible = false;
+            this.ParametersColumn.Width = 30;
+            // 
+            // EditColumn
+            // 
+            this.EditColumn.HeaderText = "";
+            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
+            this.EditColumn.Name = "EditColumn";
+            this.EditColumn.ReadOnly = true;
+            this.EditColumn.Width = 30;
+            // 
+            // DeleteColumn
+            // 
+            this.DeleteColumn.HeaderText = "";
+            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
+            this.DeleteColumn.Name = "DeleteColumn";
+            this.DeleteColumn.ReadOnly = true;
+            this.DeleteColumn.Width = 30;
             // 
             // TechnicsForm
             // 
