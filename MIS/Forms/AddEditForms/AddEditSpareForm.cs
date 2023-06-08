@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 using MIS.Data;
@@ -13,8 +12,6 @@ namespace MIS.Forms.AddEditForms
         private readonly Repository _repository = Repository.RepositoryInstance;
 
         private Spare _item;
-
-        private List<SpareType> _spareTypes;
 
         private readonly bool _edit;
         /// <summary>
@@ -108,12 +105,6 @@ namespace MIS.Forms.AddEditForms
                 buttonAddEdit.Text = "Сохранить";
                 Text = "Редактирование";
                 textBoxSpareName.Text= _item.SpareName;
-
-                // fixed: Не самое оптимальное решение, но для скрина пойдет
-                _spareTypes = new List<SpareType>();
-                _spareTypes.Add(new SpareType { SpareTypeName = $"{_item.SpareType}", SpareType_ID=_item.SpareType_ID });
-                comboBoxSpareType.DataSource = _spareTypes;
-
                 comboBoxSpareType.SelectedItem= _item.SpareType;
                textBoxArticle.Text = _item.Article;
                 textBoxPrice.Text = _item.Price.ToString("f2");

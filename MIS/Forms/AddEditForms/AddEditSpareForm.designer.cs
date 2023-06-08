@@ -47,9 +47,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 15);
+            this.label1.Size = new System.Drawing.Size(134, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Название медикамента";
+            this.label1.Text = "Название расходника";
             // 
             // textBoxSpareName
             // 
@@ -107,9 +107,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 15);
+            this.label2.Size = new System.Drawing.Size(98, 15);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Тип медикамента";
+            this.label2.Text = "Тип расходника";
             // 
             // label3
             // 
