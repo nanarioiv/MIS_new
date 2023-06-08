@@ -34,13 +34,13 @@ namespace MIS.Forms.Reports
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonExportToWord = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonReset = new System.Windows.Forms.Button();
@@ -63,25 +63,25 @@ namespace MIS.Forms.Reports
             this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ExecutionDt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.requestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.requestDtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FaultType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Technic = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExecutionDt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource)).BeginInit();
@@ -131,7 +131,7 @@ namespace MIS.Forms.Reports
             this.groupBox1.Size = new System.Drawing.Size(1101, 125);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Поиск заявок";
+            this.groupBox1.Text = "Поиск посещений";
             // 
             // buttonReset
             // 
@@ -161,16 +161,17 @@ namespace MIS.Forms.Reports
             // 
             this.comboBoxTechnicType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTechnicType.FormattingEnabled = true;
-            this.comboBoxTechnicType.Location = new System.Drawing.Point(646, 37);
+            this.comboBoxTechnicType.Location = new System.Drawing.Point(440, 83);
             this.comboBoxTechnicType.Name = "comboBoxTechnicType";
             this.comboBoxTechnicType.Size = new System.Drawing.Size(200, 21);
             this.comboBoxTechnicType.TabIndex = 3;
+            this.comboBoxTechnicType.SelectedIndexChanged += new System.EventHandler(this.comboBoxTechnicType_SelectedIndexChanged);
             // 
             // comboBoxStatuses
             // 
             this.comboBoxStatuses.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxStatuses.FormattingEnabled = true;
-            this.comboBoxStatuses.Location = new System.Drawing.Point(440, 83);
+            this.comboBoxStatuses.Location = new System.Drawing.Point(646, 37);
             this.comboBoxStatuses.Name = "comboBoxStatuses";
             this.comboBoxStatuses.Size = new System.Drawing.Size(200, 21);
             this.comboBoxStatuses.TabIndex = 3;
@@ -197,7 +198,7 @@ namespace MIS.Forms.Reports
             // 
             this.comboBoxFaultTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFaultTypes.FormattingEnabled = true;
-            this.comboBoxFaultTypes.Location = new System.Drawing.Point(234, 82);
+            this.comboBoxFaultTypes.Location = new System.Drawing.Point(234, 83);
             this.comboBoxFaultTypes.Name = "comboBoxFaultTypes";
             this.comboBoxFaultTypes.Size = new System.Drawing.Size(200, 21);
             this.comboBoxFaultTypes.TabIndex = 3;
@@ -224,9 +225,9 @@ namespace MIS.Forms.Reports
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(643, 66);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 13);
+            this.label9.Size = new System.Drawing.Size(76, 13);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Производитель";
+            this.label9.Text = "Тип кабинета";
             // 
             // label3
             // 
@@ -242,11 +243,12 @@ namespace MIS.Forms.Reports
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(643, 20);
+            this.label8.Location = new System.Drawing.Point(437, 66);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 13);
+            this.label8.Size = new System.Drawing.Size(62, 13);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Тип техники";
+            this.label8.Text = "Отделение";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label2
             // 
@@ -262,11 +264,11 @@ namespace MIS.Forms.Reports
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(437, 66);
+            this.label7.Location = new System.Drawing.Point(643, 20);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 13);
+            this.label7.Size = new System.Drawing.Size(66, 13);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Статус заявки";
+            this.label7.Text = "Вид оплаты";
             // 
             // label6
             // 
@@ -274,9 +276,9 @@ namespace MIS.Forms.Reports
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(437, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 13);
+            this.label6.Size = new System.Drawing.Size(101, 13);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Номер заявки";
+            this.label6.Text = "Номер посещения";
             // 
             // label5
             // 
@@ -284,9 +286,9 @@ namespace MIS.Forms.Reports
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(231, 66);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 13);
+            this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Вид неисправности";
+            this.label5.Text = "Диагноз";
             // 
             // label4
             // 
@@ -294,9 +296,9 @@ namespace MIS.Forms.Reports
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(231, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 13);
+            this.label4.Size = new System.Drawing.Size(106, 13);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Фамилия клиента";
+            this.label4.Text = "Фамилия пациента";
             // 
             // label1
             // 
@@ -304,9 +306,9 @@ namespace MIS.Forms.Reports
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(54, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 13);
+            this.label1.Size = new System.Drawing.Size(156, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Период создания заявки";
+            this.label1.Text = "Период создания посещения";
             // 
             // dateTimePickerTo
             // 
@@ -350,14 +352,14 @@ namespace MIS.Forms.Reports
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.requestIDDataGridViewTextBoxColumn,
-            this.clientDataGridViewTextBoxColumn,
             this.requestDtDataGridViewTextBoxColumn,
-            this.ExecutionDt,
+            this.clientDataGridViewTextBoxColumn,
             this.Employee,
             this.FaultType,
             this.Technic,
             this.statusDataGridViewTextBoxColumn,
-            this.Column1});
+            this.Column1,
+            this.ExecutionDt});
             this.dataGridView.DataSource = this.requestBindingSource;
             this.dataGridView.Location = new System.Drawing.Point(12, 135);
             this.dataGridView.MultiSelect = false;
@@ -368,13 +370,16 @@ namespace MIS.Forms.Reports
             this.dataGridView.Size = new System.Drawing.Size(1101, 390);
             this.dataGridView.TabIndex = 16;
             // 
+            // requestBindingSource
+            // 
+            this.requestBindingSource.DataSource = typeof(MIS.Data.Request);
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Employee";
             this.dataGridViewTextBoxColumn1.HeaderText = "Сотрудник";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 85;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -398,7 +403,6 @@ namespace MIS.Forms.Reports
             this.dataGridViewTextBoxColumn4.HeaderText = "Сотрудник";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 85;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -417,32 +421,6 @@ namespace MIS.Forms.Reports
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
-            // ExecutionDt
-            // 
-            this.ExecutionDt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ExecutionDt.DataPropertyName = "ExecutionDt";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Format = "d";
-            dataGridViewCellStyle5.NullValue = null;
-            this.ExecutionDt.DefaultCellStyle = dataGridViewCellStyle5;
-            this.ExecutionDt.HeaderText = "Дата выполнения";
-            this.ExecutionDt.Name = "ExecutionDt";
-            this.ExecutionDt.ReadOnly = true;
-            this.ExecutionDt.Width = 113;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column1.DataPropertyName = "CostOfRepair";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.Format = "C2";
-            dataGridViewCellStyle8.NullValue = null;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column1.HeaderText = "Стоимость";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 87;
-            // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -450,7 +428,6 @@ namespace MIS.Forms.Reports
             this.dataGridViewTextBoxColumn7.HeaderText = "Сотрудник";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 85;
             // 
             // dataGridViewTextBoxColumn8
             // 
@@ -475,19 +452,10 @@ namespace MIS.Forms.Reports
             this.requestIDDataGridViewTextBoxColumn.DataPropertyName = "Request_ID";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.requestIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.requestIDDataGridViewTextBoxColumn.HeaderText = "№ завки";
+            this.requestIDDataGridViewTextBoxColumn.HeaderText = "№ Посещения";
             this.requestIDDataGridViewTextBoxColumn.Name = "requestIDDataGridViewTextBoxColumn";
             this.requestIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.requestIDDataGridViewTextBoxColumn.Width = 76;
-            // 
-            // clientDataGridViewTextBoxColumn
-            // 
-            this.clientDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
-            this.clientDataGridViewTextBoxColumn.HeaderText = "Клиент";
-            this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
-            this.clientDataGridViewTextBoxColumn.ReadOnly = true;
-            this.clientDataGridViewTextBoxColumn.Width = 68;
+            this.requestIDDataGridViewTextBoxColumn.Width = 97;
             // 
             // requestDtDataGridViewTextBoxColumn
             // 
@@ -497,33 +465,43 @@ namespace MIS.Forms.Reports
             dataGridViewCellStyle4.Format = "d";
             dataGridViewCellStyle4.NullValue = null;
             this.requestDtDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.requestDtDataGridViewTextBoxColumn.HeaderText = "Дата создания";
+            this.requestDtDataGridViewTextBoxColumn.HeaderText = "Дата посещения";
             this.requestDtDataGridViewTextBoxColumn.Name = "requestDtDataGridViewTextBoxColumn";
             this.requestDtDataGridViewTextBoxColumn.ReadOnly = true;
+            this.requestDtDataGridViewTextBoxColumn.Width = 108;
+            // 
+            // clientDataGridViewTextBoxColumn
+            // 
+            this.clientDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
+            this.clientDataGridViewTextBoxColumn.HeaderText = "Пациент";
+            this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
+            this.clientDataGridViewTextBoxColumn.ReadOnly = true;
+            this.clientDataGridViewTextBoxColumn.Width = 75;
             // 
             // Employee
             // 
             this.Employee.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Employee.DataPropertyName = "Employee";
-            this.Employee.HeaderText = "Сотрудник";
+            this.Employee.HeaderText = "Врач";
             this.Employee.Name = "Employee";
             this.Employee.ReadOnly = true;
-            this.Employee.Width = 85;
+            this.Employee.Width = 56;
             // 
             // FaultType
             // 
             this.FaultType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.FaultType.DataPropertyName = "FaultType";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FaultType.DefaultCellStyle = dataGridViewCellStyle6;
-            this.FaultType.HeaderText = "Вид неисправности";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FaultType.DefaultCellStyle = dataGridViewCellStyle5;
+            this.FaultType.HeaderText = "Диагноз";
             this.FaultType.Name = "FaultType";
             this.FaultType.ReadOnly = true;
             // 
             // Technic
             // 
             this.Technic.DataPropertyName = "Technic";
-            this.Technic.HeaderText = "Техника";
+            this.Technic.HeaderText = "Отделение";
             this.Technic.Name = "Technic";
             this.Technic.ReadOnly = true;
             // 
@@ -531,16 +509,39 @@ namespace MIS.Forms.Reports
             // 
             this.statusDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.statusDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Статус";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.statusDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Вид оплаты";
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.statusDataGridViewTextBoxColumn.Width = 66;
+            this.statusDataGridViewTextBoxColumn.Width = 84;
             // 
-            // requestBindingSource
+            // Column1
             // 
-            this.requestBindingSource.DataSource = typeof(MIS.Data.Request);
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column1.DataPropertyName = "CostOfRepair";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Format = "C2";
+            dataGridViewCellStyle7.NullValue = null;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Column1.HeaderText = "Стоимость";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 87;
+            // 
+            // ExecutionDt
+            // 
+            this.ExecutionDt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ExecutionDt.DataPropertyName = "ExecutionDt";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.Format = "d";
+            dataGridViewCellStyle8.NullValue = null;
+            this.ExecutionDt.DefaultCellStyle = dataGridViewCellStyle8;
+            this.ExecutionDt.HeaderText = "Дата выполнения";
+            this.ExecutionDt.Name = "ExecutionDt";
+            this.ExecutionDt.ReadOnly = true;
+            this.ExecutionDt.Visible = false;
+            this.ExecutionDt.Width = 113;
             // 
             // RequestReportForm
             // 
@@ -552,7 +553,7 @@ namespace MIS.Forms.Reports
             this.Controls.Add(this.groupBox1);
             this.Name = "RequestReportForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Отчётность по заявкам";
+            this.Text = "Отчётность по посещениям";
             this.Load += new System.EventHandler(this.RequestWorksForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -589,20 +590,20 @@ namespace MIS.Forms.Reports
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn requestIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clientDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn requestDtDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ExecutionDt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Employee;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FaultType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Technic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn requestIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn requestDtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Employee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FaultType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Technic;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ExecutionDt;
     }
 }

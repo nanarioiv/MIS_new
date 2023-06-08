@@ -140,5 +140,14 @@ namespace MIS.Forms.Reports
             }
         }
 
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxTechnicType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

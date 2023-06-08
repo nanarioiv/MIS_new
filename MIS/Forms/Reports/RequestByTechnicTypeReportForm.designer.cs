@@ -46,6 +46,7 @@ namespace MIS.Forms.Reports
             this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.requestByTechnicTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,7 +56,6 @@ namespace MIS.Forms.Reports
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.requestByTechnicTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technicTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.countDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
@@ -97,7 +97,7 @@ namespace MIS.Forms.Reports
             this.groupBox1.Size = new System.Drawing.Size(539, 125);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Поиск заявок";
+            this.groupBox1.Text = "Поиск ";
             // 
             // buttonReset
             // 
@@ -158,9 +158,9 @@ namespace MIS.Forms.Reports
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(54, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 13);
+            this.label1.Size = new System.Drawing.Size(156, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Период создания заявки";
+            this.label1.Text = "Период создания посещения";
             // 
             // dateTimePickerTo
             // 
@@ -214,6 +214,10 @@ namespace MIS.Forms.Reports
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(539, 390);
             this.dataGridView.TabIndex = 16;
+            // 
+            // requestByTechnicTypeBindingSource
+            // 
+            this.requestByTechnicTypeBindingSource.DataSource = typeof(MIS.Data.RequestByTechnicType);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -287,15 +291,11 @@ namespace MIS.Forms.Reports
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.ReadOnly = true;
             // 
-            // requestByTechnicTypeBindingSource
-            // 
-            this.requestByTechnicTypeBindingSource.DataSource = typeof(MIS.Data.RequestByTechnicType);
-            // 
             // technicTypeDataGridViewTextBoxColumn
             // 
             this.technicTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.technicTypeDataGridViewTextBoxColumn.DataPropertyName = "TechnicType";
-            this.technicTypeDataGridViewTextBoxColumn.HeaderText = "Тип техники";
+            this.technicTypeDataGridViewTextBoxColumn.HeaderText = "Отделение";
             this.technicTypeDataGridViewTextBoxColumn.Name = "technicTypeDataGridViewTextBoxColumn";
             this.technicTypeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -305,11 +305,11 @@ namespace MIS.Forms.Reports
             this.countDataGridViewTextBoxColumn.DataPropertyName = "Count";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.countDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.countDataGridViewTextBoxColumn.HeaderText = "Количество заявок";
+            this.countDataGridViewTextBoxColumn.HeaderText = "Количество посещений";
             this.countDataGridViewTextBoxColumn.MinimumWidth = 130;
             this.countDataGridViewTextBoxColumn.Name = "countDataGridViewTextBoxColumn";
             this.countDataGridViewTextBoxColumn.ReadOnly = true;
-            this.countDataGridViewTextBoxColumn.Width = 130;
+            this.countDataGridViewTextBoxColumn.Width = 138;
             // 
             // RequestByTechnicTypeReportForm
             // 
@@ -321,7 +321,7 @@ namespace MIS.Forms.Reports
             this.Controls.Add(this.groupBox1);
             this.Name = "RequestByTechnicTypeReportForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Статистика заявок по типу техники";
+            this.Text = "Статистика посещений по отделениям";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();

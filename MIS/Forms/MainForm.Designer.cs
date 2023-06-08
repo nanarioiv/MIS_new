@@ -113,8 +113,8 @@
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.requestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.requestDtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExecutionDt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FaultType = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -354,8 +354,8 @@
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.requestIDDataGridViewTextBoxColumn,
-            this.clientDataGridViewTextBoxColumn,
             this.requestDtDataGridViewTextBoxColumn,
+            this.clientDataGridViewTextBoxColumn,
             this.ExecutionDt,
             this.Employee,
             this.FaultType,
@@ -825,16 +825,6 @@
             this.requestIDDataGridViewTextBoxColumn.ReadOnly = true;
             this.requestIDDataGridViewTextBoxColumn.Width = 95;
             // 
-            // clientDataGridViewTextBoxColumn
-            // 
-            this.clientDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
-            this.clientDataGridViewTextBoxColumn.HeaderText = "Пациент";
-            this.clientDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
-            this.clientDataGridViewTextBoxColumn.ReadOnly = true;
-            this.clientDataGridViewTextBoxColumn.Width = 75;
-            // 
             // requestDtDataGridViewTextBoxColumn
             // 
             this.requestDtDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -848,6 +838,16 @@
             this.requestDtDataGridViewTextBoxColumn.Name = "requestDtDataGridViewTextBoxColumn";
             this.requestDtDataGridViewTextBoxColumn.ReadOnly = true;
             this.requestDtDataGridViewTextBoxColumn.Width = 108;
+            // 
+            // clientDataGridViewTextBoxColumn
+            // 
+            this.clientDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
+            this.clientDataGridViewTextBoxColumn.HeaderText = "Пациент";
+            this.clientDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
+            this.clientDataGridViewTextBoxColumn.ReadOnly = true;
+            this.clientDataGridViewTextBoxColumn.Width = 75;
             // 
             // ExecutionDt
             // 
@@ -914,11 +914,11 @@
             dataGridViewCellStyle8.Format = "C2";
             dataGridViewCellStyle8.NullValue = null;
             this.Column1.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column1.HeaderText = "Общая стоимость";
+            this.Column1.HeaderText = "Стоимость";
             this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 114;
+            this.Column1.Width = 87;
             // 
             // DetailColumn
             // 
@@ -1056,8 +1056,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private System.Windows.Forms.DataGridViewTextBoxColumn requestIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn requestDtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ExecutionDt;
         private System.Windows.Forms.DataGridViewTextBoxColumn Employee;
         private System.Windows.Forms.DataGridViewTextBoxColumn FaultType;
