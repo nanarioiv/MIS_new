@@ -31,12 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -45,6 +39,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.должностиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,20 +71,6 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.requestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.requestDtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ExecutionDt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FaultType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Technic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DetailColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ExportToWordColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonReset = new System.Windows.Forms.Button();
             this.comboBoxManufacturer = new System.Windows.Forms.ComboBox();
@@ -125,11 +112,25 @@
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.requestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.requestDtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExecutionDt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FaultType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Technic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DetailColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ExportToWordColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.EditColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -377,152 +378,6 @@
             this.dataGridView.Size = new System.Drawing.Size(1206, 357);
             this.dataGridView.TabIndex = 3;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
-            // 
-            // requestIDDataGridViewTextBoxColumn
-            // 
-            this.requestIDDataGridViewTextBoxColumn.DataPropertyName = "Request_ID";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.requestIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.requestIDDataGridViewTextBoxColumn.HeaderText = "№ посещения";
-            this.requestIDDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.requestIDDataGridViewTextBoxColumn.Name = "requestIDDataGridViewTextBoxColumn";
-            this.requestIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.requestIDDataGridViewTextBoxColumn.Width = 95;
-            // 
-            // requestDtDataGridViewTextBoxColumn
-            // 
-            this.requestDtDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.requestDtDataGridViewTextBoxColumn.DataPropertyName = "RequestDt";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Format = "d";
-            dataGridViewCellStyle4.NullValue = null;
-            this.requestDtDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.requestDtDataGridViewTextBoxColumn.HeaderText = "Дата посещения";
-            this.requestDtDataGridViewTextBoxColumn.MinimumWidth = 90;
-            this.requestDtDataGridViewTextBoxColumn.Name = "requestDtDataGridViewTextBoxColumn";
-            this.requestDtDataGridViewTextBoxColumn.ReadOnly = true;
-            this.requestDtDataGridViewTextBoxColumn.Width = 108;
-            // 
-            // clientDataGridViewTextBoxColumn
-            // 
-            this.clientDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
-            this.clientDataGridViewTextBoxColumn.HeaderText = "Пациент";
-            this.clientDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
-            this.clientDataGridViewTextBoxColumn.ReadOnly = true;
-            this.clientDataGridViewTextBoxColumn.Width = 75;
-            // 
-            // ExecutionDt
-            // 
-            this.ExecutionDt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ExecutionDt.DataPropertyName = "ExecutionDt";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Format = "d";
-            dataGridViewCellStyle5.NullValue = null;
-            this.ExecutionDt.DefaultCellStyle = dataGridViewCellStyle5;
-            this.ExecutionDt.HeaderText = "Дата выполнения (удалить)";
-            this.ExecutionDt.MinimumWidth = 90;
-            this.ExecutionDt.Name = "ExecutionDt";
-            this.ExecutionDt.ReadOnly = true;
-            this.ExecutionDt.Visible = false;
-            // 
-            // Employee
-            // 
-            this.Employee.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Employee.DataPropertyName = "Employee";
-            this.Employee.HeaderText = "Врач";
-            this.Employee.MinimumWidth = 8;
-            this.Employee.Name = "Employee";
-            this.Employee.ReadOnly = true;
-            this.Employee.Width = 56;
-            // 
-            // FaultType
-            // 
-            this.FaultType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.FaultType.DataPropertyName = "FaultType";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FaultType.DefaultCellStyle = dataGridViewCellStyle6;
-            this.FaultType.HeaderText = "Диагноз";
-            this.FaultType.MinimumWidth = 8;
-            this.FaultType.Name = "FaultType";
-            this.FaultType.ReadOnly = true;
-            // 
-            // Technic
-            // 
-            this.Technic.DataPropertyName = "Technic";
-            this.Technic.HeaderText = "Отделение";
-            this.Technic.MinimumWidth = 8;
-            this.Technic.Name = "Technic";
-            this.Technic.ReadOnly = true;
-            this.Technic.Width = 150;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.statusDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Вид оплаты";
-            this.statusDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.statusDataGridViewTextBoxColumn.Width = 84;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column1.DataPropertyName = "CostOfRepair";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.Format = "C2";
-            dataGridViewCellStyle8.NullValue = null;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column1.HeaderText = "Стоимость";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 87;
-            // 
-            // DetailColumn
-            // 
-            this.DetailColumn.HeaderText = "";
-            this.DetailColumn.Image = global::MIS.Properties.Resources.tool;
-            this.DetailColumn.MinimumWidth = 8;
-            this.DetailColumn.Name = "DetailColumn";
-            this.DetailColumn.ReadOnly = true;
-            this.DetailColumn.Width = 30;
-            // 
-            // ExportToWordColumn
-            // 
-            this.ExportToWordColumn.HeaderText = "";
-            this.ExportToWordColumn.Image = global::MIS.Properties.Resources.iconfinder_logo_brand_brands_logos_word_2993664;
-            this.ExportToWordColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.ExportToWordColumn.MinimumWidth = 8;
-            this.ExportToWordColumn.Name = "ExportToWordColumn";
-            this.ExportToWordColumn.ReadOnly = true;
-            this.ExportToWordColumn.Width = 30;
-            // 
-            // EditColumn
-            // 
-            this.EditColumn.HeaderText = "";
-            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
-            this.EditColumn.MinimumWidth = 8;
-            this.EditColumn.Name = "EditColumn";
-            this.EditColumn.ReadOnly = true;
-            this.EditColumn.Width = 30;
-            // 
-            // DeleteColumn
-            // 
-            this.DeleteColumn.HeaderText = "";
-            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
-            this.DeleteColumn.MinimumWidth = 8;
-            this.DeleteColumn.Name = "DeleteColumn";
-            this.DeleteColumn.ReadOnly = true;
-            this.DeleteColumn.Width = 30;
-            // 
-            // requestBindingSource
-            // 
-            this.requestBindingSource.DataSource = typeof(MIS.Data.Request);
             // 
             // groupBox1
             // 
@@ -956,6 +811,153 @@
             this.dataGridViewTextBoxColumn16.ReadOnly = true;
             this.dataGridViewTextBoxColumn16.Width = 150;
             // 
+            // requestBindingSource
+            // 
+            this.requestBindingSource.DataSource = typeof(MIS.Data.Request);
+            // 
+            // requestIDDataGridViewTextBoxColumn
+            // 
+            this.requestIDDataGridViewTextBoxColumn.DataPropertyName = "Request_ID";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.requestIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.requestIDDataGridViewTextBoxColumn.HeaderText = "№ посещения";
+            this.requestIDDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.requestIDDataGridViewTextBoxColumn.Name = "requestIDDataGridViewTextBoxColumn";
+            this.requestIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.requestIDDataGridViewTextBoxColumn.Width = 95;
+            // 
+            // requestDtDataGridViewTextBoxColumn
+            // 
+            this.requestDtDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.requestDtDataGridViewTextBoxColumn.DataPropertyName = "RequestDt";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Format = "d";
+            dataGridViewCellStyle4.NullValue = null;
+            this.requestDtDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            this.requestDtDataGridViewTextBoxColumn.HeaderText = "Дата посещения";
+            this.requestDtDataGridViewTextBoxColumn.MinimumWidth = 90;
+            this.requestDtDataGridViewTextBoxColumn.Name = "requestDtDataGridViewTextBoxColumn";
+            this.requestDtDataGridViewTextBoxColumn.ReadOnly = true;
+            this.requestDtDataGridViewTextBoxColumn.Width = 108;
+            // 
+            // clientDataGridViewTextBoxColumn
+            // 
+            this.clientDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
+            this.clientDataGridViewTextBoxColumn.HeaderText = "Пациент";
+            this.clientDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
+            this.clientDataGridViewTextBoxColumn.ReadOnly = true;
+            this.clientDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // ExecutionDt
+            // 
+            this.ExecutionDt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ExecutionDt.DataPropertyName = "ExecutionDt";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Format = "d";
+            dataGridViewCellStyle5.NullValue = null;
+            this.ExecutionDt.DefaultCellStyle = dataGridViewCellStyle5;
+            this.ExecutionDt.HeaderText = "Дата выполнения (удалить)";
+            this.ExecutionDt.MinimumWidth = 90;
+            this.ExecutionDt.Name = "ExecutionDt";
+            this.ExecutionDt.ReadOnly = true;
+            this.ExecutionDt.Visible = false;
+            this.ExecutionDt.Width = 157;
+            // 
+            // Employee
+            // 
+            this.Employee.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Employee.DataPropertyName = "Employee";
+            this.Employee.HeaderText = "Врач";
+            this.Employee.MinimumWidth = 8;
+            this.Employee.Name = "Employee";
+            this.Employee.ReadOnly = true;
+            this.Employee.Width = 56;
+            // 
+            // FaultType
+            // 
+            this.FaultType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.FaultType.DataPropertyName = "FaultType";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FaultType.DefaultCellStyle = dataGridViewCellStyle6;
+            this.FaultType.HeaderText = "Диагноз";
+            this.FaultType.MinimumWidth = 8;
+            this.FaultType.Name = "FaultType";
+            this.FaultType.ReadOnly = true;
+            // 
+            // Technic
+            // 
+            this.Technic.DataPropertyName = "Technic";
+            this.Technic.HeaderText = "Отделение";
+            this.Technic.MinimumWidth = 8;
+            this.Technic.Name = "Technic";
+            this.Technic.ReadOnly = true;
+            this.Technic.Width = 150;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.statusDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Вид оплаты";
+            this.statusDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.statusDataGridViewTextBoxColumn.Width = 84;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column1.DataPropertyName = "CostOfRepair";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.Format = "C2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle8;
+            this.Column1.HeaderText = "Стоимость";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 87;
+            // 
+            // DetailColumn
+            // 
+            this.DetailColumn.HeaderText = "";
+            this.DetailColumn.Image = global::MIS.Properties.Resources.tool;
+            this.DetailColumn.MinimumWidth = 8;
+            this.DetailColumn.Name = "DetailColumn";
+            this.DetailColumn.ReadOnly = true;
+            this.DetailColumn.Width = 30;
+            // 
+            // ExportToWordColumn
+            // 
+            this.ExportToWordColumn.HeaderText = "";
+            this.ExportToWordColumn.Image = ((System.Drawing.Image)(resources.GetObject("ExportToWordColumn.Image")));
+            this.ExportToWordColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.ExportToWordColumn.MinimumWidth = 8;
+            this.ExportToWordColumn.Name = "ExportToWordColumn";
+            this.ExportToWordColumn.ReadOnly = true;
+            this.ExportToWordColumn.Width = 30;
+            // 
+            // EditColumn
+            // 
+            this.EditColumn.HeaderText = "";
+            this.EditColumn.Image = global::MIS.Properties.Resources.edit_16;
+            this.EditColumn.MinimumWidth = 8;
+            this.EditColumn.Name = "EditColumn";
+            this.EditColumn.ReadOnly = true;
+            this.EditColumn.Width = 30;
+            // 
+            // DeleteColumn
+            // 
+            this.DeleteColumn.HeaderText = "";
+            this.DeleteColumn.Image = global::MIS.Properties.Resources.delete_16;
+            this.DeleteColumn.MinimumWidth = 8;
+            this.DeleteColumn.Name = "DeleteColumn";
+            this.DeleteColumn.ReadOnly = true;
+            this.DeleteColumn.Width = 30;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -977,9 +979,9 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
