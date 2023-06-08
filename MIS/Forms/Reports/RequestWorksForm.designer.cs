@@ -33,17 +33,15 @@ namespace MIS.Forms.Reports
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.RequestWork_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Request_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Цена = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Итого = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.requestWorkBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonReset = new System.Windows.Forms.Button();
             this.buttonExportToWord = new System.Windows.Forms.Button();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.comboBoxWorks = new System.Windows.Forms.ComboBox();
@@ -57,16 +55,18 @@ namespace MIS.Forms.Reports
             this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
             this.textBoxRequestId = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.buttonReset = new System.Windows.Forms.Button();
+            this.RequestWork_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Request_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.requestWorkDtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.spareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.requestWorkBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Цена = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Итого = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.requestWorkBindingSource)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView
@@ -95,9 +95,9 @@ namespace MIS.Forms.Reports
             this.RequestWork_ID,
             this.Request_ID,
             this.requestWorkDtDataGridViewTextBoxColumn,
+            this.employeeDataGridViewTextBoxColumn,
             this.workDataGridViewTextBoxColumn,
             this.workPriceDataGridViewTextBoxColumn,
-            this.employeeDataGridViewTextBoxColumn,
             this.spareDataGridViewTextBoxColumn,
             this.Цена,
             this.Итого});
@@ -111,51 +111,9 @@ namespace MIS.Forms.Reports
             this.dataGridView.Size = new System.Drawing.Size(1101, 390);
             this.dataGridView.TabIndex = 2;
             // 
-            // RequestWork_ID
+            // requestWorkBindingSource
             // 
-            this.RequestWork_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.RequestWork_ID.DataPropertyName = "RequestWork_ID";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.RequestWork_ID.DefaultCellStyle = dataGridViewCellStyle11;
-            this.RequestWork_ID.HeaderText = "ID";
-            this.RequestWork_ID.Name = "RequestWork_ID";
-            this.RequestWork_ID.ReadOnly = true;
-            this.RequestWork_ID.Width = 43;
-            // 
-            // Request_ID
-            // 
-            this.Request_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Request_ID.DataPropertyName = "Request_ID";
-            this.Request_ID.HeaderText = "№ заявки";
-            this.Request_ID.Name = "Request_ID";
-            this.Request_ID.ReadOnly = true;
-            this.Request_ID.Width = 82;
-            // 
-            // Цена
-            // 
-            this.Цена.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Цена.DataPropertyName = "SparePrice";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.Format = "C2";
-            dataGridViewCellStyle15.NullValue = "-";
-            this.Цена.DefaultCellStyle = dataGridViewCellStyle15;
-            this.Цена.HeaderText = "Цена запчасти";
-            this.Цена.Name = "Цена";
-            this.Цена.ReadOnly = true;
-            this.Цена.Width = 98;
-            // 
-            // Итого
-            // 
-            this.Итого.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Итого.DataPropertyName = "TotalPrice";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.Format = "C2";
-            dataGridViewCellStyle16.NullValue = null;
-            this.Итого.DefaultCellStyle = dataGridViewCellStyle16;
-            this.Итого.HeaderText = "Итого";
-            this.Итого.Name = "Итого";
-            this.Итого.ReadOnly = true;
-            this.Итого.Width = 62;
+            this.requestWorkBindingSource.DataSource = typeof(MIS.Data.RequestWork);
             // 
             // groupBox1
             // 
@@ -179,6 +137,24 @@ namespace MIS.Forms.Reports
             this.groupBox1.Size = new System.Drawing.Size(1101, 120);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+            // 
+            // buttonReset
+            // 
+            this.buttonReset.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonReset.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonReset.FlatAppearance.BorderSize = 2;
+            this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReset.ForeColor = System.Drawing.Color.Black;
+            this.buttonReset.Image = global::MIS.Properties.Resources.return_24;
+            this.buttonReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonReset.Location = new System.Drawing.Point(698, 78);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(210, 36);
+            this.buttonReset.TabIndex = 16;
+            this.buttonReset.TabStop = false;
+            this.buttonReset.Text = "Сброс поиска";
+            this.buttonReset.UseVisualStyleBackColor = false;
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
             // buttonExportToWord
             // 
@@ -231,9 +207,9 @@ namespace MIS.Forms.Reports
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(251, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.Size = new System.Drawing.Size(96, 13);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Тип работ";
+            this.label4.Text = "Категория услуги";
             // 
             // comboBoxEmployees
             // 
@@ -250,9 +226,9 @@ namespace MIS.Forms.Reports
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(251, 66);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 13);
+            this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Сотрудник";
+            this.label5.Text = "Врач";
             // 
             // label3
             // 
@@ -280,9 +256,9 @@ namespace MIS.Forms.Reports
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(55, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 13);
+            this.label1.Size = new System.Drawing.Size(132, 13);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Период выполнения работ";
+            this.label1.Text = "Период оказания услуги";
             // 
             // dateTimePickerTo
             // 
@@ -317,27 +293,29 @@ namespace MIS.Forms.Reports
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(477, 20);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 13);
+            this.label6.Size = new System.Drawing.Size(101, 13);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Номер заявки";
+            this.label6.Text = "Номер посещения";
             // 
-            // buttonReset
+            // RequestWork_ID
             // 
-            this.buttonReset.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonReset.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.buttonReset.FlatAppearance.BorderSize = 2;
-            this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReset.ForeColor = System.Drawing.Color.Black;
-            this.buttonReset.Image = global::MIS.Properties.Resources.return_24;
-            this.buttonReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonReset.Location = new System.Drawing.Point(698, 78);
-            this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(210, 36);
-            this.buttonReset.TabIndex = 16;
-            this.buttonReset.TabStop = false;
-            this.buttonReset.Text = "Сброс поиска";
-            this.buttonReset.UseVisualStyleBackColor = false;
-            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
+            this.RequestWork_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.RequestWork_ID.DataPropertyName = "RequestWork_ID";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.RequestWork_ID.DefaultCellStyle = dataGridViewCellStyle11;
+            this.RequestWork_ID.HeaderText = "ID";
+            this.RequestWork_ID.Name = "RequestWork_ID";
+            this.RequestWork_ID.ReadOnly = true;
+            this.RequestWork_ID.Width = 43;
+            // 
+            // Request_ID
+            // 
+            this.Request_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Request_ID.DataPropertyName = "Request_ID";
+            this.Request_ID.HeaderText = "№ Посещения";
+            this.Request_ID.Name = "Request_ID";
+            this.Request_ID.ReadOnly = true;
+            this.Request_ID.Width = 97;
             // 
             // requestWorkDtDataGridViewTextBoxColumn
             // 
@@ -350,14 +328,21 @@ namespace MIS.Forms.Reports
             this.requestWorkDtDataGridViewTextBoxColumn.Name = "requestWorkDtDataGridViewTextBoxColumn";
             this.requestWorkDtDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // employeeDataGridViewTextBoxColumn
+            // 
+            this.employeeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.employeeDataGridViewTextBoxColumn.DataPropertyName = "Employee";
+            this.employeeDataGridViewTextBoxColumn.HeaderText = "Врач";
+            this.employeeDataGridViewTextBoxColumn.Name = "employeeDataGridViewTextBoxColumn";
+            this.employeeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // workDataGridViewTextBoxColumn
             // 
-            this.workDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.workDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.workDataGridViewTextBoxColumn.DataPropertyName = "Work";
-            this.workDataGridViewTextBoxColumn.HeaderText = "Выполняемая работа";
+            this.workDataGridViewTextBoxColumn.HeaderText = "Услуга";
             this.workDataGridViewTextBoxColumn.Name = "workDataGridViewTextBoxColumn";
             this.workDataGridViewTextBoxColumn.ReadOnly = true;
-            this.workDataGridViewTextBoxColumn.Width = 129;
             // 
             // workPriceDataGridViewTextBoxColumn
             // 
@@ -372,15 +357,6 @@ namespace MIS.Forms.Reports
             this.workPriceDataGridViewTextBoxColumn.ReadOnly = true;
             this.workPriceDataGridViewTextBoxColumn.Width = 87;
             // 
-            // employeeDataGridViewTextBoxColumn
-            // 
-            this.employeeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.employeeDataGridViewTextBoxColumn.DataPropertyName = "Employee";
-            this.employeeDataGridViewTextBoxColumn.HeaderText = "Сотрудник";
-            this.employeeDataGridViewTextBoxColumn.Name = "employeeDataGridViewTextBoxColumn";
-            this.employeeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.employeeDataGridViewTextBoxColumn.Width = 85;
-            // 
             // spareDataGridViewTextBoxColumn
             // 
             this.spareDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -390,10 +366,35 @@ namespace MIS.Forms.Reports
             this.spareDataGridViewTextBoxColumn.HeaderText = "Запчасть";
             this.spareDataGridViewTextBoxColumn.Name = "spareDataGridViewTextBoxColumn";
             this.spareDataGridViewTextBoxColumn.ReadOnly = true;
+            this.spareDataGridViewTextBoxColumn.Visible = false;
             // 
-            // requestWorkBindingSource
+            // Цена
             // 
-            this.requestWorkBindingSource.DataSource = typeof(MIS.Data.RequestWork);
+            this.Цена.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Цена.DataPropertyName = "SparePrice";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.Format = "C2";
+            dataGridViewCellStyle15.NullValue = "-";
+            this.Цена.DefaultCellStyle = dataGridViewCellStyle15;
+            this.Цена.HeaderText = "Цена запчасти";
+            this.Цена.Name = "Цена";
+            this.Цена.ReadOnly = true;
+            this.Цена.Visible = false;
+            this.Цена.Width = 98;
+            // 
+            // Итого
+            // 
+            this.Итого.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Итого.DataPropertyName = "TotalPrice";
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.Format = "C2";
+            dataGridViewCellStyle16.NullValue = null;
+            this.Итого.DefaultCellStyle = dataGridViewCellStyle16;
+            this.Итого.HeaderText = "Итого";
+            this.Итого.Name = "Итого";
+            this.Итого.ReadOnly = true;
+            this.Итого.Visible = false;
+            this.Итого.Width = 62;
             // 
             // RequestWorksForm
             // 
@@ -405,12 +406,12 @@ namespace MIS.Forms.Reports
             this.Controls.Add(this.dataGridView);
             this.Name = "RequestWorksForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Реестр выполненных работ";
+            this.Text = "Реестр оказанных услуг";
             this.Load += new System.EventHandler(this.RequestWorksForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.requestWorkBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.requestWorkBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -431,17 +432,17 @@ namespace MIS.Forms.Reports
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBoxEmployees;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RequestWork_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Request_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn requestWorkDtDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn workDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn workPriceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn employeeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn spareDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Цена;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Итого;
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.Button buttonExportToWord;
         private System.Windows.Forms.Button buttonReset;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RequestWork_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Request_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn requestWorkDtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn employeeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn workDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn workPriceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn spareDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Цена;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Итого;
     }
 }
