@@ -41,9 +41,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 22);
+            this.label1.Size = new System.Drawing.Size(164, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Тип расходника";
+            this.label1.Text = "Тип медицинского изделия";
             // 
             // textBoxSpareTypeName
             // 
@@ -52,7 +52,7 @@
             this.textBoxSpareTypeName.Location = new System.Drawing.Point(12, 97);
             this.textBoxSpareTypeName.MaxLength = 100;
             this.textBoxSpareTypeName.Name = "textBoxSpareTypeName";
-            this.textBoxSpareTypeName.Size = new System.Drawing.Size(356, 28);
+            this.textBoxSpareTypeName.Size = new System.Drawing.Size(356, 21);
             this.textBoxSpareTypeName.TabIndex = 1;
             // 
             // buttonCancel
@@ -93,7 +93,7 @@
             this.comboBoxTechnicType.FormattingEnabled = true;
             this.comboBoxTechnicType.Location = new System.Drawing.Point(12, 34);
             this.comboBoxTechnicType.Name = "comboBoxTechnicType";
-            this.comboBoxTechnicType.Size = new System.Drawing.Size(356, 30);
+            this.comboBoxTechnicType.Size = new System.Drawing.Size(356, 23);
             this.comboBoxTechnicType.TabIndex = 5;
             // 
             // label2
@@ -101,13 +101,13 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(197, 22);
+            this.label2.Size = new System.Drawing.Size(136, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Тип техники (удалить)";
             // 
             // AddEditSpareTypeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.buttonCancel;

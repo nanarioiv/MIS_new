@@ -122,7 +122,7 @@ namespace MIS.Forms.ReferenceForms
             // 
             this.faultTypeNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.faultTypeNameDataGridViewTextBoxColumn.DataPropertyName = "FaultTypeName";
-            this.faultTypeNameDataGridViewTextBoxColumn.HeaderText = "Диагноз (нужен код по МКБ)";
+            this.faultTypeNameDataGridViewTextBoxColumn.HeaderText = "Диагноз";
             this.faultTypeNameDataGridViewTextBoxColumn.Name = "faultTypeNameDataGridViewTextBoxColumn";
             this.faultTypeNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 

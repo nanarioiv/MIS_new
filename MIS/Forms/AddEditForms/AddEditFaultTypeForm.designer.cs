@@ -119,6 +119,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(356, 21);
             this.textBox1.TabIndex = 6;
+            this.textBox1.Visible = false;
             // 
             // label3
             // 
@@ -128,6 +129,7 @@
             this.label3.Size = new System.Drawing.Size(143, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "Код по МКБ (добавить)";
+            this.label3.Visible = false;
             // 
             // AddEditFaultTypeForm
             // 

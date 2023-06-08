@@ -261,8 +261,8 @@
             // 
             this.запчастиToolStripMenuItem.Image = global::MIS.Properties.Resources.tool;
             this.запчастиToolStripMenuItem.Name = "запчастиToolStripMenuItem";
-            this.запчастиToolStripMenuItem.Size = new System.Drawing.Size(108, 28);
-            this.запчастиToolStripMenuItem.Text = "Расходники";
+            this.запчастиToolStripMenuItem.Size = new System.Drawing.Size(116, 28);
+            this.запчастиToolStripMenuItem.Text = "Мед. изделия";
             this.запчастиToolStripMenuItem.Click += new System.EventHandler(this.запчастиToolStripMenuItem_Click);
             // 
             // отчётыToolStripMenuItem
@@ -275,41 +275,41 @@
             this.статистикаЗаявокПоТипуТехникиToolStripMenuItem});
             this.отчётыToolStripMenuItem.Image = global::MIS.Properties.Resources.word_16;
             this.отчётыToolStripMenuItem.Name = "отчётыToolStripMenuItem";
-            this.отчётыToolStripMenuItem.Size = new System.Drawing.Size(90, 28);
-            this.отчётыToolStripMenuItem.Text = "Справки";
+            this.отчётыToolStripMenuItem.Size = new System.Drawing.Size(84, 28);
+            this.отчётыToolStripMenuItem.Text = "Отчёты";
             // 
             // реестрToolStripMenuItem
             // 
             this.реестрToolStripMenuItem.Name = "реестрToolStripMenuItem";
-            this.реестрToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
+            this.реестрToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
             this.реестрToolStripMenuItem.Text = "Реестр оказанных услуг";
             this.реестрToolStripMenuItem.Click += new System.EventHandler(this.реестрToolStripMenuItem_Click);
             // 
             // отчётПоЗаявкамToolStripMenuItem
             // 
             this.отчётПоЗаявкамToolStripMenuItem.Name = "отчётПоЗаявкамToolStripMenuItem";
-            this.отчётПоЗаявкамToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
+            this.отчётПоЗаявкамToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
             this.отчётПоЗаявкамToolStripMenuItem.Text = "Отчёт по посещениям";
             this.отчётПоЗаявкамToolStripMenuItem.Click += new System.EventHandler(this.отчётПоЗаявкамToolStripMenuItem_Click);
             // 
             // отчётОРасходеЗапчастейToolStripMenuItem
             // 
             this.отчётОРасходеЗапчастейToolStripMenuItem.Name = "отчётОРасходеЗапчастейToolStripMenuItem";
-            this.отчётОРасходеЗапчастейToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
-            this.отчётОРасходеЗапчастейToolStripMenuItem.Text = "Отчёт по расходным материалам";
+            this.отчётОРасходеЗапчастейToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.отчётОРасходеЗапчастейToolStripMenuItem.Text = "Отчёт по расходу медицинских изделий";
             this.отчётОРасходеЗапчастейToolStripMenuItem.Click += new System.EventHandler(this.отчётОРасходеЗапчастейToolStripMenuItem_Click);
             // 
             // статистикаЗаявокПоВидамНеисправностейToolStripMenuItem
             // 
             this.статистикаЗаявокПоВидамНеисправностейToolStripMenuItem.Name = "статистикаЗаявокПоВидамНеисправностейToolStripMenuItem";
-            this.статистикаЗаявокПоВидамНеисправностейToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
+            this.статистикаЗаявокПоВидамНеисправностейToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
             this.статистикаЗаявокПоВидамНеисправностейToolStripMenuItem.Text = "Статистика посещений по диагнозам";
             this.статистикаЗаявокПоВидамНеисправностейToolStripMenuItem.Click += new System.EventHandler(this.статистикаЗаявокПоВидамНеисправностейToolStripMenuItem_Click);
             // 
             // статистикаЗаявокПоТипуТехникиToolStripMenuItem
             // 
             this.статистикаЗаявокПоТипуТехникиToolStripMenuItem.Name = "статистикаЗаявокПоТипуТехникиToolStripMenuItem";
-            this.статистикаЗаявокПоТипуТехникиToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
+            this.статистикаЗаявокПоТипуТехникиToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
             this.статистикаЗаявокПоТипуТехникиToolStripMenuItem.Text = "Статистика посещений по отделениям";
             this.статистикаЗаявокПоТипуТехникиToolStripMenuItem.Click += new System.EventHandler(this.статистикаЗаявокПоТипуТехникиToolStripMenuItem_Click);
             // 

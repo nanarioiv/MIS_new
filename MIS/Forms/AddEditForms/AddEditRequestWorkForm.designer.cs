@@ -89,10 +89,10 @@
             this.linkLabelSearchSpare.AutoSize = true;
             this.linkLabelSearchSpare.Location = new System.Drawing.Point(18, 68);
             this.linkLabelSearchSpare.Name = "linkLabelSearchSpare";
-            this.linkLabelSearchSpare.Size = new System.Drawing.Size(112, 15);
+            this.linkLabelSearchSpare.Size = new System.Drawing.Size(178, 15);
             this.linkLabelSearchSpare.TabIndex = 13;
             this.linkLabelSearchSpare.TabStop = true;
-            this.linkLabelSearchSpare.Text = "Поиск расходника";
+            this.linkLabelSearchSpare.Text = "Поиск медицинского изделия";
             this.linkLabelSearchSpare.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelSearchSpare_LinkClicked);
             // 
             // textBoxSpare

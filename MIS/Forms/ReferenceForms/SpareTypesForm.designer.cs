@@ -74,15 +74,14 @@ namespace MIS.Forms.ReferenceForms
             this.EditColumn,
             this.DeleteColumn});
             this.dataGridView.DataSource = this.spareTypeBindingSource;
-            this.dataGridView.Location = new System.Drawing.Point(18, 106);
-            this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView.Location = new System.Drawing.Point(12, 69);
             this.dataGridView.MultiSelect = false;
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.RowHeadersWidth = 62;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(850, 460);
+            this.dataGridView.Size = new System.Drawing.Size(567, 299);
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
@@ -100,12 +99,11 @@ namespace MIS.Forms.ReferenceForms
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Image = global::MIS.Properties.Resources.add_btn;
             this.buttonAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdd.Location = new System.Drawing.Point(18, 18);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonAdd.Location = new System.Drawing.Point(12, 12);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(850, 55);
+            this.buttonAdd.Size = new System.Drawing.Size(567, 36);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить тип расходника";
+            this.buttonAdd.Text = "Добавить тип медицинского изделия";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -119,13 +117,13 @@ namespace MIS.Forms.ReferenceForms
             this.spareTypeIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.spareTypeIDDataGridViewTextBoxColumn.Name = "spareTypeIDDataGridViewTextBoxColumn";
             this.spareTypeIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.spareTypeIDDataGridViewTextBoxColumn.Width = 62;
+            this.spareTypeIDDataGridViewTextBoxColumn.Width = 43;
             // 
             // spareTypeNameDataGridViewTextBoxColumn
             // 
             this.spareTypeNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.spareTypeNameDataGridViewTextBoxColumn.DataPropertyName = "SpareTypeName";
-            this.spareTypeNameDataGridViewTextBoxColumn.HeaderText = "Тип расходника";
+            this.spareTypeNameDataGridViewTextBoxColumn.HeaderText = "Тип медицинского изделия";
             this.spareTypeNameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.spareTypeNameDataGridViewTextBoxColumn.Name = "spareTypeNameDataGridViewTextBoxColumn";
             this.spareTypeNameDataGridViewTextBoxColumn.ReadOnly = true;
@@ -139,7 +137,7 @@ namespace MIS.Forms.ReferenceForms
             this.technicTypeDataGridViewTextBoxColumn.Name = "technicTypeDataGridViewTextBoxColumn";
             this.technicTypeDataGridViewTextBoxColumn.ReadOnly = true;
             this.technicTypeDataGridViewTextBoxColumn.Visible = false;
-            this.technicTypeDataGridViewTextBoxColumn.Width = 238;
+            this.technicTypeDataGridViewTextBoxColumn.Width = 143;
             // 
             // EditColumn
             // 
@@ -161,16 +159,15 @@ namespace MIS.Forms.ReferenceForms
             // 
             // SpareTypesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(886, 585);
+            this.ClientSize = new System.Drawing.Size(591, 380);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.dataGridView);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SpareTypesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Типы расходников";
+            this.Text = "Типы медицинских изделий";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spareTypeBindingSource)).EndInit();
             this.ResumeLayout(false);
