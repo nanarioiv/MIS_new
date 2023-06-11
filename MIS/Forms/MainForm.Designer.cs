@@ -209,7 +209,7 @@
             // 
             this.типыЗапчастейToolStripMenuItem.Name = "типыЗапчастейToolStripMenuItem";
             this.типыЗапчастейToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
-            this.типыЗапчастейToolStripMenuItem.Text = "Типы расходников";
+            this.типыЗапчастейToolStripMenuItem.Text = "Типы медицинских изделий";
             this.типыЗапчастейToolStripMenuItem.Click += new System.EventHandler(this.типыЗапчастейToolStripMenuItem_Click);
             // 
             // toolStripSeparator2

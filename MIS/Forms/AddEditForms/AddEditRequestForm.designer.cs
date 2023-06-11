@@ -222,9 +222,9 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(6, 479);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(226, 17);
+            this.label6.Size = new System.Drawing.Size(151, 17);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Клинический диагноз (добавить)";
+            this.label6.Text = "Клинический диагноз";
             // 
             // label7
             // 
@@ -307,9 +307,9 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.Location = new System.Drawing.Point(6, 347);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(140, 17);
+            this.label9.Size = new System.Drawing.Size(69, 17);
             this.label9.TabIndex = 11;
-            this.label9.Text = "Анамнез (добавить)";
+            this.label9.Text = "Анамнез ";
             // 
             // textBoxAnamnesis
             // 

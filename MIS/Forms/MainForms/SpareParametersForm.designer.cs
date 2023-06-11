@@ -158,7 +158,7 @@ namespace MIS.Forms.MainForms
             this.Controls.Add(this.dataGridView);
             this.Name = "SpareParametersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Характеристики расходников";
+            this.Text = "Характеристики мед. изделий";
             this.Load += new System.EventHandler(this.SpareParametersForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spareParameterBindingSource)).EndInit();

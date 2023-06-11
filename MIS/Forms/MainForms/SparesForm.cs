@@ -149,7 +149,7 @@ namespace MIS.Forms.MainForms
             // на основании выбора типа техники выбираем из БД типы запастей для этого типа техники
             if (comboBoxTechnicType.SelectedItem is TechnicType selectedTechType)
             {
-                _spareTypes.Add(new SpareType { SpareTypeName = "Все типы расходников" });
+                _spareTypes.Add(new SpareType { SpareTypeName = "Все типы мед. изделий" });
                 if (selectedTechType.TechnicType_ID != 0)
                 {
                     _spareTypes.AddRange(_repository.GetEntityes<SpareType>(st => st.TechnicType_ID == selectedTechType.TechnicType_ID));

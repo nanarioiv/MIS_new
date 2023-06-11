@@ -7,7 +7,7 @@ namespace MIS.Data
         {
             if (SpareType_ID==0)
             {
-                return "Все типы расходников";
+                return "Все типы мед. изделий";
             }
             return $"{SpareTypeName}";
         }

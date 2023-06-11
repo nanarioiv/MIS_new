@@ -194,18 +194,18 @@ namespace MIS.Forms.MainForms
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(14, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 13);
+            this.label2.Size = new System.Drawing.Size(147, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Тип расходника";
+            this.label2.Text = "Тип медицинского изделия";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(14, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 13);
+            this.label3.Size = new System.Drawing.Size(204, 13);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Наименование расходника";
+            this.label3.Text = "Наименование медицинского изделия";
             // 
             // label1
             // 
@@ -270,7 +270,7 @@ namespace MIS.Forms.MainForms
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(715, 36);
             this.buttonAdd.TabIndex = 3;
-            this.buttonAdd.Text = "Добавить новый расходник";
+            this.buttonAdd.Text = "Добавить новое медицинское изделие";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -305,11 +305,11 @@ namespace MIS.Forms.MainForms
             // 
             this.spareTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.spareTypeDataGridViewTextBoxColumn.DataPropertyName = "SpareType";
-            this.spareTypeDataGridViewTextBoxColumn.HeaderText = "Тип расходника";
+            this.spareTypeDataGridViewTextBoxColumn.HeaderText = "Тип медицинского изделия";
             this.spareTypeDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.spareTypeDataGridViewTextBoxColumn.Name = "spareTypeDataGridViewTextBoxColumn";
             this.spareTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.spareTypeDataGridViewTextBoxColumn.Width = 104;
+            this.spareTypeDataGridViewTextBoxColumn.Width = 157;
             // 
             // spareNameDataGridViewTextBoxColumn
             // 
@@ -382,7 +382,7 @@ namespace MIS.Forms.MainForms
             this.Controls.Add(this.dataGridView);
             this.Name = "SparesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Расходные материалы";
+            this.Text = "Медицинские изделия";
             this.Load += new System.EventHandler(this.SparesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spareBindingSource)).EndInit();
