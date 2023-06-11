@@ -37,27 +37,27 @@ namespace MIS.Forms.AddEditForms
             var sb = new StringBuilder();
             if (comboBoxPosts.SelectedItem == null)
             {
-                sb.AppendLine($"Не верно заполнено поле {label1.Text}!");
+                sb.AppendLine($"Не заполнено поле {label1.Text}!");
             }
             if (string.IsNullOrWhiteSpace(textBoxFName.Text))
             {
-                sb.AppendLine($"Не верно заполнено поле {label2.Text}!");
+                sb.AppendLine($"Не заполнено поле {label2.Text}!");
             }
             if (string.IsNullOrWhiteSpace(textBoxName.Text))
             {
-                sb.AppendLine($"Не верно заполнено поле {label3.Text}!");
+                sb.AppendLine($"Не заполнено поле {label3.Text}!");
             }
             if (string.IsNullOrWhiteSpace(textBoxLName.Text))
             {
-                sb.AppendLine($"Не верно заполнено поле {label4.Text}!");
+                sb.AppendLine($"Не заполнено поле {label4.Text}!");
             }
             if (string.IsNullOrWhiteSpace(textBoxLogin.Text))
             {
-                sb.AppendLine($"Не верно заполнено поле {label7.Text}!");
+                sb.AppendLine($"Не заполнено поле {label7.Text}!");
             }
             if (string.IsNullOrWhiteSpace(textBoxPassword.Text))
             {
-                sb.AppendLine($"Не верно заполнено поле {label8.Text}!");
+                sb.AppendLine($"Не заполнено поле {label8.Text}!");
             }
             if (sb.Length != 0)
             {
